@@ -1,0 +1,8 @@
+
+target 'Sample' do
+
+  use_frameworks!
+
+  pod 'MobWithAdSDK', :git => 'https://github.com/mobon/MobwithAdSpecs.git'
+  
+end
