@@ -1,0 +1,11 @@
+framework module MobWithADSDKFramework {
+  umbrella header "MobWithADSDKFramework.h"
+  export *
+
+  module * { export * }
+}
+
+module MobWithADSDKFramework.Swift {
+  header "MobWithADSDKFramework-Swift.h"
+  requires objc
+}
