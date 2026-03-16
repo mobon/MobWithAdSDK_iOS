@@ -4,6 +4,10 @@
 <dict>
 	<key>AppLovinSdkKey</key>
 	<string>{AppLovin AppKey}</string>
+	<key>BidmadAppDomain</key>
+	<string>19239-serving-bidmad.adop.co.kr</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-7431155442526188~6476656896</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

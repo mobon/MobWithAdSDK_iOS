@@ -50,8 +50,6 @@ class ViewController: UIViewController {
         idfaLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tappedIdfaLabel(gesture:))))
         
         MobWithADSDK.standard.enableLog(true)
-        MobWithADSDK.standard.initSDK(coupangSubId: coupangSubID)
-        MobWithADSDK.standard.setUnityGameId(gameId: "5737823") //5720742
         MobWithADSDK.standard.setLevelPlaySDKAppKey("22180584d") //200aec285, 20196aec5. 22180584d
         MobWithADSDK.standard.setPangleAppId(appId: "8705357")    //8705357, 8659257
         MobWithADSDK.standard.setDTExchangeAppID(appId: "220419")
