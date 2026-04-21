@@ -6,11 +6,13 @@ import AVFoundation
 import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
+import DeveloperToolsSupport
 import Foundation
 @_exported import MobWithADSDKFramework
 import OSLog
 import StoreKit
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
@@ -224,6 +226,7 @@ extension MobWithADSDKFramework.VastViewableImpression : Swift.Equatable {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc static func initializeSDK(config: [Swift.String : Any]?)
   #endif
+  @objc static func getVersion() -> Swift.String
 }
 public enum TrackingError : Swift.Error {
   case MissingAdBreak
@@ -1167,6 +1170,26 @@ extension MobWithADSDKFramework.MMNativeAdView : MobWithADSDKFramework.MWAdapter
   public var rawValue: ObjectiveC.NSInteger {
     get
   }
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency public class DHPaddedLabel : UIKit.UILabel {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var topInset: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var bottomInset: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var leftInset: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var rightInset: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func drawText(in rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+extension UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func showDHToast(message: Swift.String, showIcon: Swift.Bool = false, bottomOffset: CoreFoundation.CGFloat = 20.0, _ callback: (() -> Swift.Void)? = nil)
+  #endif
 }
 extension Swift.String {
   public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String

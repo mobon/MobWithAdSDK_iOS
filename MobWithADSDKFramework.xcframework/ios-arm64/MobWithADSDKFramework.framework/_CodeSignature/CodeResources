@@ -4,25 +4,125 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		Cru+90+wGWgb5LoJTzwuW+hGW6E=
+		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		TDzdrwG05XJdAeDfUFp1C1r1qRI=
+		w5eUjO6LdIkBf+2rUDCopX2tVg4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6xMgVX2oIJ7LmPphVgLpk/CPphE=
+		6ly2Z9MS1PPD0VcQ937YlLX1u8o=
+		</data>
+		<key>MWFullBannerDefaultView.nib</key>
+		<data>
+		PZA5/7Mf4oRWlAQNoVI3N4y2dr8=
+		</data>
+		<key>MWFullBannerNonProductView.nib</key>
+		<data>
+		gqwEoQpZ85MxOsaaracG19p77Qs=
+		</data>
+		<key>MWFullBannerProductView.nib</key>
+		<data>
+		txaIcXdH5Zm42rrL5Ktrh05VUTw=
+		</data>
+		<key>MWFullVideoHTextView.nib</key>
+		<data>
+		VC4f4jD+wL9HY7bxtFRghtM6/q4=
+		</data>
+		<key>MWFullVideoVFullView.nib</key>
+		<data>
+		EX6gfGUpSzMI3067jhhWD3zNRxU=
+		</data>
+		<key>MWFullVideoVNoTextView.nib</key>
+		<data>
+		iSykqShzpPmSoqLVrrPbkije9Zo=
+		</data>
+		<key>MWFullVideoVTextView.nib</key>
+		<data>
+		fWGJ3H7XJzdGz9zC7i+zDGvJqJE=
+		</data>
+		<key>MWModalBannerDefaultView.nib</key>
+		<data>
+		HqDrEFpmHCpkUguZQkSElTcN+lE=
+		</data>
+		<key>MWModalBannerNonProductView.nib</key>
+		<data>
+		JmP1Bj04k1WshgvENAqQ+lE83sw=
+		</data>
+		<key>MWModalBannerProductView.nib</key>
+		<data>
+		W4bL1Vbgbf7f1r4nP5lPMBm1TxE=
+		</data>
+		<key>MWModalVideoHTextView.nib</key>
+		<data>
+		vQlGiJL3QG17LV64dVRyKGLeQUY=
+		</data>
+		<key>MWModalVideoVFullView.nib</key>
+		<data>
+		g7ZOfel6Szf1fJxMhL/et9yooZ8=
+		</data>
+		<key>MWModalVideoVNoTextView.nib</key>
+		<data>
+		9z8bILJCkg9HmLOfsbmB6sSMlaY=
+		</data>
+		<key>MWModalVideoVTextView.nib</key>
+		<data>
+		XLEjLSTdIaejEOscHPghR3OaT2Q=
+		</data>
+		<key>MWRewardFullBannerDefaultView.nib</key>
+		<data>
+		t+sBtRVACasDOe6HDvF4/opWbmQ=
+		</data>
+		<key>MWRewardFullBannerNonProductView.nib</key>
+		<data>
+		540g3Noz+nxvtSzGwOTI1Cy3O+c=
+		</data>
+		<key>MWRewardFullBannerProductView.nib</key>
+		<data>
+		Z/zhXxNB5WK/HYfW9kJGdqpqqcE=
+		</data>
+		<key>MWRewardFullVideoHFullView.nib</key>
+		<data>
+		z/9er6QuWaUzy8+6Y1XgVWXC7fs=
+		</data>
+		<key>MWRewardFullVideoVFullView.nib</key>
+		<data>
+		PU0fZlML7F8jl6S1rs7L1hXsJL8=
+		</data>
+		<key>MWRewardModalBannerDefaultView.nib</key>
+		<data>
+		6+Bkv+2UixAkgDQYywXVG+QxaC0=
+		</data>
+		<key>MWRewardModalBannerNonProductView.nib</key>
+		<data>
+		6rFTg6XduPYCF+IOL10hZIXxZ8w=
+		</data>
+		<key>MWRewardModalBannerProductView.nib</key>
+		<data>
+		1XUaXg2SYaz+uWgzgAOYz6utlTQ=
+		</data>
+		<key>MWRewardModalVideoHFullView.nib</key>
+		<data>
+		B4UmnOhD7WuF6YpsUE9s7uKUff4=
+		</data>
+		<key>MWRewardModalVideoVFullView.nib</key>
+		<data>
+		p2WW000QgXWj3D0tdI0CWJzpLDc=
 		</data>
 		<key>MixerVideoViewController.nib</key>
 		<data>
-		O+e3Lzmn1WsXfvmy2Y47m2kDOsM=
+		kpwt2ezBjznr8CT16ByPmQPCGJM=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		SYRrA2SuitFMDlnScoa2jr/mPws=
+		QP8tsRegmOtPFm/0citbuCrJN30=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		zfWBxKE7Ls1bQHUzuirDFU4v0Cw=
+		OI6s7V3BIUtCmQ+jF4kPxR2xrfw=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +130,11 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zfWBxKE7Ls1bQHUzuirDFU4v0Cw=
+		OI6s7V3BIUtCmQ+jF4kPxR2xrfw=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Isn65QyQBq2wNeP9caSi8RerOMs=
+		l73oPkV4T8DjTA699Mmq3q28x1A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +154,7 @@
 		</data>
 		<key>RewardBannerViewController.nib</key>
 		<data>
-		tQliwTXskOq7GJK0cfGabc+kk5s=
+		scOiqoYwb9mo2EB3w8+RAngvguc=
 		</data>
 		<key>mobwith_reward_ad_title1.png</key>
 		<data>
@@ -103,32 +203,207 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zuWBcaWvnPQO4Lsg9d2YOFtKT4vxn6zRYqh7U6KKvKw=
+			</data>
+		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/KdzpEp84YxaBpUVW5VsA0YVttl7Q3fBQOgMprH2AR8=
+			sUfg/lAUdW610tNjKfKQtK4Jc/OFXShNEePJgHs5Z+I=
+			</data>
+		</dict>
+		<key>MWFullBannerDefaultView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3hUl7xmHmv5Fgvn2PSlQpele1BvHV9SZVmoKt++K4J8=
+			</data>
+		</dict>
+		<key>MWFullBannerNonProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			830w2z6saJRVLFlsT6pvBTS4FC0rRq/nc/xKVxpVdyw=
+			</data>
+		</dict>
+		<key>MWFullBannerProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PjgYajxZMDyQ2vWO4NNSu8WlsvSxVnzlj6Czxv4AVz8=
+			</data>
+		</dict>
+		<key>MWFullVideoHTextView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zgVshMtAgIHhztZRYPxZiIFWp3gErvrhRohP7i5lw0A=
+			</data>
+		</dict>
+		<key>MWFullVideoVFullView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KELefEJSN6aERXvVwAWlx7VagO/wrvw9KObN2yhVqZ4=
+			</data>
+		</dict>
+		<key>MWFullVideoVNoTextView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7kHqr3qU4bBY9dVbCWkzcd3G34OAvIsFarn+b/UzK9A=
+			</data>
+		</dict>
+		<key>MWFullVideoVTextView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kDUvcQzsgAVyaev7oVyPaEuTFVnkwaFOWE6yQnnVMiI=
+			</data>
+		</dict>
+		<key>MWModalBannerDefaultView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y6FtfQb59ZlNWGOnZyu66mEQ7zWdNrhiJTiSkiKD0uo=
+			</data>
+		</dict>
+		<key>MWModalBannerNonProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8QqO2q9DqDdJSByTDiBOAKQMYbkztlYUGoLxsmADCCA=
+			</data>
+		</dict>
+		<key>MWModalBannerProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LMNf+5DE4W4sbQJPm5fcWAzyPJ6MQ/BZakyLhdy1wQQ=
+			</data>
+		</dict>
+		<key>MWModalVideoHTextView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0pzpuvupW/u+qhMRhKDGBfqdLMAJsJ9pUGFlQAVoVaY=
+			</data>
+		</dict>
+		<key>MWModalVideoVFullView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N5hkRsNmI5/+jZbT+SH6ngtLHqYqi5siZ0WwU561K14=
+			</data>
+		</dict>
+		<key>MWModalVideoVNoTextView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bUgUBwjvnBAjhnzytjqsowqzfyt1+WBL6pLLKXvVh5E=
+			</data>
+		</dict>
+		<key>MWModalVideoVTextView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tAHOaZDsg4r4KJ7DQ90yR5gXDOvEv0o0LFQ+BTQvXaM=
+			</data>
+		</dict>
+		<key>MWRewardFullBannerDefaultView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HYgvG5ozRB5/ktmexlxTwnm5q9FuXP6PLvIMt8K2qnQ=
+			</data>
+		</dict>
+		<key>MWRewardFullBannerNonProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jLo8F9MvvDGst+s0gy416SddeFxowV+3lEu399tQIJY=
+			</data>
+		</dict>
+		<key>MWRewardFullBannerProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dwjBtz22b0nj8ig9PVCywFEhhDM0iZzyPODLEU6wAvY=
+			</data>
+		</dict>
+		<key>MWRewardFullVideoHFullView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mHVwOxtWzVNvXa/YZbIKtwFXJ5Mf+HO0sfVdi9oEnIY=
+			</data>
+		</dict>
+		<key>MWRewardFullVideoVFullView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eoQhyZJ6SoeoUS0I1L0nY5mOm/1Xym5xoFxxKlELZYE=
+			</data>
+		</dict>
+		<key>MWRewardModalBannerDefaultView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Di/mxP7AMbaMcZ4ZRAqrjcUT4n9uTul/bsPz5DLYOfw=
+			</data>
+		</dict>
+		<key>MWRewardModalBannerNonProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FMJr5aLEwJ6PAIZ47fBIL1yE4uDT0YewbNtzSQpsxFc=
+			</data>
+		</dict>
+		<key>MWRewardModalBannerProductView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ww1jZDR7hmKiT3Wsqkk0nZ5wXieISIlKz2WMeA1Crqc=
+			</data>
+		</dict>
+		<key>MWRewardModalVideoHFullView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bu0WFs0WblTWh7BomEfzebNDWLsBwNW0Alu4SQSfoOc=
+			</data>
+		</dict>
+		<key>MWRewardModalVideoVFullView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rR8PtoHRq+eAP/MST5Ds5MNXJv9FMCClkV1YCmKzHKU=
 			</data>
 		</dict>
 		<key>MixerVideoViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p8Rg5JZvkt7I5Od0zL6h25JKz88VzvkcrAprzXbhpcg=
+			jrO0wHvUut1IBw67p6onO/HiIwbx1/Z4r8F+pO6fti4=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JlOXaVAV0fWCD8jWhg7A8juqNKF3xbnVU1NTOauG1To=
+			drXwUIlmHYl2pHBlJA/JdObLMsynBGlq22AOtH9moFQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7qX0mWJ4mV6akaRXvO5f1fhmFb+qmSWQYY7ofHLfAg=
+			Yt/qujwUb3YyjZEoXGQaeOYenqk7RxjR+dVyD7bY3G8=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -142,14 +417,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7qX0mWJ4mV6akaRXvO5f1fhmFb+qmSWQYY7ofHLfAg=
+			Yt/qujwUb3YyjZEoXGQaeOYenqk7RxjR+dVyD7bY3G8=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kdXYkQPa9YlDG5DtIhWKORUR+B7pHup3vRpJ6Eu7SyY=
+			Kc7zKIwDbqdJDJZsu/RKlte6GfhCwwQiUVGOcLFz5Jo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -184,7 +459,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LniroRKukrMO8lRQTzcYKuTpZfRrymQwd+JEjHatsFs=
+			3Dzewo8JREOu+0notOM/IyXTGjjBaGdpvPiyRpTbeCI=
 			</data>
 		</dict>
 		<key>mobwith_reward_ad_title1.png</key>

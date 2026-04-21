@@ -307,6 +307,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSCoder;
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC21MobWithADSDKFramework13DHPaddedLabel")
+@interface DHPaddedLabel : UILabel
+@property (nonatomic) IBInspectable CGFloat topInset;
+@property (nonatomic) IBInspectable CGFloat bottomInset;
+@property (nonatomic) IBInspectable CGFloat leftInset;
+@property (nonatomic) IBInspectable CGFloat rightInset;
+- (void)drawTextInRect:(CGRect)rect;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol MobWithADViewDelegate;
 @class NSString;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMAdLoader")
@@ -358,9 +372,7 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_300x250 = 2,
 };
 
-@class NSCoder;
 @class UIImageView;
-@class UILabel;
 @class UIButton;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 @interface MMNativeAdView : UIView
@@ -460,6 +472,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework25MWAdapterSDKInitializable_")
 /// 여기에서 AppKey는 각 SDK 마다 다른 이름으로 불리며, 대체로 해당 SDK 자체를 초기화 할 때 요구하는 값이 내려감
 /// 추가로, Admob 같이 앱의 info.plist에 값을 지정하는 경우 config가 nil값을 내려줌
 + (void)initializeSDKWithConfig:(NSDictionary<NSString *, id> * _Nullable)config;
++ (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, MWAdapterType, open) {
