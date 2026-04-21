@@ -6,17 +6,17 @@ target 'Sample' do
 
   use_frameworks!
 
-  pod 'MobWithAdSDK', '1.3.0'
+  pod 'MobWithAdSDK', '1.3.1'
   
-  pod 'MobWithAdFitAdapter', '3.21.15.1.3.0'
-  pod 'MobWithAdMobAdapter', '12.14.0.1.3.0'
-  pod 'MobWithCaulyAdapter', '3.1.22.1.3.0'
-  pod 'MobWithDTExchangeAdapter', '8.4.2.1.3.0'
-  pod 'MobWithInMobiAdapter', '11.1.0.1.3.0'
-  pod 'MobWithLevelPlayAdapter', '9.2.0.0.1.3.0'
-  pod 'MobWithPangleAdapter', '7.8.0.4.1.3.0'
+  pod 'MobWithAdFitAdapter', '3.21.15.1.3.1'
+  pod 'MobWithAdMobAdapter', '12.14.0.1.3.1'
+  pod 'MobWithCaulyAdapter', '3.1.22.1.3.1'
+  pod 'MobWithDTExchangeAdapter', '8.4.2.1.3.1'
+  pod 'MobWithInMobiAdapter', '11.1.0.1.3.1'
+  pod 'MobWithLevelPlayAdapter', '9.2.0.0.1.3.1'
+  pod 'MobWithPangleAdapter', '7.8.0.4.1.3.1'
 
-  pod 'MobWithBidMadAdapter', '6.13.3.1.3.0'
+  pod 'MobWithBidMadAdapter', '6.13.3.1.3.1'
   pod "BidmadAdmixerAdapter", '2.0.2.12.2'        #BidMad의 경우 무조건 하나 이상의 Adapter를 적용해야 초기화에 성공한다.
 
 end
