@@ -4801,6 +4801,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MMAdType",
         "printedName": "MMAdType",
@@ -5131,8 +5141,7 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -6385,6 +6394,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MWAdapterSDKInitializable",
         "printedName": "MWAdapterSDKInitializable",
@@ -6477,8 +6496,7 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "conformances": [
           {
@@ -6923,6 +6941,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -7377,8 +7405,7 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -14622,6 +14649,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithPopupAdDelegate",
         "printedName": "MobWithPopupAdDelegate",
@@ -14875,8 +14912,7 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "conformances": [
           {
@@ -16374,6 +16410,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MWAdapterRegisterProtocol",
         "printedName": "MWAdapterRegisterProtocol",
@@ -16440,8 +16486,7 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "conformances": [
           {
@@ -32423,6 +32468,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CompanionsRequirement",
         "printedName": "CompanionsRequirement",
@@ -37232,6 +37287,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MWAdapterDelegate",
         "printedName": "MWAdapterDelegate",
@@ -37537,8 +37602,7 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "conformances": [
           {
@@ -37561,6 +37625,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
@@ -37774,8 +37848,7 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -44724,49 +44797,49 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1208,
+      "offset": 1217,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1249,
+      "offset": 1246,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "StringLiteral",
-      "offset": 1360,
+      "offset": 1357,
       "length": 10,
       "value": "\"sortlist\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1390,
       "length": 8,
       "value": "\"unitId\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
+      "offset": 1422,
       "length": 9,
       "value": "\"sdkType\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1458,
       "length": 12,
       "value": "\"exlItlMemo\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListItemModel.swift",
       "kind": "StringLiteral",
-      "offset": 1705,
+      "offset": 1702,
       "length": 13,
       "value": "\"useParellel\""
     },
@@ -45480,35 +45553,35 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMAdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 154,
+      "offset": 172,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMAdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 176,
+      "offset": 194,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMAdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 192,
+      "offset": 210,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMAdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 208,
+      "offset": 226,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMAdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 264,
+      "offset": 282,
       "length": 8,
       "value": "5"
     },
@@ -45599,63 +45672,63 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterCatalog.swift",
       "kind": "Dictionary",
-      "offset": 817,
+      "offset": 834,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterCatalog.swift",
       "kind": "Array",
-      "offset": 875,
+      "offset": 892,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 164,
+      "offset": 181,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 180,
+      "offset": 197,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 196,
+      "offset": 213,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 211,
+      "offset": 228,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 230,
+      "offset": 247,
       "length": 10,
       "value": "5"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 250,
+      "offset": 267,
       "length": 4,
       "value": "6"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 264,
+      "offset": 281,
       "length": 5,
       "value": "7"
     },
@@ -46397,7 +46470,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterRegister.swift",
       "kind": "Dictionary",
-      "offset": 336,
+      "offset": 353,
       "length": 3,
       "value": "[]"
     },
@@ -47762,7 +47835,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1397,
+      "offset": 1219,
       "length": 2,
       "value": "\"\""
     },
@@ -48203,14 +48276,14 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMBannerType.swift",
       "kind": "IntegerLiteral",
-      "offset": 169,
+      "offset": 187,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMBannerType.swift",
       "kind": "IntegerLiteral",
-      "offset": 193,
+      "offset": 211,
       "length": 14,
       "value": "2"
     },
@@ -49120,7 +49193,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Native\/MobwithNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 510,
+      "offset": 511,
       "length": 2,
       "value": "\"\""
     },

@@ -8,7 +8,6 @@ import AppTrackingTransparency
 import CoreTelephony
 import DeveloperToolsSupport
 import Foundation
-@_exported import MobWithADSDKFramework
 import OSLog
 import StoreKit
 import Swift
