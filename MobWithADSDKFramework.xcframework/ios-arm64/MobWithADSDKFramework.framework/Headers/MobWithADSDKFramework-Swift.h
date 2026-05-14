@@ -399,7 +399,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 ///
 /// \param infoLogoImageView 광고 Info Logo를 표시할 ImageView. Tag값 설정 필요
 ///
-- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView mediaView:(UIView * _Nullable)mediaView OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end
 
@@ -523,6 +523,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic) BOOL useCloseButton;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
