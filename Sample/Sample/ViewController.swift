@@ -7,7 +7,7 @@
 
 import UIKit
 import MobWithADSDKFramework
-import AdFitSDK
+
 
 import AdSupport
 import AppTrackingTransparency
@@ -122,11 +122,9 @@ class ViewController: UIViewController {
     
     
     func createAdViewAndLoad() {
-        
-//        BizBoardTemplate.defaultEdgeInset = UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-        
+
         let customUnitID: String = textFieldUnitID.text ?? ""
-        let positionY:CGFloat = 130.0
+        let positionY:CGFloat = 100.0
         
         if let _ = mobWithAdView {
             switch segmentAdType.selectedSegmentIndex {
@@ -189,11 +187,6 @@ class ViewController: UIViewController {
             
             self.view.addSubview(mobWithAdView)
         }
-        
-//        mobWithAdView?.interval = 10
-//
-//        mobWithAdView?.stop()
-//        mobWithAdView?.restart()
         
         mobWithAdView?.fillMode = (segmentFullMode.selectedSegmentIndex == 0)
         loadAd()
