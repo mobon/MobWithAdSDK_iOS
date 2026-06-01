@@ -1,4 +1,0 @@
-framework module MobWithADSDKFramework {
-  header "MobWithADSDKFramework-Swift.h"
-  requires objc
-}

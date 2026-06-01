@@ -23,23 +23,7 @@
 		BD16D2942E12376D001AEFDC /* DHPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */; };
 		BD16D2952E12376D001AEFDC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2932E12376D001AEFDC /* UIView+Extension.swift */; };
 		BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2962E12377F001AEFDC /* MediaCodes.swift */; };
-		BD9B82722FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */; };
-		BD9B82732FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		6AF550822A4AE79F004907CC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BD9B82732FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6568EAC9FA6E1CD321000D89 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,7 +45,6 @@
 		BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHPaddedLabel.swift; sourceTree = "<group>"; };
 		BD16D2932E12376D001AEFDC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BD16D2962E12377F001AEFDC /* MediaCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCodes.swift; sourceTree = "<group>"; };
-		BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
 		EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,7 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AF5506D2A4AE093004907CC /* Pods_Sample.framework in Frameworks */,
-				BD9B82722FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +82,6 @@
 		6AD5DEFB28DD4EEE00CC6C30 = {
 			isa = PBXGroup;
 			children = (
-				BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */,
 				6AD5DF0628DD4EEE00CC6C30 /* Sample */,
 				6AD5DF0528DD4EEE00CC6C30 /* Products */,
 				6AD1C93228E14CA40032C869 /* Frameworks */,
@@ -164,7 +145,8 @@
 				6AD5DF0028DD4EEE00CC6C30 /* Sources */,
 				6AD5DF0128DD4EEE00CC6C30 /* Frameworks */,
 				6AD5DF0228DD4EEE00CC6C30 /* Resources */,
-				6AF550822A4AE79F004907CC /* Embed Frameworks */,
+				C778AE74D0A3AFD72F1068CE /* [CP] Embed Pods Frameworks */,
+				B420A51D6AE8F43C84BF5552 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +226,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B420A51D6AE8F43C84BF5552 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C778AE74D0A3AFD72F1068CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -433,7 +457,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +498,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
