@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MobWithADSDKFramework
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MobWithADSDKFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AdSupport
@@ -1012,6 +1012,9 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   @objc optional func mobWithAdViewClickedAd()
   @objc optional func mobWithAdViewDidReceivedAd()
   @objc optional func mobWithAdViewDidFailToReceiveAd()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc optional func mobWithAdViewClose(_ banner: MobWithADSDKFramework.MobWithAdView?)
+  #endif
 }
 @objc public protocol MobWithNativeAdLoaderDelegate {
   @objc optional func mobWithNativeAdViewClickedAd()

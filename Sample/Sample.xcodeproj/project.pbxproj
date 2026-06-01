@@ -23,6 +23,8 @@
 		BD16D2942E12376D001AEFDC /* DHPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */; };
 		BD16D2952E12376D001AEFDC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2932E12376D001AEFDC /* UIView+Extension.swift */; };
 		BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2962E12377F001AEFDC /* MediaCodes.swift */; };
+		BD9B82722FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */; };
+		BD9B82732FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BD9B82732FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 		BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHPaddedLabel.swift; sourceTree = "<group>"; };
 		BD16D2932E12376D001AEFDC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BD16D2962E12377F001AEFDC /* MediaCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCodes.swift; sourceTree = "<group>"; };
+		BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
 		EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AF5506D2A4AE093004907CC /* Pods_Sample.framework in Frameworks */,
+				BD9B82722FC6E6EC0097FC70 /* MobWithADSDKFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,7 @@
 		6AD5DEFB28DD4EEE00CC6C30 = {
 			isa = PBXGroup;
 			children = (
+				BD9B82702FC6E6E90097FC70 /* MobWithADSDKFramework.xcframework */,
 				6AD5DF0628DD4EEE00CC6C30 /* Sample */,
 				6AD5DF0528DD4EEE00CC6C30 /* Products */,
 				6AD1C93228E14CA40032C869 /* Frameworks */,

@@ -33695,6 +33695,46 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mobWithAdViewClose",
+            "printedName": "mobWithAdViewClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithAdView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithAdView",
+                    "printedName": "MobWithADSDKFramework.MobWithAdView",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithAdView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithADViewDelegate(im)mobWithAdViewClose:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14ADViewDelegateP03mobB11AdViewCloseyyAA0abgH0CSgF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithADViewDelegate>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithADViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -49989,65 +50029,65 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 983,
+      "offset": 981,
+      "length": 9,
+      "value": "\"closeBg\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 11,
+      "value": "\"closeIcon\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
       "length": 10,
       "value": "\"iconAd01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1121,
+      "offset": 1393,
       "length": 11,
       "value": "\"iconAdB01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1260,
+      "offset": 1532,
       "length": 11,
       "value": "\"iconAdS02\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1399,
+      "offset": 1671,
       "length": 11,
       "value": "\"iconClose\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1546,
+      "offset": 1818,
       "length": 15,
       "value": "\"iconCloseFull\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
-      "length": 12,
-      "value": "\"iconCloseX\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1967,
       "length": 14,
       "value": "\"iconSoundOff\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2113,
       "length": 13,
       "value": "\"iconSoundOn\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphonesimulator\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2118,
-      "length": 8,
-      "value": "\"stroke\""
     }
   ]
 }
