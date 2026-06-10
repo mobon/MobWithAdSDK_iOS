@@ -8,17 +8,13 @@
 		<data>
 		8eOLoeJhq7ehQicjQLo3K8Oesp8=
 		</data>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<data>
-		LHByQKecAhH7OaWQpJHCTkP0KUg=
-		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
 		uJv6RXeJRjVXGDEnamd/8pq8XyI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		h4FEKFvN2W78/v5nJadlbpJP4Nk=
+		tjMe8bjxyXtAYLPpD9VAv5h6wS4=
 		</data>
 		<key>MWFullBannerDefaultView.nib</key>
 		<data>
@@ -232,13 +228,6 @@
 			<key>hash2</key>
 			<data>
 			gf4BqnLf3ji1XymhQ+RLzqgc2ugMXE5C2rnfoB6kIAg=
-			</data>
-		</dict>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qbKlAROQ2yYcQPKvfxmn3yTESpc4dQ3IJUT7ohvSieo=
 			</data>
 		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
