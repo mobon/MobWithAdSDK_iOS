@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tjMe8bjxyXtAYLPpD9VAv5h6wS4=
+		oUo9gk6VXtiKCW+tX1U7SEhR7wc=
 		</data>
 		<key>MWFullBannerDefaultView.nib</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PKyVWITHngHIKqC0vaA6zajJ+Fs=
+		DG65Vj45q+7B350ufdUe3LPzvlA=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		60rXUyg3t77uVAyMb855P1Wm1hU=
+		YApJNMEUYM+qZvYehsJ2DCDpnoI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -444,7 +444,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			28taiiMZ0AJNDqS5FphSfyqwP6FHSLWmpUHOByh2j2Y=
+			Cf6nNG6sDAGhurEA7xYNOpol+XH+B6Xd6mvYg4O/lCE=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -479,7 +479,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xCSezbimqbBcVzJMg2eQqtw7jIksx1Ug2MY58+Un4a8=
+			xwRw+uL1wELA+L24vQL9rtZulX2sGrQ+U8f0dPZroDw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
