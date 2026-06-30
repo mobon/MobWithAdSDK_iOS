@@ -441,6 +441,26 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol MMSplashAdDelegate;
+SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMSplashAd")
+@interface MMSplashAd : NSObject
+@property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
+@property (nonatomic) BOOL useFullScreenAd;
+@property (nonatomic) NSInteger timeOutSec;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable campaignCodes;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework18MMSplashAdDelegate_")
+@protocol MMSplashAdDelegate
+/// 광고를 수신한 경우 전달됨
+- (void)mobWithSplashAdDidReceived;
+/// 광고 수신 실패시 전달
+- (void)mobWithSplashAdFailToReceived;
+@end
+
 @class UIViewController;
 @class NativeAdViewItem;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework13MWAdapterBase_")

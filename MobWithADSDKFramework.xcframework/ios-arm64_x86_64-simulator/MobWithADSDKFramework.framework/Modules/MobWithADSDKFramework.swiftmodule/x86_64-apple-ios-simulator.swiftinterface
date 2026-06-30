@@ -537,6 +537,15 @@ public struct VastAdSystem : Swift.Codable {
 extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastAdSystem, b: MobWithADSDKFramework.VastAdSystem) -> Swift.Bool
 }
+public class MMHybridBannerBridge {
+  final public let bridgeName: Swift.String
+  @objc public var category: [Swift.String]?
+  @objc public var campaignCodes: [Swift.String]?
+  public init(webVeiw: WebKit.WKWebView)
+  public func webViewFinishLoad(_ view: WebKit.WKWebView)
+  public func handleBridgeMessage(_ message: WebKit.WKScriptMessage) -> Swift.Bool
+  @objc deinit
+}
 public enum VMAPTrackingEventType : Swift.String, Swift.Codable {
   case breakStart
   case breakEnd
@@ -877,6 +886,21 @@ public struct VastPricing : Swift.Codable {
 }
 extension MobWithADSDKFramework.VastPricing : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastPricing, b: MobWithADSDKFramework.VastPricing) -> Swift.Bool
+}
+@objc public protocol MMSplashAdDelegate {
+  @objc func mobWithSplashAdDidReceived()
+  @objc func mobWithSplashAdFailToReceived()
+}
+@objc public class MMSplashAd : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any MobWithADSDKFramework.MMSplashAdDelegate)?
+  @objc public var useFullScreenAd: Swift.Bool
+  @objc public var timeOutSec: Swift.Int
+  @objc public var category: [Swift.String]?
+  @objc public var campaignCodes: [Swift.String]?
+  public init(viewController: UIKit.UIViewController, unitId: Swift.String)
+  public func loadAd()
+  public func destroy()
+  @objc deinit
 }
 public enum AdType : Swift.String, Swift.Codable {
   case inline

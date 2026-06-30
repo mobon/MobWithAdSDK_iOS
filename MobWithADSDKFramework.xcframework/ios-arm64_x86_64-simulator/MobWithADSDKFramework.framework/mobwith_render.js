@@ -1,11 +1,10 @@
  (function() {
-     
      const placementId = '__PLACEMENT_ID__';
      const customBridgeName = '__BRIDGE_NAME__';
      const html = '__HTML__';
-
-     const container = document.querySelector('[data-placement-id="' + placementId + '"]');
-
+     
+     const container = document.querySelector('.mobwith-banner[data-placement-id="' + placementId + '"]');
+          
      if (!container) {
          return;
      }
@@ -13,7 +12,7 @@
      if (typeof container.__mobwithCleanup === 'function') {
          container.__mobwithCleanup();
      }
-
+     
      container.innerHTML = '';
      const iframe = document.createElement('iframe');
 
