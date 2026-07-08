@@ -23,6 +23,7 @@
 		BD16D2942E12376D001AEFDC /* DHPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */; };
 		BD16D2952E12376D001AEFDC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2932E12376D001AEFDC /* UIView+Extension.swift */; };
 		BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2962E12377F001AEFDC /* MediaCodes.swift */; };
+		BD5E0A8C2FFCC3A70076FA60 /* MobWithADSDK in Frameworks */ = {isa = PBXBuildFile; productRef = BD5E0A8B2FFCC3A70076FA60 /* MobWithADSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AF5506D2A4AE093004907CC /* Pods_Sample.framework in Frameworks */,
+				BD5E0A8C2FFCC3A70076FA60 /* MobWithADSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,8 @@
 				Base,
 			);
 			mainGroup = 6AD5DEFB28DD4EEE00CC6C30;
+			packageReferences = (
+			);
 			productRefGroup = 6AD5DF0528DD4EEE00CC6C30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,9 +240,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -253,9 +261,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -530,6 +542,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD5E0A8A2FFCC3A70076FA60 /* XCRemoteSwiftPackageReference "MobWithAdSDK_SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobon/MobWithAdSDK_SPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD5E0A8B2FFCC3A70076FA60 /* MobWithADSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD5E0A8A2FFCC3A70076FA60 /* XCRemoteSwiftPackageReference "MobWithAdSDK_SPM" */;
+			productName = MobWithADSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AD5DEFC28DD4EEE00CC6C30 /* Project object */;
 }

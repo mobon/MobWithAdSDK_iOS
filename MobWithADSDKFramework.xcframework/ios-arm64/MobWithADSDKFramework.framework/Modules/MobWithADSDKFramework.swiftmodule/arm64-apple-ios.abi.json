@@ -66,6 +66,1553 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MMFloatingHorizontalPosition",
+        "printedName": "MMFloatingHorizontalPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "left",
+            "printedName": "left",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMFloatingHorizontalPosition.Type) -> MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingHorizontalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMFloatingHorizontalPosition",
+                        "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition@MMFloatingHorizontalPositionLeft",
+            "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO4leftyA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMFloatingHorizontalPosition.Type) -> MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingHorizontalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMFloatingHorizontalPosition",
+                        "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition@MMFloatingHorizontalPositionCenter",
+            "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO6centeryA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "right",
+            "printedName": "right",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMFloatingHorizontalPosition.Type) -> MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingHorizontalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMFloatingHorizontalPosition",
+                        "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition@MMFloatingHorizontalPositionRight",
+            "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO5rightyA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingHorizontalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21MobWithADSDKFramework28MMFloatingHorizontalPositionO8rawValueACSgSi_tcfc",
+            "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO8rawValueACSgSi_tcfc",
+            "moduleName": "MobWithADSDKFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21MobWithADSDKFramework28MMFloatingHorizontalPositionO8rawValueSivp",
+            "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO8rawValueSivp",
+            "moduleName": "MobWithADSDKFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework28MMFloatingHorizontalPositionO8rawValueSivg",
+                "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO8rawValueSivg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition",
+        "mangledName": "$s21MobWithADSDKFramework28MMFloatingHorizontalPositionO",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MMFloatingVerticalPosition",
+        "printedName": "MMFloatingVerticalPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "top",
+            "printedName": "top",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMFloatingVerticalPosition.Type) -> MobWithADSDKFramework.MMFloatingVerticalPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingVerticalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMFloatingVerticalPosition",
+                        "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition@MMFloatingVerticalPositionTop",
+            "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO3topyA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMFloatingVerticalPosition.Type) -> MobWithADSDKFramework.MMFloatingVerticalPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingVerticalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMFloatingVerticalPosition",
+                        "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition@MMFloatingVerticalPositionCenter",
+            "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO6centeryA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMFloatingVerticalPosition.Type) -> MobWithADSDKFramework.MMFloatingVerticalPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingVerticalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMFloatingVerticalPosition",
+                        "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition@MMFloatingVerticalPositionBottom",
+            "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO6bottomyA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingVerticalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21MobWithADSDKFramework26MMFloatingVerticalPositionO8rawValueACSgSi_tcfc",
+            "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO8rawValueACSgSi_tcfc",
+            "moduleName": "MobWithADSDKFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21MobWithADSDKFramework26MMFloatingVerticalPositionO8rawValueSivp",
+            "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO8rawValueSivp",
+            "moduleName": "MobWithADSDKFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework26MMFloatingVerticalPositionO8rawValueSivg",
+                "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO8rawValueSivg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition",
+        "mangledName": "$s21MobWithADSDKFramework26MMFloatingVerticalPositionO",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MMFloatingBannerConfiguration",
+        "printedName": "MMFloatingBannerConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "horizontal",
+            "printedName": "horizontal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingHorizontalPosition",
+                "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(py)horizontal",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC10horizontalAA0D18HorizontalPositionOvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingHorizontalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(im)horizontal",
+                "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC10horizontalAA0D18HorizontalPositionOvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vertical",
+            "printedName": "vertical",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingVerticalPosition",
+                "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(py)vertical",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC8verticalAA0D16VerticalPositionOvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingVerticalPosition",
+                    "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(im)vertical",
+                "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC8verticalAA0D16VerticalPositionOvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "horizontalMargin",
+            "printedName": "horizontalMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(py)horizontalMargin",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC16horizontalMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(im)horizontalMargin",
+                "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC16horizontalMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verticalMargin",
+            "printedName": "verticalMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(py)verticalMargin",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC14verticalMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(im)verticalMargin",
+                "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC14verticalMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(horizontal:vertical:horizontalMargin:verticalMargin:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingBannerConfiguration",
+                "printedName": "MobWithADSDKFramework.MMFloatingBannerConfiguration",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingHorizontalPosition",
+                "printedName": "MobWithADSDKFramework.MMFloatingHorizontalPosition",
+                "hasDefaultArg": true,
+                "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingHorizontalPosition"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingVerticalPosition",
+                "printedName": "MobWithADSDKFramework.MMFloatingVerticalPosition",
+                "hasDefaultArg": true,
+                "usr": "c:@M@MobWithADSDKFramework@E@MMFloatingVerticalPosition"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(im)initWithHorizontal:vertical:horizontalMargin:verticalMargin:",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC10horizontal8vertical0G6Margin0hI0AcA0D18HorizontalPositionO_AA0d8VerticalK0O12CoreGraphics7CGFloatVANtcfc",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingBannerConfiguration",
+                "printedName": "MobWithADSDKFramework.MMFloatingBannerConfiguration",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(cpy)default",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC7defaultACvpZ",
+            "moduleName": "MobWithADSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMFloatingBannerConfiguration",
+                    "printedName": "MobWithADSDKFramework.MMFloatingBannerConfiguration",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(cm)default",
+                "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC7defaultACvgZ",
+                "moduleName": "MobWithADSDKFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingBannerConfiguration",
+                "printedName": "MobWithADSDKFramework.MMFloatingBannerConfiguration",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration(im)init",
+            "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationCACycfc",
+            "moduleName": "MobWithADSDKFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration",
+        "mangledName": "$s21MobWithADSDKFramework29MMFloatingBannerConfigurationC",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MMFloatingBannerView",
+        "printedName": "MMFloatingBannerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any MobWithADSDKFramework.MMSplashAdDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(py)delegate",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8delegateAA18MMSplashAdDelegate_pSgvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MobWithADSDKFramework.MMSplashAdDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMSplashAdDelegate",
+                        "printedName": "any MobWithADSDKFramework.MMSplashAdDelegate",
+                        "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMSplashAdDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)delegate",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8delegateAA18MMSplashAdDelegate_pSgvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MobWithADSDKFramework.MMSplashAdDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMSplashAdDelegate",
+                        "printedName": "any MobWithADSDKFramework.MMSplashAdDelegate",
+                        "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMSplashAdDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)setDelegate:",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8delegateAA18MMSplashAdDelegate_pSgvs",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework20MMFloatingBannerViewC8delegateAA18MMSplashAdDelegate_pSgvM",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8delegateAA18MMSplashAdDelegate_pSgvM",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(py)category",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8categorySaySSGSgvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)category",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8categorySaySSGSgvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)setCategory:",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8categorySaySSGSgvs",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework20MMFloatingBannerViewC8categorySaySSGSgvM",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC8categorySaySSGSgvM",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignCodes",
+            "printedName": "campaignCodes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(py)campaignCodes",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC13campaignCodesSaySSGSgvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)campaignCodes",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC13campaignCodesSaySSGSgvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)setCampaignCodes:",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC13campaignCodesSaySSGSgvs",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework20MMFloatingBannerViewC13campaignCodesSaySSGSgvM",
+                "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC13campaignCodesSaySSGSgvM",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewController:unitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingBannerView",
+                "printedName": "MobWithADSDKFramework.MMFloatingBannerView",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21MobWithADSDKFramework20MMFloatingBannerViewC14viewController6unitIdACSo06UIViewH0C_SStcfc",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC14viewController6unitIdACSo06UIViewH0C_SStcfc",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(at:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingBannerConfiguration",
+                "printedName": "MobWithADSDKFramework.MMFloatingBannerConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework20MMFloatingBannerViewC6loadAd2at13configurationySo6UIViewC_AA0dE13ConfigurationCtF",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC6loadAd2at13configurationySo6UIViewC_AA0dE13ConfigurationCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework20MMFloatingBannerViewC7destroyyyF",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC7destroyyyF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMFloatingBannerView",
+                "printedName": "MobWithADSDKFramework.MMFloatingBannerView",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView(im)init",
+            "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewCACycfc",
+            "moduleName": "MobWithADSDKFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMFloatingBannerView",
+        "mangledName": "$s21MobWithADSDKFramework20MMFloatingBannerViewC",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "RawDocComment"
@@ -38162,6 +39709,78 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bannerUnitId:adContainerView:nibNameForDefault:nibNameForDirectAd:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMNativeAdView",
+                "printedName": "MobWithADSDKFramework.MMNativeAdView",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)initWithBannerUnitId:adContainerView:nibNameForDefault:nibNameForDirectAd:bundle:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC12bannerUnitId011adContainerF017nibNameForDefault0lmn6DirectE06bundleACSS_So6UIViewCSgS2SSo8NSBundleCSgtcfc",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "initWithBannerUnitId:adContainerView:nibNameForDefault:nibNameForDirectAd:bundle:",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "loadAd",
             "printedName": "loadAd()",
@@ -38203,6 +39822,29 @@
               "Preconcurrency",
               "Custom",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)destroy",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC7destroyyyF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -42425,6 +44067,239 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMediaView",
+            "printedName": "getMediaView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderP08getMediaG0So6UIViewCSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderP08getMediaG0So6UIViewCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdImageView",
+            "printedName": "getAdImageView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImageView",
+                    "printedName": "UIKit.UIImageView",
+                    "usr": "c:objc(cs)UIImageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getf5ImageG0So07UIImageG0CSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getf5ImageG0So07UIImageG0CSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdLogoImageView",
+            "printedName": "getAdLogoImageView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImageView",
+                    "printedName": "UIKit.UIImageView",
+                    "usr": "c:objc(cs)UIImageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getf9LogoImageG0So07UIImageG0CSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getf9LogoImageG0So07UIImageG0CSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdTitleLabel",
+            "printedName": "getAdTitleLabel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getF10TitleLabelSo7UILabelCSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getF10TitleLabelSo7UILabelCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdDescriptionLabel",
+            "printedName": "getAdDescriptionLabel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getF16DescriptionLabelSo7UILabelCSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE03getF16DescriptionLabelSo7UILabelCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGoToSiteButton",
+            "printedName": "getGoToSiteButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIButton?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIButton",
+                    "printedName": "UIKit.UIButton",
+                    "usr": "c:objc(cs)UIButton"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE17getGoToSiteButtonSo8UIButtonCSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE17getGoToSiteButtonSo8UIButtonCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInfoLogoImageView",
+            "printedName": "getInfoLogoImageView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImageView",
+                    "printedName": "UIKit.UIImageView",
+                    "usr": "c:objc(cs)UIImageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE016getInfoLogoImageG0So07UIImageG0CSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE016getInfoLogoImageG0So07UIImageG0CSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMediaView",
+            "printedName": "getMediaView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE08getMediaG0So6UIViewCSgyF",
+            "mangledName": "$s21MobWithADSDKFramework25MobwithNativeAdViewRenderPAAE08getMediaG0So6UIViewCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobwithNativeAdViewRender>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -46117,6 +47992,167 @@
       "value": "\"AUID_UPDATE_DATE\""
     },
     {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Extensions\/UserDefaults+MobMixer.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 29,
+      "value": "\"FLOATINGBANNER_DISMISS_DATE\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Extensions\/UserDefaults+MobMixer.swift",
+      "kind": "StringLiteral",
+      "offset": 698,
+      "length": 32,
+      "value": "\"FLOATINGBANNER_DISMISS_SESSION\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 213,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 229,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 328,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 833,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 871,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1243,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1292,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1600,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1636,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1664,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1713,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2088,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2155,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2309,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2415,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2256,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2791,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2841,
+      "length": 11,
+      "value": "\"iconClose\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMFloatingBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2953,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
@@ -48002,14 +50038,14 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMHybridBannerBridge.swift",
       "kind": "StringLiteral",
-      "offset": 535,
+      "offset": 554,
       "length": 27,
       "value": "\"MobwithHybridBannerBridge\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMHybridBannerBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 700,
+      "offset": 719,
       "length": 5,
       "value": "false"
     },
@@ -48730,42 +50766,42 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13262,
+      "offset": 13238,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13297,
+      "offset": 13273,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13347,
+      "offset": 13323,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13382,
+      "offset": 13358,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13424,
+      "offset": 13400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13459,
+      "offset": 13435,
       "length": 5,
       "value": "false"
     },
@@ -49458,42 +51494,42 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 235,
+      "offset": 304,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 272,
+      "offset": 341,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 662,
+      "offset": 731,
       "length": 42,
       "value": "\"https:\/\/apps.apple.com\/kr\/app\/id\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 772,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 682,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1288,
       "length": 2,
       "value": "\"\""
     },
@@ -49668,7 +51704,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18065,
+      "offset": 18510,
       "length": 5,
       "value": "false"
     },
@@ -49906,14 +51942,28 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "Array",
-      "offset": 1748,
+      "offset": 2017,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1797,
+      "offset": 2066,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2168,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 4864,
       "length": 2,
       "value": "\"\""
     },
@@ -50863,9 +52913,16 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Native\/NativeAdViewItem.swift",
+      "kind": "BooleanLiteral",
+      "offset": 581,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Native\/MobwithNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 511,
+      "offset": 938,
       "length": 2,
       "value": "\"\""
     },

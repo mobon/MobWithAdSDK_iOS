@@ -372,8 +372,48 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_300x250 = 2,
 };
 
+enum MMFloatingHorizontalPosition : NSInteger;
+enum MMFloatingVerticalPosition : NSInteger;
+SWIFT_CLASS("_TtC21MobWithADSDKFramework29MMFloatingBannerConfiguration")
+@interface MMFloatingBannerConfiguration : NSObject
+@property (nonatomic, readonly) enum MMFloatingHorizontalPosition horizontal;
+@property (nonatomic, readonly) enum MMFloatingVerticalPosition vertical;
+/// left/right 기준 여백
+@property (nonatomic, readonly) CGFloat horizontalMargin;
+/// top/bottom 기준 여백
+@property (nonatomic, readonly) CGFloat verticalMargin;
+- (nonnull instancetype)initWithHorizontal:(enum MMFloatingHorizontalPosition)horizontal vertical:(enum MMFloatingVerticalPosition)vertical horizontalMargin:(CGFloat)horizontalMargin verticalMargin:(CGFloat)verticalMargin OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) MMFloatingBannerConfiguration * _Nonnull default_;)
++ (MMFloatingBannerConfiguration * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol MMSplashAdDelegate;
+SWIFT_CLASS("_TtC21MobWithADSDKFramework20MMFloatingBannerView")
+@interface MMFloatingBannerView : NSObject
+@property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable campaignCodes;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, MMFloatingHorizontalPosition, open) {
+  MMFloatingHorizontalPositionLeft = 0,
+  MMFloatingHorizontalPositionCenter = 1,
+  MMFloatingHorizontalPositionRight = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, MMFloatingVerticalPosition, open) {
+  MMFloatingVerticalPositionTop = 0,
+  MMFloatingVerticalPositionCenter = 1,
+  MMFloatingVerticalPositionBottom = 2,
+};
+
 @class UIImageView;
 @class UIButton;
+@class NSBundle;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 @interface MMNativeAdView : UIView
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
@@ -400,7 +440,9 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 /// \param infoLogoImageView 광고 Info Logo를 표시할 ImageView. Tag값 설정 필요
 ///
 - (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView mediaView:(UIView * _Nullable)mediaView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nibNameForDefault:(NSString * _Nonnull)nibNameForDefault nibNameForDirectAd:(NSString * _Nonnull)nibNameForDirectAd bundle:(NSBundle * _Nullable)bundle OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
+- (void)destroy;
 @end
 
 @interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework))
@@ -441,7 +483,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@protocol MMSplashAdDelegate;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMSplashAd")
 @interface MMSplashAd : NSObject
 @property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
@@ -597,7 +638,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 @end
 
 @protocol MobWithNativeAdLoaderDelegate;
-@class NSBundle;
 @class NSIndexPath;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithNativeAdLoader")
 @interface MobWithNativeAdLoader : NSObject

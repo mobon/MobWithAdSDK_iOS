@@ -17,6 +17,48 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public enum MMFloatingHorizontalPosition : Swift.Int {
+  case left
+  case center
+  case right
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MMFloatingVerticalPosition : Swift.Int {
+  case top
+  case center
+  case bottom
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class MMFloatingBannerConfiguration : ObjectiveC.NSObject {
+  @objc final public let horizontal: MobWithADSDKFramework.MMFloatingHorizontalPosition
+  @objc final public let vertical: MobWithADSDKFramework.MMFloatingVerticalPosition
+  @objc final public let horizontalMargin: CoreFoundation.CGFloat
+  @objc final public let verticalMargin: CoreFoundation.CGFloat
+  @objc public init(horizontal: MobWithADSDKFramework.MMFloatingHorizontalPosition = .center, vertical: MobWithADSDKFramework.MMFloatingVerticalPosition = .bottom, horizontalMargin: CoreFoundation.CGFloat = 16, verticalMargin: CoreFoundation.CGFloat = 16)
+  @objc public static let `default`: MobWithADSDKFramework.MMFloatingBannerConfiguration
+  @objc deinit
+}
+@objc public class MMFloatingBannerView : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any MobWithADSDKFramework.MMSplashAdDelegate)?
+  @objc public var category: [Swift.String]?
+  @objc public var campaignCodes: [Swift.String]?
+  public init(viewController: UIKit.UIViewController, unitId: Swift.String)
+  public func loadAd(at containerView: UIKit.UIView, configuration: MobWithADSDKFramework.MMFloatingBannerConfiguration = .default)
+  public func destroy()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class MobWithInterstitailAd : ObjectiveC.NSObject {
   @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?
   public var rootViewController: UIKit.UIViewController? {
@@ -1138,8 +1180,12 @@ extension MobWithADSDKFramework.MobWithAdView {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?, mediaView: UIKit.UIView? = nil)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nibNameForDefault: Swift.String, nibNameForDirectAd: Swift.String = "", bundle: Foundation.Bundle?)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @_Concurrency.MainActor @preconcurrency public func showNextAd()
+  @objc @_Concurrency.MainActor @preconcurrency public func destroy()
   @objc deinit
 }
 extension MobWithADSDKFramework.MMNativeAdView {
@@ -1295,6 +1341,32 @@ public protocol MobwithNativeAdViewRender {
   #if compiler(>=5.3) && $NonescapableTypes
   func getInfoLogoImageView() -> UIKit.UIImageView?
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getMediaView() -> UIKit.UIView?
+  #endif
+}
+extension MobWithADSDKFramework.MobwithNativeAdViewRender {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getAdImageView() -> UIKit.UIImageView?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getAdLogoImageView() -> UIKit.UIImageView?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getAdTitleLabel() -> UIKit.UILabel?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getAdDescriptionLabel() -> UIKit.UILabel?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getGoToSiteButton() -> UIKit.UIButton?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getInfoLogoImageView() -> UIKit.UIImageView?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getMediaView() -> UIKit.UIView?
+  #endif
 }
 @_hasMissingDesignatedInitializers public class MobwithNativeAdView {
   @objc deinit
@@ -1351,6 +1423,12 @@ extension UIKit.UIImage {
   @objc override dynamic public init()
   @objc deinit
 }
+extension MobWithADSDKFramework.MMFloatingHorizontalPosition : Swift.Equatable {}
+extension MobWithADSDKFramework.MMFloatingHorizontalPosition : Swift.Hashable {}
+extension MobWithADSDKFramework.MMFloatingHorizontalPosition : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MMFloatingVerticalPosition : Swift.Equatable {}
+extension MobWithADSDKFramework.MMFloatingVerticalPosition : Swift.Hashable {}
+extension MobWithADSDKFramework.MMFloatingVerticalPosition : Swift.RawRepresentable {}
 extension MobWithADSDKFramework.ApiError : Swift.Equatable {}
 extension MobWithADSDKFramework.ApiError : Swift.Hashable {}
 extension MobWithADSDKFramework.MMAdType : Swift.Equatable {}
