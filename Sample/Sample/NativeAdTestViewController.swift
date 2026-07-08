@@ -39,13 +39,21 @@ class NativeAdTestViewController: UIViewController {
         
         nativeAdView = MMNativeAdView(bannerUnitId: mediaCode,
                                       adContainerView: adContainerView,
-                                      nativeAdRootView: nativeAdRootView,
-                                      adImageView: thumbnailImageView,
-                                      logoImageView: logoImageView,
-                                      titleLabel: titleLabel,
-                                      descriptionLabel: descLabel,
-                                      gotoSiteButton: goButton,
-                                      infoLogoImageView: infoLogoImageView)
+                                      nibNameForDefault: "DefaultNativeAdView",
+                                      nibNameForDirectAd: "DirectNativeAdView",
+                                      bundle: Bundle.main)
+        
+// 아래는 기존 방식으로 MMNativeAdView를 초기화하는 코드로 최신 방법의 사용을 권장함
+//        nativeAdView = MMNativeAdView(bannerUnitId: mediaCode,
+//                                      adContainerView: adContainerView,
+//                                      nativeAdRootView: nativeAdRootView,
+//                                      adImageView: thumbnailImageView,
+//                                      logoImageView: logoImageView,
+//                                      titleLabel: titleLabel,
+//                                      descriptionLabel: descLabel,
+//                                      gotoSiteButton: goButton,
+//                                      infoLogoImageView: infoLogoImageView)
+        
         nativeAdView?.rootViewController = self
         nativeAdView?.adDelegate = self
         
