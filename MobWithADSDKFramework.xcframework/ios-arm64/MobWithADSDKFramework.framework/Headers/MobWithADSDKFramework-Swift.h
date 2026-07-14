@@ -538,13 +538,14 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework25MWAdapterSDKInitializable_")
 
 typedef SWIFT_ENUM(NSInteger, MWAdapterType, open) {
   MWAdapterTypeAdmob = 0,
-  MWAdapterTypePangle = 1,
-  MWAdapterTypeInMobi = 2,
-  MWAdapterTypeKakao = 3,
-  MWAdapterTypeLevelPlay = 4,
-  MWAdapterTypeDtExchange = 5,
-  MWAdapterTypeAdop = 6,
-  MWAdapterTypeCauly = 7,
+  MWAdapterTypeAdManager = 1,
+  MWAdapterTypePangle = 2,
+  MWAdapterTypeInMobi = 3,
+  MWAdapterTypeKakao = 4,
+  MWAdapterTypeLevelPlay = 5,
+  MWAdapterTypeDtExchange = 6,
+  MWAdapterTypeAdop = 7,
+  MWAdapterTypeCauly = 8,
 };
 
 /// MobMixerSDK 기본 관리 클래스
@@ -731,6 +732,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework16NativeAdViewItem")
 @property (nonatomic, strong) UIButton * _Nullable goToSiteButton;
 @property (nonatomic, strong) UIImageView * _Nullable infoLogoImageView;
 @property (nonatomic, strong) UIView * _Nullable mediaView;
+- (void)bringUnmanagedSubviewsToFront;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

@@ -282,6 +282,7 @@ public struct VMAPExtension {
 }
 @objc public enum MWAdapterType : ObjectiveC.NSInteger {
   case admob
+  case adManager
   case pangle
   case inMobi
   case kakao
@@ -1320,6 +1321,7 @@ extension MobWithADSDKFramework.MobWithRewardAd : MobWithADSDKFramework.MWAdapte
   @objc public var goToSiteButton: UIKit.UIButton?
   @objc public var infoLogoImageView: UIKit.UIImageView?
   @objc public var mediaView: UIKit.UIView?
+  @objc public func bringUnmanagedSubviewsToFront()
   @objc deinit
 }
 public protocol MobwithNativeAdViewRender {

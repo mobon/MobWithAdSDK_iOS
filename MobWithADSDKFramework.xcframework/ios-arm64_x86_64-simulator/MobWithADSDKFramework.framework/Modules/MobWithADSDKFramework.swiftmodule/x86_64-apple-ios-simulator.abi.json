@@ -8548,6 +8548,47 @@
           },
           {
             "kind": "Var",
+            "name": "adManager",
+            "printedName": "adManager",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MWAdapterType.Type) -> MobWithADSDKFramework.MWAdapterType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MWAdapterType",
+                    "printedName": "MobWithADSDKFramework.MWAdapterType",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MWAdapterType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MWAdapterType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MWAdapterType",
+                        "printedName": "MobWithADSDKFramework.MWAdapterType",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MWAdapterType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MWAdapterType@MWAdapterTypeAdManager",
+            "mangledName": "$s21MobWithADSDKFramework13MWAdapterTypeO9adManageryA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
             "name": "pangle",
             "printedName": "pangle",
             "children": [
@@ -8585,7 +8626,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -8626,7 +8667,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -8667,7 +8708,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -8708,7 +8749,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -8749,7 +8790,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -8790,7 +8831,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -8831,7 +8872,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -43767,6 +43808,28 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "bringUnmanagedSubviewsToFront",
+            "printedName": "bringUnmanagedSubviewsToFront()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)NativeAdViewItem(im)bringUnmanagedSubviewsToFront",
+            "mangledName": "$s21MobWithADSDKFramework16NativeAdViewItemC29bringUnmanagedSubviewsToFrontyyF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -49227,50 +49290,57 @@
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
       "offset": 181,
-      "length": 6,
+      "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 197,
+      "offset": 200,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 213,
-      "length": 5,
+      "offset": 216,
+      "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 9,
+      "offset": 232,
+      "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
-      "length": 10,
+      "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 267,
-      "length": 4,
+      "offset": 266,
+      "length": 10,
       "value": "6"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
       "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 5,
+      "offset": 286,
+      "length": 4,
       "value": "7"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Adapters\/MWAdapterType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 5,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Extensions\/CALayer+DHLee.swift",
@@ -50766,42 +50836,42 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13238,
+      "offset": 13239,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13273,
+      "offset": 13274,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13323,
+      "offset": 13324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13358,
+      "offset": 13359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13400,
+      "offset": 13401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13435,
+      "offset": 13436,
       "length": 5,
       "value": "false"
     },
@@ -51704,7 +51774,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18510,
+      "offset": 18339,
       "length": 5,
       "value": "false"
     },
@@ -51861,6 +51931,13 @@
       "offset": 498,
       "length": 7,
       "value": "\"CAULY\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Enums\/MMSortListName.swift",
+      "kind": "StringLiteral",
+      "offset": 532,
+      "length": 11,
+      "value": "\"ADMANAGER\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",

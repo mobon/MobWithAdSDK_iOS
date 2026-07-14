@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="2UN-Nt-lSW" customClass="NativeAdLoaderView" customModule="Sample" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="2UN-Nt-lSW" customClass="DefaultNativeAdView" customModule="Sample" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="365" height="347"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -91,9 +91,9 @@
                 <outlet property="goButton" destination="U0l-HL-4Gz" id="aWk-Sk-Yx3"/>
                 <outlet property="infoLogoImageView" destination="EMI-Sa-cUi" id="R7f-Dh-oOI"/>
                 <outlet property="logoImageView" destination="zw3-Ts-QR1" id="tZa-8J-dPd"/>
-                <outlet property="mediaView" destination="cl1-P6-0NK" id="jjG-Rx-hEt"/>
+                <outlet property="mediaView" destination="cl1-P6-0NK" id="tem-Y6-dmU"/>
             </connections>
-            <point key="canvasLocation" x="-155" y="-12"/>
+            <point key="canvasLocation" x="239" y="-7"/>
         </view>
     </objects>
 </document>
