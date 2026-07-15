@@ -6,10 +6,10 @@ target 'Sample' do
 
   use_frameworks!
 
-  pod 'MobWithAdSDK', '1.3.14'
+  pod 'MobWithAdSDK', '1.3.15'
   
   pod 'MobWithAdFitAdapter', '3.21.24.1.3.2'
-  pod 'MobWithAdMobAdapter', '12.14.0.1.3.4'
+  pod 'MobWithAdMobAdapter', '12.6.0.1.3.10'
   pod 'MobWithCaulyAdapter', '3.1.22.1.3.1'
   pod 'MobWithDTExchangeAdapter', '8.4.2.1.3.1'
   pod 'MobWithInMobiAdapter', '11.1.0.1.3.1'
@@ -18,7 +18,9 @@ target 'Sample' do
 
   pod 'MobWithBidMadAdapter', '6.13.6.1.3.14'
   pod 'BidmadAdmixerAdapter', '2.0.2.12.2'        #BidMad의 경우 무조건 하나 이상의 Adapter를 적용해야 초기화에 성공한다.
-  
+  pod "OpenBiddingHelper", '6.13.2'
   pod 'BidmadSDK/core', '= 6.13.6'
+  pod "BidmadGoogleAdManagerAdapter", "12.6.0.12.1"
+  pod "BidmadGoogleAdMobAdapter", "12.6.0.12.1"
   
 end

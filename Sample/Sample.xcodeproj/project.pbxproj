@@ -23,12 +23,25 @@
 		BD16D2942E12376D001AEFDC /* DHPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */; };
 		BD16D2952E12376D001AEFDC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2932E12376D001AEFDC /* UIView+Extension.swift */; };
 		BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2962E12377F001AEFDC /* MediaCodes.swift */; };
+		BD449C4930078757003E8816 /* AdapterCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD449C4830078757003E8816 /* AdapterCatalog.swift */; };
 		BD4F87752FFE2F2C000A932B /* DirectNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87732FFE2F2C000A932B /* DirectNativeAdView.swift */; };
 		BD4F87762FFE2F2C000A932B /* DefaultNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87712FFE2F2C000A932B /* DefaultNativeAdView.swift */; };
 		BD4F87772FFE2F2C000A932B /* DirectNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4F87742FFE2F2C000A932B /* DirectNativeAdView.xib */; };
 		BD4F87782FFE2F2C000A932B /* DefaultNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4F87722FFE2F2C000A932B /* DefaultNativeAdView.xib */; };
-		BD5E0A8C2FFCC3A70076FA60 /* MobWithADSDK in Frameworks */ = {isa = PBXBuildFile; productRef = BD5E0A8B2FFCC3A70076FA60 /* MobWithADSDK */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD449C3F30077DCA003E8816 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6568EAC9FA6E1CD321000D89 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +63,7 @@
 		BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHPaddedLabel.swift; sourceTree = "<group>"; };
 		BD16D2932E12376D001AEFDC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BD16D2962E12377F001AEFDC /* MediaCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCodes.swift; sourceTree = "<group>"; };
+		BD449C4830078757003E8816 /* AdapterCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterCatalog.swift; sourceTree = "<group>"; };
 		BD4F87712FFE2F2C000A932B /* DefaultNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNativeAdView.swift; sourceTree = "<group>"; };
 		BD4F87722FFE2F2C000A932B /* DefaultNativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultNativeAdView.xib; sourceTree = "<group>"; };
 		BD4F87732FFE2F2C000A932B /* DirectNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectNativeAdView.swift; sourceTree = "<group>"; };
@@ -63,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AF5506D2A4AE093004907CC /* Pods_Sample.framework in Frameworks */,
-				BD5E0A8C2FFCC3A70076FA60 /* MobWithADSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +127,7 @@
 		6AD5DF0628DD4EEE00CC6C30 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				BD449C4830078757003E8816 /* AdapterCatalog.swift */,
 				BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */,
 				BD16D2932E12376D001AEFDC /* UIView+Extension.swift */,
 				BD16D2912E123746001AEFDC /* Resource */,
@@ -160,7 +174,8 @@
 				6AD5DF0128DD4EEE00CC6C30 /* Frameworks */,
 				6AD5DF0228DD4EEE00CC6C30 /* Resources */,
 				C778AE74D0A3AFD72F1068CE /* [CP] Embed Pods Frameworks */,
-				B420A51D6AE8F43C84BF5552 /* [CP] Copy Pods Resources */,
+				BD449C3F30077DCA003E8816 /* Embed Frameworks */,
+				EF48529BBCA391E5892840A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,23 +259,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B420A51D6AE8F43C84BF5552 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C778AE74D0A3AFD72F1068CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,13 +267,38 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF48529BBCA391E5892840A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -290,6 +313,7 @@
 				6A92A65C2993318F0006B3D8 /* NativeAdTestViewController.swift in Sources */,
 				6AD5DF0C28DD4EEE00CC6C30 /* ViewController.swift in Sources */,
 				6AD5DF0828DD4EEE00CC6C30 /* AppDelegate.swift in Sources */,
+				BD449C4930078757003E8816 /* AdapterCatalog.swift in Sources */,
 				BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */,
 				6AD5DF0A28DD4EEE00CC6C30 /* SceneDelegate.swift in Sources */,
 				BD4F87752FFE2F2C000A932B /* DirectNativeAdView.swift in Sources */,
@@ -473,8 +497,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.enliple.mobmixer.Sample;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enliple.advercentermanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -514,8 +538,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.enliple.mobmixer.Sample;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enliple.advercentermanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -548,25 +572,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BD5E0A8A2FFCC3A70076FA60 /* XCRemoteSwiftPackageReference "MobWithAdSDK_SPM" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobon/MobWithAdSDK_SPM";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.8;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BD5E0A8B2FFCC3A70076FA60 /* MobWithADSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD5E0A8A2FFCC3A70076FA60 /* XCRemoteSwiftPackageReference "MobWithAdSDK_SPM" */;
-			productName = MobWithADSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AD5DEFC28DD4EEE00CC6C30 /* Project object */;
 }

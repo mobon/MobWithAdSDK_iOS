@@ -732,7 +732,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework16NativeAdViewItem")
 @property (nonatomic, strong) UIButton * _Nullable goToSiteButton;
 @property (nonatomic, strong) UIImageView * _Nullable infoLogoImageView;
 @property (nonatomic, strong) UIView * _Nullable mediaView;
-- (void)bringUnmanagedSubviewsToFront;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
