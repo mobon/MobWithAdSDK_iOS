@@ -23,7 +23,6 @@
 		BD16D2942E12376D001AEFDC /* DHPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */; };
 		BD16D2952E12376D001AEFDC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2932E12376D001AEFDC /* UIView+Extension.swift */; };
 		BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D2962E12377F001AEFDC /* MediaCodes.swift */; };
-		BD449C4930078757003E8816 /* AdapterCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD449C4830078757003E8816 /* AdapterCatalog.swift */; };
 		BD4F87752FFE2F2C000A932B /* DirectNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87732FFE2F2C000A932B /* DirectNativeAdView.swift */; };
 		BD4F87762FFE2F2C000A932B /* DefaultNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87712FFE2F2C000A932B /* DefaultNativeAdView.swift */; };
 		BD4F87772FFE2F2C000A932B /* DirectNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4F87742FFE2F2C000A932B /* DirectNativeAdView.xib */; };
@@ -63,7 +62,6 @@
 		BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHPaddedLabel.swift; sourceTree = "<group>"; };
 		BD16D2932E12376D001AEFDC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BD16D2962E12377F001AEFDC /* MediaCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCodes.swift; sourceTree = "<group>"; };
-		BD449C4830078757003E8816 /* AdapterCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterCatalog.swift; sourceTree = "<group>"; };
 		BD4F87712FFE2F2C000A932B /* DefaultNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNativeAdView.swift; sourceTree = "<group>"; };
 		BD4F87722FFE2F2C000A932B /* DefaultNativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultNativeAdView.xib; sourceTree = "<group>"; };
 		BD4F87732FFE2F2C000A932B /* DirectNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectNativeAdView.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 		6AD5DF0628DD4EEE00CC6C30 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				BD449C4830078757003E8816 /* AdapterCatalog.swift */,
 				BD16D2922E12376D001AEFDC /* DHPaddedLabel.swift */,
 				BD16D2932E12376D001AEFDC /* UIView+Extension.swift */,
 				BD16D2912E123746001AEFDC /* Resource */,
@@ -267,13 +264,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -288,13 +281,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -313,7 +302,6 @@
 				6A92A65C2993318F0006B3D8 /* NativeAdTestViewController.swift in Sources */,
 				6AD5DF0C28DD4EEE00CC6C30 /* ViewController.swift in Sources */,
 				6AD5DF0828DD4EEE00CC6C30 /* AppDelegate.swift in Sources */,
-				BD449C4930078757003E8816 /* AdapterCatalog.swift in Sources */,
 				BD16D2972E12377F001AEFDC /* MediaCodes.swift in Sources */,
 				6AD5DF0A28DD4EEE00CC6C30 /* SceneDelegate.swift in Sources */,
 				BD4F87752FFE2F2C000A932B /* DirectNativeAdView.swift in Sources */,

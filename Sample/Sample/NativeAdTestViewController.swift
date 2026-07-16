@@ -29,7 +29,8 @@ class NativeAdTestViewController: UIViewController {
     
     var nativeAdView:MMNativeAdView?
     
-    let mediaCode:String = "{ 할당 받은 지면번호 }"
+//    let mediaCode:String = "{ 할당 받은 지면번호 }"
+    let mediaCode:String = "10896121"
     
     
     override func viewDidLoad() {

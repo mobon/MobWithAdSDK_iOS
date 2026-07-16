@@ -12,6 +12,7 @@ import MobWithADSDKFramework
 import AdSupport
 import AppTrackingTransparency
 
+import OpenBiddingHelper
 
 class ViewController: UIViewController {
     
@@ -50,14 +51,12 @@ class ViewController: UIViewController {
         idfaLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tappedIdfaLabel(gesture:))))
         
         MobWithADSDK.standard.enableLog(true)
-        MobWithADSDK.standard.setLevelPlaySDKAppKey("22180584d") //200aec285, 20196aec5. 22180584d
-        MobWithADSDK.standard.setPangleAppId(appId: "8705357")    //8705357, 8659257
-        MobWithADSDK.standard.setDTExchangeAppID(appId: "220419")
-        MobWithADSDK.standard.setInMobiAccountId(accountId: "88ede8a9e7294a59b605b109444c2a9f")
         
-        MobWithADSDK.standard.enableLog(true)
-        
-        
+        MobWithADSDK.standard.initSDK()
+//        MobWithADSDK.standard.setLevelPlaySDKAppKey(" {LevelPlay AppKey }")
+//        MobWithADSDK.standard.setPangleAppId(appId: "{ Pangle App ID }")
+//        MobWithADSDK.standard.setDTExchangeAppID(appId: "{ DT Exchange App ID }")
+//        MobWithADSDK.standard.setInMobiAccountId(accountId: "{ InMobi Account ID}")
         
         segmentAdType.selectedSegmentIndex = 0
 
@@ -73,7 +72,6 @@ class ViewController: UIViewController {
         rewardAd?.rootViewController = self
         rewardAd?.adDelegate = self
         rewardAd?.unitId = MediaCodes.mediaCodeRewardAd.rawValue
-        
         
         loadAd()
     }

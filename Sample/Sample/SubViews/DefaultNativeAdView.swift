@@ -8,6 +8,10 @@
 import UIKit
 import MobWithADSDKFramework
 
+
+// ADOP BidMad SDK 미디에이션을 사용하는 예제.
+// BidMad를 사용하지 않는경우 XIB 파일내 BIDMADNativeAdView 관련 설정을 제거해 주셔야 합니다.
+
 class DefaultNativeAdView: UIView {
     
     @IBOutlet weak var logoImageView: UIImageView!

@@ -5,14 +5,16 @@
 	<key>AppLovinSdkKey</key>
 	<string>{AppLovin AppKey}</string>
 	<key>BidmadAppDomain</key>
-	<string>19239-serving-bidmad.adop.co.kr</string>
+	<string>19428-serving-bidmad.adop.co.kr</string>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-7431155442526188~6476656896</string>
+	<string>ca-app-pub-9876471320931150~7693691134</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>SHOWLOG</key>
+	<string>TRUE</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
