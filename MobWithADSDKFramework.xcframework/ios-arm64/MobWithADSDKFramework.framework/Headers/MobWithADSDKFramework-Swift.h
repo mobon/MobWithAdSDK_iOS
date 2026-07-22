@@ -372,51 +372,14 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_300x250 = 2,
 };
 
-enum MMFloatingHorizontalPosition : NSInteger;
-enum MMFloatingVerticalPosition : NSInteger;
-SWIFT_CLASS("_TtC21MobWithADSDKFramework29MMFloatingBannerConfiguration")
-@interface MMFloatingBannerConfiguration : NSObject
-@property (nonatomic, readonly) enum MMFloatingHorizontalPosition horizontal;
-@property (nonatomic, readonly) enum MMFloatingVerticalPosition vertical;
-/// left/right 기준 여백
-@property (nonatomic, readonly) CGFloat horizontalMargin;
-/// top/bottom 기준 여백
-@property (nonatomic, readonly) CGFloat verticalMargin;
-- (nonnull instancetype)initWithHorizontal:(enum MMFloatingHorizontalPosition)horizontal vertical:(enum MMFloatingVerticalPosition)vertical horizontalMargin:(CGFloat)horizontalMargin verticalMargin:(CGFloat)verticalMargin OBJC_DESIGNATED_INITIALIZER;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) MMFloatingBannerConfiguration * _Nonnull default_;)
-+ (MMFloatingBannerConfiguration * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@protocol MMSplashAdDelegate;
-SWIFT_CLASS("_TtC21MobWithADSDKFramework20MMFloatingBannerView")
-@interface MMFloatingBannerView : NSObject
-@property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable campaignCodes;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-typedef SWIFT_ENUM(NSInteger, MMFloatingHorizontalPosition, open) {
-  MMFloatingHorizontalPositionLeft = 0,
-  MMFloatingHorizontalPositionCenter = 1,
-  MMFloatingHorizontalPositionRight = 2,
-};
-
-typedef SWIFT_ENUM(NSInteger, MMFloatingVerticalPosition, open) {
-  MMFloatingVerticalPositionTop = 0,
-  MMFloatingVerticalPositionCenter = 1,
-  MMFloatingVerticalPositionBottom = 2,
-};
-
 @class UIImageView;
 @class UIButton;
 @class NSBundle;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 @interface MMNativeAdView : UIView
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable campaignCodes;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 /// Native AD View
@@ -483,6 +446,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol MMSplashAdDelegate;
 SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMSplashAd")
 @interface MMSplashAd : NSObject
 @property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
@@ -546,6 +510,17 @@ typedef SWIFT_ENUM(NSInteger, MWAdapterType, open) {
   MWAdapterTypeDtExchange = 6,
   MWAdapterTypeAdop = 7,
   MWAdapterTypeCauly = 8,
+};
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MWSignalInitializable_")
+@protocol MWSignalInitializable
++ (void)initializeSDKWithConfig:(NSDictionary<NSString *, id> * _Nullable)config;
++ (NSString * _Nullable)getSignalData SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MWSignalType, open) {
+  MWSignalTypeArgus = 0,
 };
 
 /// MobMixerSDK 기본 관리 클래스

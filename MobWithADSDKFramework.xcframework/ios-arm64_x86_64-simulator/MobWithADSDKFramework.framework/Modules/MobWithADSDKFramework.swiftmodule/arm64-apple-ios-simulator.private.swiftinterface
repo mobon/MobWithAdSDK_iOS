@@ -17,47 +17,27 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public enum MMFloatingHorizontalPosition : Swift.Int {
-  case left
-  case center
-  case right
+@objc public enum MWSignalType : ObjectiveC.NSInteger {
+  case argus
+  public var string: Swift.String {
+    get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
+  public init?(rawValue: ObjectiveC.NSInteger)
   #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
     get
   }
 }
-@objc public enum MMFloatingVerticalPosition : Swift.Int {
-  case top
-  case center
-  case bottom
+@objc public protocol MWSignalInitializable {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
+  @objc static func initializeSDK(config: [Swift.String : Any]?)
   #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc @objcMembers public class MMFloatingBannerConfiguration : ObjectiveC.NSObject {
-  @objc final public let horizontal: MobWithADSDKFramework.MMFloatingHorizontalPosition
-  @objc final public let vertical: MobWithADSDKFramework.MMFloatingVerticalPosition
-  @objc final public let horizontalMargin: CoreFoundation.CGFloat
-  @objc final public let verticalMargin: CoreFoundation.CGFloat
-  @objc public init(horizontal: MobWithADSDKFramework.MMFloatingHorizontalPosition = .center, vertical: MobWithADSDKFramework.MMFloatingVerticalPosition = .bottom, horizontalMargin: CoreFoundation.CGFloat = 16, verticalMargin: CoreFoundation.CGFloat = 16)
-  @objc public static let `default`: MobWithADSDKFramework.MMFloatingBannerConfiguration
-  @objc deinit
-}
-@objc public class MMFloatingBannerView : ObjectiveC.NSObject {
-  @objc weak public var delegate: (any MobWithADSDKFramework.MMSplashAdDelegate)?
-  @objc public var category: [Swift.String]?
-  @objc public var campaignCodes: [Swift.String]?
-  public init(viewController: UIKit.UIViewController, unitId: Swift.String)
-  public func loadAd(at containerView: UIKit.UIView, configuration: MobWithADSDKFramework.MMFloatingBannerConfiguration = .default)
-  public func destroy()
-  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc static func getSignalData() -> Swift.String?
+  #endif
+  @objc static func getVersion() -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers public class MobWithInterstitailAd : ObjectiveC.NSObject {
   @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?
@@ -1177,6 +1157,8 @@ extension MobWithADSDKFramework.MobWithAdView {
     set
   }
   @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency public var category: [Swift.String]?
+  @objc @_Concurrency.MainActor @preconcurrency public var campaignCodes: [Swift.String]?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?, mediaView: UIKit.UIView? = nil)
@@ -1424,12 +1406,9 @@ extension UIKit.UIImage {
   @objc override dynamic public init()
   @objc deinit
 }
-extension MobWithADSDKFramework.MMFloatingHorizontalPosition : Swift.Equatable {}
-extension MobWithADSDKFramework.MMFloatingHorizontalPosition : Swift.Hashable {}
-extension MobWithADSDKFramework.MMFloatingHorizontalPosition : Swift.RawRepresentable {}
-extension MobWithADSDKFramework.MMFloatingVerticalPosition : Swift.Equatable {}
-extension MobWithADSDKFramework.MMFloatingVerticalPosition : Swift.Hashable {}
-extension MobWithADSDKFramework.MMFloatingVerticalPosition : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MWSignalType : Swift.Equatable {}
+extension MobWithADSDKFramework.MWSignalType : Swift.Hashable {}
+extension MobWithADSDKFramework.MWSignalType : Swift.RawRepresentable {}
 extension MobWithADSDKFramework.ApiError : Swift.Equatable {}
 extension MobWithADSDKFramework.ApiError : Swift.Hashable {}
 extension MobWithADSDKFramework.MMAdType : Swift.Equatable {}

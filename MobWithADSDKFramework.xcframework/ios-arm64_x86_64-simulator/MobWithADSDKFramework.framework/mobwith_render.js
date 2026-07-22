@@ -17,6 +17,7 @@
      const iframe = document.createElement('iframe');
 
      iframe.style.width = '100%';
+     iframe.style.height = '0px';
      iframe.style.border = '0';
      iframe.style.display = 'block';
      iframe.style.overflow = 'hidden';
@@ -43,7 +44,11 @@
      let mutationObserver = null;
      let resizeObserver = null;
      const imageListeners = [];
-
+     
+     let lastScale = 0;
+     let lastIframeHeight = 0;
+     
+     
      const resizeIframe = function() {
          if (destroyed) {
              return;
@@ -56,8 +61,46 @@
              if (!body || !html) {
                  return;
              }
+             
+             console.log('[MobWith]', {
+                         bodyScroll: body.scrollHeight,
+                         bodyOffset: body.offsetHeight,
+                         bodyClient: body.clientHeight,
+                         htmlScroll: html.scrollHeight,
+                         htmlOffset: html.offsetHeight,
+                         htmlClient: html.clientHeight,
+                         bodyMargin: getComputedStyle(body).margin,
+                         htmlMargin: getComputedStyle(html).margin
+                     });
+             
+             
+             console.log({
+                 htmlHeight: getComputedStyle(html).height,
+                 htmlMinHeight: getComputedStyle(html).minHeight,
+                 bodyHeight: getComputedStyle(body).height,
+                 bodyMinHeight: getComputedStyle(body).minHeight
 
-             const height = Math.max(
+             });
+
+             console.log({
+                 bodyRect: body.getBoundingClientRect().height,
+                 htmlRect: html.getBoundingClientRect().height
+             });
+             
+             console.log({
+                 innerHeight: iframe.contentWindow.innerHeight,
+                 visualViewport: iframe.contentWindow.visualViewport?.height,
+                 documentClient: iframe.contentWindow.document.documentElement.clientHeight
+             });
+             
+             console.log(doc.compatMode);
+             
+             const contentWidth = Math.max(
+                 body.scrollWidth,
+                 html.scrollWidth
+             );
+             
+             const contentHeight = Math.max(
                  body.scrollHeight,
                  body.offsetHeight,
                  body.clientHeight,
@@ -66,9 +109,34 @@
                  html.clientHeight
              );
 
-             if (height > 0) {
-                 iframe.style.height = height + 'px';
+             let containerWidth = container.getBoundingClientRect().width;
+             if (containerWidth <= 0) {
+                 containerWidth = window.innerWidth;
              }
+
+             let scale = 1;
+             if (contentWidth > 0 && containerWidth > contentWidth) {
+                 scale = containerWidth / contentWidth;
+             }
+             
+             const iframeHeight = contentHeight * scale;
+             if (lastScale !== scale || lastIframeHeight !== iframeHeight) {
+                 lastScale = scale;
+                 lastIframeHeight = iframeHeight;
+                 
+                 body.style.transformOrigin = '0 0';
+                 body.style.transform = `scale(${scale})`;
+                 iframe.style.height = iframeHeight + 'px';
+             }
+             
+             console.log({
+                 bodyScrollWidths: body.scrollWidth,
+                 htmlScrollWidths: html.scrollWidth,
+                 containerWidths: containerWidth,
+                 scales: scale,
+                 iframeHeights: iframeHeight
+             });
+             
          } catch (e) {
              console.log(e);
          }
