@@ -1163,6 +1163,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -18514,6 +18524,117 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "MMHybridBannerBridgeDelegate",
+        "printedName": "MMHybridBannerBridgeDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "mobWithHybridBannerBridgeAdClicked",
+            "printedName": "mobWithHybridBannerBridgeAdClicked(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MMHybridBannerBridge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMHybridBannerBridge",
+                    "printedName": "MobWithADSDKFramework.MMHybridBannerBridge",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMHybridBannerBridgeDelegate(im)mobWithHybridBannerBridgeAdClicked:",
+            "mangledName": "$s21MobWithADSDKFramework28MMHybridBannerBridgeDelegateP03mobb6HybrideF9AdClickedyyAA0deF0CSgF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MMHybridBannerBridgeDelegate>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MMHybridBannerBridgeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mobWithHybridBannerBridgeAdLoadFailed",
+            "printedName": "mobWithHybridBannerBridgeAdLoadFailed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MMHybridBannerBridge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMHybridBannerBridge",
+                    "printedName": "MobWithADSDKFramework.MMHybridBannerBridge",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMHybridBannerBridgeDelegate(im)mobWithHybridBannerBridgeAdLoadFailed:",
+            "mangledName": "$s21MobWithADSDKFramework28MMHybridBannerBridgeDelegateP03mobb6HybrideF12AdLoadFailedyyAA0deF0CSgF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MMHybridBannerBridgeDelegate>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MMHybridBannerBridgeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMHybridBannerBridgeDelegate",
+        "mangledName": "$s21MobWithADSDKFramework28MMHybridBannerBridgeDelegateP",
+        "moduleName": "MobWithADSDKFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MMHybridBannerBridge",
         "printedName": "MMHybridBannerBridge",
         "children": [
@@ -18568,6 +18689,109 @@
           },
           {
             "kind": "Var",
+            "name": "adDelegate",
+            "printedName": "adDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any MobWithADSDKFramework.MMHybridBannerBridgeDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvp",
+            "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvp",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MobWithADSDKFramework.MMHybridBannerBridgeDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMHybridBannerBridgeDelegate",
+                        "printedName": "any MobWithADSDKFramework.MMHybridBannerBridgeDelegate",
+                        "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMHybridBannerBridgeDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvg",
+                "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvg",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MobWithADSDKFramework.MMHybridBannerBridgeDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMHybridBannerBridgeDelegate",
+                        "printedName": "any MobWithADSDKFramework.MMHybridBannerBridgeDelegate",
+                        "usr": "c:@M@MobWithADSDKFramework@objc(pl)MMHybridBannerBridgeDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvs",
+                "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvs",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvM",
+                "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC10adDelegateAA0defH0_pSgvM",
+                "moduleName": "MobWithADSDKFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "category",
             "printedName": "category",
             "children": [
@@ -18595,7 +18819,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC8categorySaySSGSgvp",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(py)category",
             "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC8categorySaySSGSgvp",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
@@ -18635,7 +18859,7 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC8categorySaySSGSgvg",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(im)category",
                 "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC8categorySaySSGSgvg",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
@@ -18678,7 +18902,7 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC8categorySaySSGSgvs",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(im)setCategory:",
                 "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC8categorySaySSGSgvs",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
@@ -18736,7 +18960,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC13campaignCodesSaySSGSgvp",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(py)campaignCodes",
             "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC13campaignCodesSaySSGSgvp",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
@@ -18776,7 +19000,7 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC13campaignCodesSaySSGSgvg",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(im)campaignCodes",
                 "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC13campaignCodesSaySSGSgvg",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
@@ -18819,7 +19043,7 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC13campaignCodesSaySSGSgvs",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(im)setCampaignCodes:",
                 "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC13campaignCodesSaySSGSgvs",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
@@ -18857,7 +19081,7 @@
                 "kind": "TypeNominal",
                 "name": "MMHybridBannerBridge",
                 "printedName": "MobWithADSDKFramework.MMHybridBannerBridge",
-                "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC"
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge"
               },
               {
                 "kind": "TypeNominal",
@@ -18903,6 +19127,26 @@
           },
           {
             "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC7destroyyyF",
+            "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC7destroyyyF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "handleBridgeMessage",
             "printedName": "handleBridgeMessage(_:)",
             "children": [
@@ -18927,14 +19171,45 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMHybridBannerBridge",
+                "printedName": "MobWithADSDKFramework.MMHybridBannerBridge",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge(im)init",
+            "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeCACycfc",
+            "moduleName": "MobWithADSDKFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC",
+        "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMHybridBannerBridge",
         "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC",
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -18950,6 +19225,55 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -29656,288 +29980,6 @@
                 "declKind": "Accessor",
                 "usr": "s:21MobWithADSDKFramework10MMSplashAdC10timeOutSecSivM",
                 "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC10timeOutSecSivM",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "category",
-            "printedName": "category",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMSplashAd(py)category",
-            "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC8categorySaySSGSgvp",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMSplashAd(im)category",
-                "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC8categorySaySSGSgvg",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMSplashAd(im)setCategory:",
-                "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC8categorySaySSGSgvs",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework10MMSplashAdC8categorySaySSGSgvM",
-                "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC8categorySaySSGSgvM",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "campaignCodes",
-            "printedName": "campaignCodes",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMSplashAd(py)campaignCodes",
-            "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC13campaignCodesSaySSGSgvp",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMSplashAd(im)campaignCodes",
-                "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC13campaignCodesSaySSGSgvg",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMSplashAd(im)setCampaignCodes:",
-                "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC13campaignCodesSaySSGSgvs",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework10MMSplashAdC13campaignCodesSaySSGSgvM",
-                "mangledName": "$s21MobWithADSDKFramework10MMSplashAdC13campaignCodesSaySSGSgvM",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -45228,6 +45270,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
       },
       {
@@ -47274,6 +47326,62 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 6,
+      "value": "\"zone\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 373,
+      "length": 12,
+      "value": "\"advertInfo\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1174,
+      "length": 8,
+      "value": "\"adType\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1201,
+      "length": 4,
+      "value": "\"ad\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1229,
+      "length": 9,
+      "value": "\"adTitle\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1268,
+      "length": 15,
+      "value": "\"adDescription\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1312,
+      "length": 14,
+      "value": "\"adLandingUrl\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1355,
+      "length": 14,
+      "value": "\"adImpTracker\""
+    },
+    {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/ADLoader\/MobWithNativeAdLoader.swift",
       "kind": "Array",
       "offset": 384,
@@ -47713,6 +47821,34 @@
       "offset": 12578,
       "length": 4,
       "value": "\"02\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
+      "kind": "StringLiteral",
+      "offset": 14114,
+      "length": 23,
+      "value": "\"\/v1\/dsp\/advert\/splash\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14238,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14283,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
+      "kind": "StringLiteral",
+      "offset": 14489,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobmixRefreshIntervalModel.swift",
@@ -49068,14 +49204,14 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMHybridBannerBridge.swift",
       "kind": "StringLiteral",
-      "offset": 577,
+      "offset": 849,
       "length": 27,
       "value": "\"MobwithHybridBannerBridge\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMHybridBannerBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 742,
+      "offset": 1081,
       "length": 5,
       "value": "false"
     },
@@ -49733,105 +49869,105 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 927,
+      "offset": 828,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 963,
+      "offset": 864,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 991,
+      "offset": 892,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 1040,
+      "offset": 941,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1392,
+      "offset": 1293,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1459,
+      "offset": 1360,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1613,
+      "offset": 1514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1719,
+      "offset": 1620,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1461,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 15861,
+      "offset": 15642,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 15896,
+      "offset": 15677,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 15946,
+      "offset": 15727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 15981,
+      "offset": 15762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16023,
+      "offset": 15804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16058,
+      "offset": 15839,
       "length": 5,
       "value": "false"
     },
@@ -52627,6 +52763,27 @@
       "offset": 968,
       "length": 3,
       "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashModel.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashModel.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/Splash\/MobMixSplashModel.swift",
+      "kind": "StringLiteral",
+      "offset": 408,
+      "length": 6,
+      "value": "\"data\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",

@@ -560,12 +560,22 @@ public struct VastAdSystem : Swift.Codable {
 extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastAdSystem, b: MobWithADSDKFramework.VastAdSystem) -> Swift.Bool
 }
-public class MMHybridBannerBridge {
+@objc public protocol MMHybridBannerBridgeDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc optional func mobWithHybridBannerBridgeAdClicked(_ bridge: MobWithADSDKFramework.MMHybridBannerBridge?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc optional func mobWithHybridBannerBridgeAdLoadFailed(_ bridge: MobWithADSDKFramework.MMHybridBannerBridge?)
+  #endif
+}
+@objc public class MMHybridBannerBridge : ObjectiveC.NSObject {
   final public let bridgeName: Swift.String
+  weak public var adDelegate: (any MobWithADSDKFramework.MMHybridBannerBridgeDelegate)?
   @objc public var category: [Swift.String]?
   @objc public var campaignCodes: [Swift.String]?
   public init(webVeiw: WebKit.WKWebView)
   public func webViewFinishLoad(_ view: WebKit.WKWebView)
+  public func destroy()
   public func handleBridgeMessage(_ message: WebKit.WKScriptMessage) -> Swift.Bool
   @objc deinit
 }
@@ -918,8 +928,6 @@ extension MobWithADSDKFramework.VastPricing : Swift.Equatable {
   @objc weak public var delegate: (any MobWithADSDKFramework.MMSplashAdDelegate)?
   @objc public var useFullScreenAd: Swift.Bool
   @objc public var timeOutSec: Swift.Int
-  @objc public var category: [Swift.String]?
-  @objc public var campaignCodes: [Swift.String]?
   public init(viewController: UIKit.UIViewController, unitId: Swift.String)
   public func loadAd()
   public func destroy()

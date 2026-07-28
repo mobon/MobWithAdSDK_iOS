@@ -2,9 +2,15 @@
      const placementId = '__PLACEMENT_ID__';
      const customBridgeName = '__BRIDGE_NAME__';
      const html = '__HTML__';
+     const os = '__OS__';
      
-     const container = document.querySelector('.mobwith-banner[data-placement-id="' + placementId + '"]');
-          
+     const selector =
+         os === 'iOS'
+             ? `.mobwith-banner[data-placement-id-ios="${placementId}"]`
+             : `.mobwith-banner[data-placement-id-android="${placementId}"]`;
+
+     const container = document.querySelector(selector);
+     
      if (!container) {
          return;
      }
@@ -44,11 +50,7 @@
      let mutationObserver = null;
      let resizeObserver = null;
      const imageListeners = [];
-     
-     let lastScale = 0;
-     let lastIframeHeight = 0;
-     
-     
+
      const resizeIframe = function() {
          if (destroyed) {
              return;
@@ -61,46 +63,8 @@
              if (!body || !html) {
                  return;
              }
-             
-             console.log('[MobWith]', {
-                         bodyScroll: body.scrollHeight,
-                         bodyOffset: body.offsetHeight,
-                         bodyClient: body.clientHeight,
-                         htmlScroll: html.scrollHeight,
-                         htmlOffset: html.offsetHeight,
-                         htmlClient: html.clientHeight,
-                         bodyMargin: getComputedStyle(body).margin,
-                         htmlMargin: getComputedStyle(html).margin
-                     });
-             
-             
-             console.log({
-                 htmlHeight: getComputedStyle(html).height,
-                 htmlMinHeight: getComputedStyle(html).minHeight,
-                 bodyHeight: getComputedStyle(body).height,
-                 bodyMinHeight: getComputedStyle(body).minHeight
 
-             });
-
-             console.log({
-                 bodyRect: body.getBoundingClientRect().height,
-                 htmlRect: html.getBoundingClientRect().height
-             });
-             
-             console.log({
-                 innerHeight: iframe.contentWindow.innerHeight,
-                 visualViewport: iframe.contentWindow.visualViewport?.height,
-                 documentClient: iframe.contentWindow.document.documentElement.clientHeight
-             });
-             
-             console.log(doc.compatMode);
-             
-             const contentWidth = Math.max(
-                 body.scrollWidth,
-                 html.scrollWidth
-             );
-             
-             const contentHeight = Math.max(
+             const height = Math.max(
                  body.scrollHeight,
                  body.offsetHeight,
                  body.clientHeight,
@@ -109,34 +73,9 @@
                  html.clientHeight
              );
 
-             let containerWidth = container.getBoundingClientRect().width;
-             if (containerWidth <= 0) {
-                 containerWidth = window.innerWidth;
+             if (height > 0) {
+                 iframe.style.height = height + 'px';
              }
-
-             let scale = 1;
-             if (contentWidth > 0 && containerWidth > contentWidth) {
-                 scale = containerWidth / contentWidth;
-             }
-             
-             const iframeHeight = contentHeight * scale;
-             if (lastScale !== scale || lastIframeHeight !== iframeHeight) {
-                 lastScale = scale;
-                 lastIframeHeight = iframeHeight;
-                 
-                 body.style.transformOrigin = '0 0';
-                 body.style.transform = `scale(${scale})`;
-                 iframe.style.height = iframeHeight + 'px';
-             }
-             
-             console.log({
-                 bodyScrollWidths: body.scrollWidth,
-                 htmlScrollWidths: html.scrollWidth,
-                 containerWidths: containerWidth,
-                 scales: scale,
-                 iframeHeights: iframeHeight
-             });
-             
          } catch (e) {
              console.log(e);
          }
