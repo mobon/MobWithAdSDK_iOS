@@ -574,7 +574,7 @@ extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   @objc public var category: [Swift.String]?
   @objc public var campaignCodes: [Swift.String]?
   public init(webVeiw: WebKit.WKWebView)
-  public func webViewFinishLoad(_ view: WebKit.WKWebView)
+  public func webViewFinishLoad(_ view: WebKit.WKWebView, isLoadAd: Swift.Bool = true)
   public func destroy()
   public func handleBridgeMessage(_ message: WebKit.WKScriptMessage) -> Swift.Bool
   @objc deinit

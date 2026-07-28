@@ -19102,7 +19102,7 @@
           {
             "kind": "Function",
             "name": "webViewFinishLoad",
-            "printedName": "webViewFinishLoad(_:)",
+            "printedName": "webViewFinishLoad(_:isLoadAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19114,11 +19114,18 @@
                 "name": "WKWebView",
                 "printedName": "WebKit.WKWebView",
                 "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC17webViewFinishLoadyySo05WKWebH0CF",
-            "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC17webViewFinishLoadyySo05WKWebH0CF",
+            "usr": "s:21MobWithADSDKFramework20MMHybridBannerBridgeC17webViewFinishLoad_02isJ2AdySo05WKWebH0C_SbtF",
+            "mangledName": "$s21MobWithADSDKFramework20MMHybridBannerBridgeC17webViewFinishLoad_02isJ2AdySo05WKWebH0C_SbtF",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "AccessControl"
@@ -49214,6 +49221,13 @@
       "offset": 1081,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMHybridBannerBridge.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1356,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/VastClient\/models\/VMAP\/VMAPTrackingEvent.swift",
