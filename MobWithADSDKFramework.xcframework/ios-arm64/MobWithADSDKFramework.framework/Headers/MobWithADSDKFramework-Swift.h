@@ -525,10 +525,11 @@ typedef SWIFT_ENUM(NSInteger, MWAdapterType, open) {
   MWAdapterTypeCauly = 8,
 };
 
+@class NSData;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MWSignalInitializable_")
 @protocol MWSignalInitializable
 + (void)initializeSDKWithConfig:(NSDictionary<NSString *, id> * _Nullable)config;
-+ (NSString * _Nullable)getSignalData SWIFT_WARN_UNUSED_RESULT;
++ (NSData * _Nullable)getSignalData SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -576,7 +577,6 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
-@property (nonatomic) BOOL useCloseButton;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;

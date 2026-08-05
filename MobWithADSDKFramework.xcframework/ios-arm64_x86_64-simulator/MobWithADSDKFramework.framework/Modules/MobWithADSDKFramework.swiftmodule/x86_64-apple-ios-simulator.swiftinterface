@@ -35,7 +35,7 @@ import _SwiftConcurrencyShims
   @objc static func initializeSDK(config: [Swift.String : Any]?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc static func getSignalData() -> Swift.String?
+  @objc static func getSignalData() -> Foundation.Data?
   #endif
   @objc static func getVersion() -> Swift.String
 }
@@ -1113,7 +1113,6 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   }
   @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @_Concurrency.MainActor @preconcurrency public var interval: Swift.Int
-  @objc @_Concurrency.MainActor @preconcurrency public var useCloseButton: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
