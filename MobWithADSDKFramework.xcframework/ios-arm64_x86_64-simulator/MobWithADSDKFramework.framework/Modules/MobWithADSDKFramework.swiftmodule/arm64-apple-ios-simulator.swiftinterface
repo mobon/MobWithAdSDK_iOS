@@ -41,16 +41,16 @@ import _SwiftConcurrencyShims
 }
 @objc @_inheritsConvenienceInitializers public class MobWithInterstitailAd : ObjectiveC.NSObject {
   @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?
-  public var rootViewController: UIKit.UIViewController? {
+  weak public var rootViewController: UIKit.UIViewController? {
     get
     set
   }
   public var unitId: Swift.String
   @objc override dynamic public init()
+  @objc deinit
   @objc public func loadAd()
   public func isLoaded() -> Swift.Bool
   public func show()
-  @objc deinit
 }
 extension MobWithADSDKFramework.MobWithInterstitailAd : MobWithADSDKFramework.MWAdapterDelegate {
   @objc dynamic public func mwAdapterDidReceivedAd(adapter: any MobWithADSDKFramework.MWAdapterBase)
@@ -565,7 +565,7 @@ extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   @objc optional func mobWithHybridBannerBridgeAdClicked(_ bridge: MobWithADSDKFramework.MMHybridBannerBridge?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithHybridBannerBridgeAdLoadFailed(_ bridge: MobWithADSDKFramework.MMHybridBannerBridge?)
+  @objc optional func mobWithHybridBannerBridgeAdLoadFailed(_ bridge: MobWithADSDKFramework.MMHybridBannerBridge?, zoneId: Swift.String, zoneType: Swift.String)
   #endif
 }
 @objc public class MMHybridBannerBridge : ObjectiveC.NSObject {
@@ -575,6 +575,7 @@ extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   @objc public var campaignCodes: [Swift.String]?
   public init(webVeiw: WebKit.WKWebView)
   public func webViewFinishLoad(_ view: WebKit.WKWebView, isLoadAd: Swift.Bool = true)
+  public func requestAd(placementId: Swift.String, adType: Swift.String)
   public func destroy()
   public func handleBridgeMessage(_ message: WebKit.WKScriptMessage) -> Swift.Bool
   @objc deinit
@@ -1107,12 +1108,13 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   @_Concurrency.MainActor @preconcurrency public var bannerUnitID: Swift.String
   @_Concurrency.MainActor @preconcurrency public var fillMode: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var fitToHeight: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var rootViewController: UIKit.UIViewController? {
+  @_Concurrency.MainActor @preconcurrency weak public var rootViewController: UIKit.UIViewController? {
     get
     set
   }
   @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @_Concurrency.MainActor @preconcurrency public var interval: Swift.Int
+  @objc @_Concurrency.MainActor @preconcurrency public var useCloseButton: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
@@ -1120,6 +1122,7 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   #endif
   @_Concurrency.MainActor @preconcurrency public func showNextAd()
+  @_Concurrency.MainActor @preconcurrency public func clearAdViews()
   @objc @_Concurrency.MainActor @preconcurrency public func clearAdLoader()
   @objc deinit
 }
@@ -1159,7 +1162,7 @@ extension MobWithADSDKFramework.MobWithAdView {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MMNativeAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var bannerUnitID: Swift.String
-  @_Concurrency.MainActor @preconcurrency public var rootViewController: UIKit.UIViewController? {
+  @_Concurrency.MainActor @preconcurrency weak public var rootViewController: UIKit.UIViewController? {
     get
     set
   }
@@ -1268,19 +1271,20 @@ extension Swift.String {
   public func toFormattedCurrency() -> Swift.String
   public func isValidPCode() -> Swift.Bool
   public func urlQueryEncoded() -> Swift.String
+  public func strictQueryEncode(_ value: Swift.String) -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers public class MobWithRewardAd : ObjectiveC.NSObject {
   @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithRewardAdDelegate)?
-  public var rootViewController: UIKit.UIViewController? {
+  weak public var rootViewController: UIKit.UIViewController? {
     get
     set
   }
   public var unitId: Swift.String
   @objc override dynamic public init()
+  @objc deinit
   @objc public func loadAd()
   public func isLoaded() -> Swift.Bool
   public func show()
-  @objc deinit
 }
 extension MobWithADSDKFramework.MobWithRewardAd : MobWithADSDKFramework.MWAdapterDelegate {
   @objc dynamic public func mwAdapterDidReceivedAd(adapter: any MobWithADSDKFramework.MWAdapterBase)

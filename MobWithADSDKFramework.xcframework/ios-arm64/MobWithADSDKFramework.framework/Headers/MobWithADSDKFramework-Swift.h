@@ -384,7 +384,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MMHybridBannerBridgeDelegate_")
 @protocol MMHybridBannerBridgeDelegate
 @optional
 - (void)mobWithHybridBannerBridgeAdClicked:(MMHybridBannerBridge * _Nullable)bridge;
-- (void)mobWithHybridBannerBridgeAdLoadFailed:(MMHybridBannerBridge * _Nullable)bridge;
+- (void)mobWithHybridBannerBridgeAdLoadFailed:(MMHybridBannerBridge * _Nullable)bridge zoneId:(NSString * _Nonnull)zoneId zoneType:(NSString * _Nonnull)zoneType;
 @end
 
 @class UIImageView;
@@ -577,6 +577,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic) BOOL useCloseButton;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
