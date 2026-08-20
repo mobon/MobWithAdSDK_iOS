@@ -50897,10 +50897,24 @@
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1522,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1596,
+      "offset": 1658,
       "length": 2,
       "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1689,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
@@ -50912,56 +50926,56 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1864,
+      "offset": 1960,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1903,
+      "offset": 1999,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2419,
+      "offset": 2515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2476,
+      "offset": 2572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2531,
+      "offset": 2627,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2645,
+      "offset": 2741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 3100,
+      "offset": 3196,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19036,
+      "offset": 19218,
       "length": 5,
       "value": "false"
     },
