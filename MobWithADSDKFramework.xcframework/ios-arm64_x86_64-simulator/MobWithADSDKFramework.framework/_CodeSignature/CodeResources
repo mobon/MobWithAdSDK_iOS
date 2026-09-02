@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		zSh4EbR16JPRIcqE6PwBgvRVAqs=
+		zktAcon52a/dD6wS69mCmM0Xa+c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aDa1nxMgm98ThWcR9fdHfe9nmqU=
+		MOAVDRZVHuFez+2sIkuerhXw61E=
 		</data>
 		<key>MWFullBannerDefaultView.nib</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		CYP+S6oa+NZkOl+Je4BoSfgtjmM=
+		fwoqiPSoG5ZJr2QT8UfFm04cKu4=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cgLAc/h9P5vaN46R3CvalDWsACw=
+		8dGsdi+9D+w5W00w5RsnOKnvMcs=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -134,19 +134,19 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cgLAc/h9P5vaN46R3CvalDWsACw=
+		8dGsdi+9D+w5W00w5RsnOKnvMcs=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7f1oQslrE5V1EBtVroHX4EWv1qM=
+		OAA9ihbkFW43FuyNQC+OJqI6k/Q=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CYP+S6oa+NZkOl+Je4BoSfgtjmM=
+		fwoqiPSoG5ZJr2QT8UfFm04cKu4=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sU58qPmb+fDhGb9xiGdiX1CObDE=
+		tiVfMP6U9SeUsuOH8hyJ1kmNDJg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -154,11 +154,11 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sU58qPmb+fDhGb9xiGdiX1CObDE=
+		tiVfMP6U9SeUsuOH8hyJ1kmNDJg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4fg5SuYvKYqDyK9RaIfz3vVcu/w=
+		JTAAbM8eJegnh/uYG6veWdsHPEY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>mobwith_render.js</key>
 		<data>
-		fC2ZxlaXBGI/GJMBUqBbMxuOUv4=
+		rElXe6axwITNXgOH2N8YpFa6T3A=
 		</data>
 		<key>mobwith_reward_ad_title1.png</key>
 		<data>
@@ -242,7 +242,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			whDP0dl+kgvhjVG54LSOyopVg742C2AA6l9nxqg+r/s=
+			OC2mc8FHJVw51GozN9ybHAZ8TttxzM9oHHotQsNLQ88=
 			</data>
 		</dict>
 		<key>MWFullBannerDefaultView.nib</key>
@@ -431,14 +431,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gCAemSQR/IN3N6pRfnZWRJN0TYj3E7yYm8ZspGW7W08=
+			MOp/oevC09E9OeTLQ8vyssNoHhrMyeJ6X4U0aL+r984=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L6Lti5iEQkNl5iEld34qbatjLSUrrQ9v2eYmZ0xcUZI=
+			SS7Q0u8QkKd7BNlkLkjVurRPNXVTFHej2PDEnkuayv0=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -452,28 +452,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L6Lti5iEQkNl5iEld34qbatjLSUrrQ9v2eYmZ0xcUZI=
+			SS7Q0u8QkKd7BNlkLkjVurRPNXVTFHej2PDEnkuayv0=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E3VhlNt8VGr3gRTZz2R3TIrdVDRwQlplOFBE3spjqlA=
+			Frp4iCl7Wxo5bMo28/tJQ5xF1oq/1fRR0y+YSPk/Bys=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gCAemSQR/IN3N6pRfnZWRJN0TYj3E7yYm8ZspGW7W08=
+			MOp/oevC09E9OeTLQ8vyssNoHhrMyeJ6X4U0aL+r984=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rkdhLRpol0pdsO+tk8Y/c/4ZV6xtGcD23kyDOT+ei0A=
+			8li49XwpJ/YgavQW2KCfc4X97Zx5bWzt/afZniMKN9U=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -487,14 +487,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rkdhLRpol0pdsO+tk8Y/c/4ZV6xtGcD23kyDOT+ei0A=
+			8li49XwpJ/YgavQW2KCfc4X97Zx5bWzt/afZniMKN9U=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/UsyVSQV9JohQh+LVqh138IYbAfg3fdPzO/f3q5Y5X4=
+			7ZI09yaS6zEgBYca3/djFjgN2mH95fHTdREDIxBbPDY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -536,7 +536,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2MFsT31IQe1QnXsUpGQvV+U5XenmiudRLJ4sabnSb18=
+			IZBi98sBoacllXhmUb1qiK7XXGbn9H0h9KeyZ4NZYRQ=
 			</data>
 		</dict>
 		<key>mobwith_reward_ad_title1.png</key>

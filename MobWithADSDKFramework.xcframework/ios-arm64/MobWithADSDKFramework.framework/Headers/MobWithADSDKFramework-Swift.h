@@ -523,6 +523,7 @@ typedef SWIFT_ENUM(NSInteger, MWAdapterType, open) {
   MWAdapterTypeDtExchange = 6,
   MWAdapterTypeAdop = 7,
   MWAdapterTypeCauly = 8,
+  MWAdapterTypeAdpopcorn = 9,
 };
 
 @class NSData;
@@ -552,6 +553,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// SDK 정보를 초기화 한다.
 - (void)initSDK SWIFT_METHOD_FAMILY(none);
 - (void)enableLog:(BOOL)enable;
+- (void)setAdPopcornAppKey:(NSString * _Nonnull)appKey;
 - (void)setLevelPlaySDKAppKey:(NSString * _Nonnull)appKey;
 - (void)setPangleAppIdWithAppId:(NSString * _Nonnull)appId;
 - (void)setDTExchangeAppIDWithAppId:(NSString * _Nonnull)appId;

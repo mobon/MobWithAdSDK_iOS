@@ -51,6 +51,10 @@
      let resizeObserver = null;
      const imageListeners = [];
 
+     // Define lastMeasuredHeight and stableCount for ResizeObserver logic
+     let lastMeasuredHeight = null;
+     let stableCount = 0;
+
      const resizeIframe = function() {
          if (destroyed) {
              return;
@@ -74,6 +78,19 @@
              );
 
              if (height > 0) {
+                 // Track height stability and disconnect observer if stable for 3 consecutive times
+                 if (lastMeasuredHeight === height) {
+                     stableCount++;
+                 } else {
+                     stableCount = 0;
+                     lastMeasuredHeight = height;
+                 }
+
+                 if (stableCount >= 10 && resizeObserver) {
+                     resizeObserver.disconnect();
+                     resizeObserver = null;
+                 }
+
                  iframe.style.height = height + 'px';
              }
          } catch (e) {
@@ -160,6 +177,7 @@
              resizeObserver =
                  new ResizeObserver(
                      function() {
+                         // In the callback, call requestResize and also check for stability here if needed
                          requestResize();
                      }
                  );
@@ -246,3 +264,4 @@
      requestResize();
 
  })();
+
