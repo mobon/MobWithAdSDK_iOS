@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8eOLoeJhq7ehQicjQLo3K8Oesp8=
+		aFPhs9JTu5Zs2LG0b/Qyi5sSdbQ=
 		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hxgPvu6FYcfnqQ3+Az0Q7kyQgZE=
+		i/6VUXp6ycW591p2qyTnsBxWu3o=
 		</data>
 		<key>MWFullBannerDefaultView.nib</key>
 		<data>
@@ -74,43 +74,43 @@
 		</data>
 		<key>MWRewardFullBannerDefaultView.nib</key>
 		<data>
-		t+sBtRVACasDOe6HDvF4/opWbmQ=
+		ttBQFzjxrIRu23Kvt4toYGaQmwQ=
 		</data>
 		<key>MWRewardFullBannerNonProductView.nib</key>
 		<data>
-		540g3Noz+nxvtSzGwOTI1Cy3O+c=
+		b15B4TY4ibQqEReVdL53wEzGaWs=
 		</data>
 		<key>MWRewardFullBannerProductView.nib</key>
 		<data>
-		Z/zhXxNB5WK/HYfW9kJGdqpqqcE=
+		Q7oHkx2ctd2TrRsHOHvsu1xTync=
 		</data>
 		<key>MWRewardFullVideoHFullView.nib</key>
 		<data>
-		z/9er6QuWaUzy8+6Y1XgVWXC7fs=
+		yLVBMHRzDIbRboJ4gKjxNsIB18U=
 		</data>
 		<key>MWRewardFullVideoVFullView.nib</key>
 		<data>
-		PU0fZlML7F8jl6S1rs7L1hXsJL8=
+		49VFQ3nKaMlT+IlHBBhvob6E4x4=
 		</data>
 		<key>MWRewardModalBannerDefaultView.nib</key>
 		<data>
-		6+Bkv+2UixAkgDQYywXVG+QxaC0=
+		3jrn4pyj3YTj7EfShCX1WqLPCdI=
 		</data>
 		<key>MWRewardModalBannerNonProductView.nib</key>
 		<data>
-		6rFTg6XduPYCF+IOL10hZIXxZ8w=
+		0GH1o2QVY0f/gMbF6+vgEhqNVKg=
 		</data>
 		<key>MWRewardModalBannerProductView.nib</key>
 		<data>
-		1XUaXg2SYaz+uWgzgAOYz6utlTQ=
+		CMMchJWQZeBW4/qVZ/FtoREbrX4=
 		</data>
 		<key>MWRewardModalVideoHFullView.nib</key>
 		<data>
-		B4UmnOhD7WuF6YpsUE9s7uKUff4=
+		YertQi/tVryYyEQA2OBnKzRBoyc=
 		</data>
 		<key>MWRewardModalVideoVFullView.nib</key>
 		<data>
-		p2WW000QgXWj3D0tdI0CWJzpLDc=
+		PPaXDei8bTo79JB3840S6aKFlFo=
 		</data>
 		<key>MWSplashVideoType.nib</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fwoqiPSoG5ZJr2QT8UfFm04cKu4=
+		XRI/7mU41TU1FUho8EmOWhN9L6c=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -138,11 +138,11 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OAA9ihbkFW43FuyNQC+OJqI6k/Q=
+		JicvUH+4DIaARycJ0KYC7QpBns4=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fwoqiPSoG5ZJr2QT8UfFm04cKu4=
+		XRI/7mU41TU1FUho8EmOWhN9L6c=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JTAAbM8eJegnh/uYG6veWdsHPEY=
+		iHxpJT/jeDKf1txDUkuTQlTs6R4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -235,7 +235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gf4BqnLf3ji1XymhQ+RLzqgc2ugMXE5C2rnfoB6kIAg=
+			o7SrlO5tkbyJjVnvQQ4amG8VrnpdU/lS4Bo5vzwgzDE=
 			</data>
 		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
@@ -347,70 +347,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HYgvG5ozRB5/ktmexlxTwnm5q9FuXP6PLvIMt8K2qnQ=
+			/Do80gY+afHmAnCOxM5VAlp83nV9jR8KRlXebkdEYqY=
 			</data>
 		</dict>
 		<key>MWRewardFullBannerNonProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jLo8F9MvvDGst+s0gy416SddeFxowV+3lEu399tQIJY=
+			gMrQ7EL6qaIlRRfSfh78zdC5v8DJZ72Nc/4fUMhQSak=
 			</data>
 		</dict>
 		<key>MWRewardFullBannerProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dwjBtz22b0nj8ig9PVCywFEhhDM0iZzyPODLEU6wAvY=
+			1THwh2f0CQKOIGHA0MmHO2HaICu9M8vFAi30F3+s+SY=
 			</data>
 		</dict>
 		<key>MWRewardFullVideoHFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mHVwOxtWzVNvXa/YZbIKtwFXJ5Mf+HO0sfVdi9oEnIY=
+			CdNIIYMp+S7zgtfLvQ08+jkIkAZU4Qj4P+wCMesosT0=
 			</data>
 		</dict>
 		<key>MWRewardFullVideoVFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eoQhyZJ6SoeoUS0I1L0nY5mOm/1Xym5xoFxxKlELZYE=
+			dKy3dcnRaiZrGxo4yet0/k5VHQfvI+MmbMOlHBl10lc=
 			</data>
 		</dict>
 		<key>MWRewardModalBannerDefaultView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Di/mxP7AMbaMcZ4ZRAqrjcUT4n9uTul/bsPz5DLYOfw=
+			rbJYi0jtCfLQTyEJwZFSzZAfAhJ258RuPc5uYtFunxo=
 			</data>
 		</dict>
 		<key>MWRewardModalBannerNonProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FMJr5aLEwJ6PAIZ47fBIL1yE4uDT0YewbNtzSQpsxFc=
+			auUAAcgKgfkqRg+DW/p+XtVMJ1iryjbEi9DBPc2KlYI=
 			</data>
 		</dict>
 		<key>MWRewardModalBannerProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ww1jZDR7hmKiT3Wsqkk0nZ5wXieISIlKz2WMeA1Crqc=
+			NCa+l5rZUw/fp+iOz+5SdtTFbYXm5+ohsab4JL5k8qE=
 			</data>
 		</dict>
 		<key>MWRewardModalVideoHFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bu0WFs0WblTWh7BomEfzebNDWLsBwNW0Alu4SQSfoOc=
+			W5vF9KYbT9T8GR0r3tixfMTZ3gkDUqJ4NcOAhlCJ6Ks=
 			</data>
 		</dict>
 		<key>MWRewardModalVideoVFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rR8PtoHRq+eAP/MST5Ds5MNXJv9FMCClkV1YCmKzHKU=
+			T1go+eNj5FHRoWxcBm3XN1MQeN3Mk1pLJUCqIlkeuhU=
 			</data>
 		</dict>
 		<key>MWSplashVideoType.nib</key>
@@ -431,7 +431,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MOp/oevC09E9OeTLQ8vyssNoHhrMyeJ6X4U0aL+r984=
+			plqoP9x3xHxrPOPI7/qGD154HNccV8iTmdVANfkviNQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -459,14 +459,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Frp4iCl7Wxo5bMo28/tJQ5xF1oq/1fRR0y+YSPk/Bys=
+			BtB3yTDNl4vXEG8yRifGZgqg8/a8eiv+sa8bE6smf3Y=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MOp/oevC09E9OeTLQ8vyssNoHhrMyeJ6X4U0aL+r984=
+			plqoP9x3xHxrPOPI7/qGD154HNccV8iTmdVANfkviNQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -494,7 +494,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ZI09yaS6zEgBYca3/djFjgN2mH95fHTdREDIxBbPDY=
+			mk87fWERctAUisVxqfnyJ4wXEGBryLIQfGdi66wve7M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
