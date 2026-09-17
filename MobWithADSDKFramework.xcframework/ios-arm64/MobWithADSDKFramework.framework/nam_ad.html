@@ -1,0 +1,916 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <script src="https://webapi.adpopcorn.com/ssp/web-sdk/ap-ssp-web-sdk-1.14.1.min.js"></script>
+        <script src="https://sdk.naverads.net/libs/glad/prod/gfp-core.js"></script>
+
+        <script>
+            // ✅ 최우선 - ResizeObserver 경고 완전 차단 (SDK 로드 전에 실행)
+            // ✅ 한 번만 실행 (여러 광고가 있어도 안전)
+            if (!window.__NAM_RESIZE_OBSERVER_PATCHED__) {
+                window.__NAM_RESIZE_OBSERVER_PATCHED__ = true;
+                
+                (function() {
+                    // 에러 이벤트 완전 차단
+                    const blockResizeObserverErrors = (e) => {
+                        if (e && e.message) {
+                            const msg = String(e.message).toLowerCase();
+                            if (msg.includes('resizeobserver') || 
+                                msg.includes('resize observer') ||
+                                msg.includes('undelivered') ||
+                                msg.includes('loop')) {
+                                e.stopImmediatePropagation();
+                                e.stopPropagation();
+                                if (e.preventDefault) e.preventDefault();
+                                return false;
+                            }
+                        }
+                    };
+                    
+                    window.addEventListener('error', blockResizeObserverErrors, true);
+                    window.addEventListener('error', blockResizeObserverErrors, false);
+                    
+                    // ✅ ResizeObserver 자체를 래핑하여 에러 발생 방지
+                    if (window.ResizeObserver && !window.ResizeObserver.__NAM_WRAPPED__) {
+                        const OriginalResizeObserver = window.ResizeObserver;
+                        
+                        window.ResizeObserver = class WrappedResizeObserver extends OriginalResizeObserver {
+                            constructor(callback) {
+                                // ✅ 콜백을 래핑하여 에러 억제
+                                const wrappedCallback = (...args) => {
+                                    try {
+                                        // requestAnimationFrame으로 한 번 더 감싸기
+                                        requestAnimationFrame(() => {
+                                            try {
+                                                callback(...args);
+                                            } catch (e) {
+                                                // 무시
+                                            }
+                                        });
+                                    } catch (e) {
+                                        // 무시
+                                    }
+                                };
+                                super(wrappedCallback);
+                            }
+                        };
+                        
+                        // ✅ 래핑 완료 표시
+                        window.ResizeObserver.__NAM_WRAPPED__ = true;
+                    }
+                    
+                    // ✅ console 메서드도 오버라이드 (한 번만)
+                    if (!console.__NAM_PATCHED__) {
+                        console.__NAM_PATCHED__ = true;
+                        
+                        const originalError = console.error;
+                        const originalWarn = console.warn;
+                        
+                        console.error = function(...args) {
+                            const msg = args.join(' ').toLowerCase();
+                            if (msg.includes('resizeobserver') || 
+                                msg.includes('undelivered') ||
+                                msg.includes('loop limit')) {
+                                return;
+                            }
+                            originalError.apply(console, args);
+                        };
+                        
+                        console.warn = function(...args) {
+                            const msg = args.join(' ').toLowerCase();
+                            if (msg.includes('resizeobserver') || 
+                                msg.includes('undelivered') ||
+                                msg.includes('loop limit')) {
+                                return;
+                            }
+                            originalWarn.apply(console, args);
+                        };
+                    }
+                })();
+            }
+        </script>
+
+        <script>
+            window.__NAM_CONFIG__ = {
+                appKey: "{{NAM_APP_KEY}}",
+                placementId: "{{PLACEMENT_ID}}",
+                namPlacementId: "{{NAM_PLACEMENT_ID}}",
+                zoneId: "{{ZONE_ID}}",
+                zoneType: "{{ZONE_TYPE}}",
+                bridgeName: "{{BRIDGE_NAME}}",
+                platform: "{{PLATFORM}}",                // iOS / Android
+                width: "{{AD_WIDTH}}",
+                height: "{{AD_HEIGHT}}",
+                idfa: "{{IDFA}}",
+                // ✅ Swift에서 전달받은 추가 정보 (exlItlInfo 생성용)
+                sessionId: "{{SESSION_ID}}",
+                advrtsPrdtCode: "{{ADVRTS_PRDT_CODE}}",
+                sortlist: "{{SORTLIST}}",
+                unitId: "{{UNIT_ID}}"
+            };
+            
+            // ✅ 사이즈 처리 로직
+            const width = parseInt(window.__NAM_CONFIG__.width);
+            const height = parseInt(window.__NAM_CONFIG__.height);
+            
+            // 100 이하면 비율로 간주 (반응형)
+            const isResponsive = width < 100 || height < 50;
+            
+            // ✅ 검증 (실패해도 계속 진행)
+            if (!window.__NAM_CONFIG__.appKey) {
+                console.warn("[NAM] Warning: NAM_APP_KEY might not be properly set");
+            }
+            if (!window.__NAM_CONFIG__.placementId) {
+                console.warn("[NAM] Warning: PLACEMENT_ID might not be properly set");
+            }
+        </script>
+        
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            
+            /* ✅ html을 flex 컨테이너로 만들어서 body를 중앙 정렬 */
+            html {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                min-height: 100vh;
+            }
+            
+            /* 둘 다 고정 */
+            body.fixed-size {
+                width: var(--ad-width);
+                height: var(--ad-height);
+            }
+            
+            /* 둘 다 반응형 (비율 유지) */
+            body.responsive-size {
+                width: 100%;
+                aspect-ratio: var(--ad-ratio);
+            }
+            
+            /* 가로만 반응형, 세로 고정 (예: 32 x 50 → 100% x 50px) */
+            body.responsive-width {
+                width: 100%;
+                height: var(--ad-height);
+            }
+            
+            /* 세로만 반응형, 가로 고정 (예: 320 x 5 → 320px x ?) */
+            /* ⚠️ 세로만 가변은 CSS만으로 불가능 → aspect-ratio 사용 */
+            body.responsive-height {
+                width: var(--ad-width);
+                aspect-ratio: var(--ad-ratio);
+            }
+            
+            /* ✅ viewport 기반 너비 제어 + 중앙 정렬 */
+            @media (max-width: 499px) {
+                body.fixed-size,
+                body.responsive-height,
+                body.responsive-width,
+                body.responsive-size {
+                    width: 100% !important;
+                }
+            }
+            
+            @media (min-width: 500px) {
+                body.fixed-size,
+                body.responsive-height,
+                body.responsive-width,
+                body.responsive-size {
+                    width: 350px !important;
+                    /* 350px일 때는 중앙 정렬됨 (html의 justify-content: center) */
+                }
+            }
+            
+            #nam-ad-container {
+                width: 100%;
+                height: auto;
+                min-height: 50px; /* 최소 높이 설정 */
+            }
+        </style>
+
+        
+        <script>
+            // ✅ CSS 변수 설정
+            function applyAdSize(width, height) {
+                const isWidthResponsive = width < 100;
+                const isHeightResponsive = height < 50;
+
+                if (isWidthResponsive && isHeightResponsive) {
+                    // 둘 다 비율 (예: 32 x 5)
+                    document.documentElement.style.setProperty('--ad-ratio', `${width} / ${height}`);
+                    document.body.classList.add('responsive-size');
+                    console.log("[NAM] Mode: Both responsive (aspect-ratio)");
+                    
+                } else if (isWidthResponsive && !isHeightResponsive) {
+                    // 가로만 비율, 세로 고정 (예: 32 x 50 → 100% x 50px)
+                    document.documentElement.style.setProperty('--ad-height', `${height}px`);
+                    document.body.classList.add('responsive-width');
+                    console.log("[NAM] Mode: Width responsive, height fixed");
+                    
+                } else if (!isWidthResponsive && isHeightResponsive) {
+                    // 세로만 비율, 가로 고정 (예: 320 x 5 → 320px x auto)
+                    document.documentElement.style.setProperty('--ad-width', `${width}px`);
+                    document.documentElement.style.setProperty('--ad-ratio', `${width} / ${height}`);
+                    document.body.classList.add('responsive-height');
+                    console.log("[NAM] Mode: Height responsive, width fixed");
+                    
+                } else {
+                    // 둘 다 고정 (예: 320 x 50)
+                    document.documentElement.style.setProperty('--ad-width', `${width}px`);
+                    document.documentElement.style.setProperty('--ad-height', `${height}px`);
+                    document.body.classList.add('fixed-size');
+                    console.log("[NAM] Mode: Both fixed");
+                }
+            }
+            
+            if (document.body) {
+                applyAdSize(width, height);
+            }
+            else {
+                document.addEventListener("DOMContentLoaded", () => {
+                    applyAdSize(width, height);
+                }, { once: true });
+            }
+
+            // ✅ viewport 크기 변경 감지 (디바이스 회전, 브라우저 리사이즈 등)
+            let resizeTimeout = null;
+            let lastViewportWidth = window.innerWidth;
+            
+            window.addEventListener("resize", () => {
+                // 디바운싱: 연속된 resize 이벤트를 100ms 후에 한 번만 처리
+                if (resizeTimeout) clearTimeout(resizeTimeout);
+                
+                resizeTimeout = setTimeout(() => {
+                    const viewportWidth = window.innerWidth;
+                    
+                    // 가로 사이즈가 실제로 변경되었을 때만 처리
+                    if (viewportWidth !== lastViewportWidth) {
+                        console.log("[NAM] Viewport width changed:", lastViewportWidth, "→", viewportWidth);
+                        lastViewportWidth = viewportWidth;
+                        
+                        // ✅ 높이 재측정 요청 (나중에 iframe 관찰 코드에서 처리)
+                        window.dispatchEvent(new CustomEvent('nam-recalculate-height'));
+                    }
+                }, 100);
+            });
+
+        </script>
+        
+
+        <script>
+            window.AdPopcornSSPWebSDK = window.AdPopcornSSPWebSDK || { cmd: [] };
+            AdPopcornSSPWebSDK.cmd.push(() => {
+                AdPopcornSSPWebSDK.init({
+                    app_key: window.__NAM_CONFIG__.appKey,
+                    placement_id: window.__NAM_CONFIG__.placementId
+                });
+                
+                if (window.__NAM_CONFIG__.idfa &&
+                    window.__NAM_CONFIG__.idfa.trim() !== "") {
+                    
+                    if (window.__NAM_CONFIG__.platform === "iOS") {
+                        AdPopcornSSPWebSDK.setConfig({
+                            idfa: window.__NAM_CONFIG__.idfa
+                        });
+                    }
+                    else {
+                        AdPopcornSSPWebSDK.setConfig({
+                            adid: window.__NAM_CONFIG__.idfa
+                        });
+                    }
+                }
+            });
+        </script>
+    </head>
+
+    
+    <body style="background-color: transparent;">
+        <div id="nam-ad-container" style="background-color: transparent;"></div>
+        
+        <script>
+            const elementId = "nam-ad-container";
+            const config = window.__NAM_CONFIG__;
+            
+            let adLoadFinalized = false;
+            let timeoutId = null;
+
+            const AdManager = (() => {
+                function send(type, additionalDetail = {}, forceAllowClick = false) {
+                    if (adLoadFinalized && !forceAllowClick) {
+                        console.log("[NAM] Message ignored (load already finalized):", type);
+                        return;
+                    }
+
+                    let bridge = null;
+
+                    if (config.platform === "iOS") {
+                        bridge = window.webkit?.messageHandlers?.[config.bridgeName];
+                    } else if (config.platform === "Android") {
+                        bridge = window[config.bridgeName];
+                    }
+
+                    if (!bridge) {
+                        console.log("[NAM] Bridge not available for platform:", config.platform);
+                        return;
+                    }
+
+                    const message = JSON.stringify({
+                        type: type,
+                        detail: {
+                            zone: config.zoneId,
+                            zone_type: config.zoneType,
+                            ...additionalDetail
+                        }
+                    });
+
+                    bridge.postMessage(message);
+                    console.log("[NAM] Message sent:", message);
+                    
+                    if (!forceAllowClick) {
+                        adLoadFinalized = true;
+                        
+                        if (timeoutId) {
+                            clearTimeout(timeoutId);
+                            timeoutId = null;
+                        }
+                    }
+                }
+
+                return {
+                    clicked(landingURL) {
+                        send("click", { source: "nam_fallback", landingURL}, true);
+                    },
+                    noAd(source, extraData = {}) {
+                        send("noad", { 
+                            source,
+                            ...extraData
+                        });
+                    },
+                    adLoaded(extraData = {}) {
+                        send("adLoaded", { 
+                            source: "nam_fallback",
+                            ...extraData
+                        }, false);
+                        
+                        adLoadFinalized = true;
+                        
+                        if (timeoutId) {
+                            clearTimeout(timeoutId);
+                            timeoutId = null;
+                        }
+                    }
+                };
+            })();
+            
+        </script>
+
+        <script>
+            (function () {
+                const container = document.getElementById(elementId);
+                if (!container) return;
+
+                let observedIframe = null;
+                let resizeObserver = null;
+                let mutationObserver = null;
+                let containerObserver = null;
+                let viewportResizeHandler = null;
+                let lastMeasuredHeight = 0;
+                let stableCount = 0;
+                const STABLE_THRESHOLD = 10;
+                let isDestroyed = false;
+                let observersActive = true;  // ✅ observer 활성 상태 추적
+                
+                // ✅ 네이티브에서 강제 종료 플래그 설정 가능
+                const bodyElement = document.body;
+                if (bodyElement) {
+                    bodyElement.__namDestroyed = false;
+                }
+
+                function applyAdHeight(px) {
+                    // ✅ 즉시 체크
+                    if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                        console.log("[NAM] applyAdHeight skipped (destroyed)");
+                        return;
+                    }
+                    if (!px || px <= 0) return;
+                    if (!document.contains(container)) {
+                        console.log("[NAM] applyAdHeight skipped (container not in DOM)");
+                        return;
+                    }
+
+                    console.log("[NAM] Setting ad height to:", px + "px");
+                    
+                    // ✅ try-catch로 감싸서 DOM 조작 실패 시에도 안전
+                    try {
+                        // ✅ container는 auto로 두고, body만 고정
+                        document.body.style.setProperty("height", px + "px", "important");
+                    } catch (e) {
+                        console.log("[NAM] applyAdHeight error:", e);
+                    }
+                }
+
+                function teardown() {
+                    console.log("[NAM] Teardown called");
+                    
+                    // ✅ 1. 먼저 플래그 설정
+                    isDestroyed = true;
+                    if (bodyElement) {
+                        bodyElement.__namDestroyed = true;
+                    }
+                    
+                    // ✅ 2. 즉시 disconnect (지연 없이)
+                    if (resizeObserver) {
+                        console.log("[NAM] Disconnecting ResizeObserver");
+                        try {
+                            resizeObserver.disconnect();
+                        } catch (e) {
+                            console.log("[NAM] ResizeObserver disconnect error:", e);
+                        }
+                        resizeObserver = null;
+                    }
+                    if (mutationObserver) {
+                        console.log("[NAM] Disconnecting MutationObserver");
+                        try {
+                            mutationObserver.disconnect();
+                        } catch (e) {
+                            console.log("[NAM] MutationObserver disconnect error:", e);
+                        }
+                        mutationObserver = null;
+                    }
+                    if (containerObserver) {
+                        console.log("[NAM] Disconnecting ContainerObserver");
+                        try {
+                            containerObserver.disconnect();
+                        } catch (e) {
+                            console.log("[NAM] ContainerObserver disconnect error:", e);
+                        }
+                        containerObserver = null;
+                    }
+                    if (viewportResizeHandler) {
+                        console.log("[NAM] Removing viewport resize handler");
+                        window.removeEventListener('nam-recalculate-height', viewportResizeHandler);
+                        viewportResizeHandler = null;
+                    }
+                    observedIframe = null;
+                    stableCount = 0;
+                    lastMeasuredHeight = 0;
+                    console.log("[NAM] Teardown completed");
+                }
+                
+                // ✅ Observer 비활성화 함수 (높이 안정화 시)
+                const deactivateObservers = function() {
+                    if (!observersActive) return;
+                    
+                    console.log('[NAM] Deactivating observers (height stabilized)');
+                    observersActive = false;
+                    
+                    if (mutationObserver) {
+                        try {
+                            mutationObserver.disconnect();
+                        } catch (e) {
+                            console.log('[NAM] MutationObserver disconnect error:', e);
+                        }
+                        mutationObserver = null;
+                    }
+                    
+                    if (resizeObserver) {
+                        try {
+                            resizeObserver.disconnect();
+                        } catch (e) {
+                            console.log('[NAM] ResizeObserver disconnect error:', e);
+                        }
+                        resizeObserver = null;
+                    }
+                };
+                
+                // ✅ Observer 재활성화 함수 (viewport 변경 시)
+                const reactivateObservers = function() {
+                    if (observersActive || isDestroyed || (bodyElement && bodyElement.__namDestroyed)) return;
+                    if (!observedIframe) return;
+                    
+                    console.log('[NAM] Reactivating observers (viewport changed)');
+                    observersActive = true;
+                    stableCount = 0;
+                    lastMeasuredHeight = 0;
+                    
+                    // ResizeObserver 재시작
+                    if (!resizeObserver) {
+                        let rafId = null;
+                        let lastProcessedHeight = 0;
+
+                        resizeObserver = new ResizeObserver((entries) => {
+                            if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                                console.log("[NAM] ResizeObserver callback skipped (destroyed)");
+                                return;
+                            }
+                            if (!observersActive) return;
+                            
+                            if (rafId !== null) {
+                                cancelAnimationFrame(rafId);
+                            }
+                            
+                            rafId = requestAnimationFrame(() => {
+                                rafId = null;
+                                
+                                if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                                    return;
+                                }
+                                if (!observersActive) return;
+                                
+                                for (const entry of entries) {
+                                    const contentRectHeight = Math.round(entry.contentRect.height);
+                                    const offsetHeight = observedIframe.offsetHeight;
+                                    let height = contentRectHeight || offsetHeight;
+                                    
+                                    if (height <= 0) continue;
+                                    if (height === lastProcessedHeight) continue;
+                                    
+                                    lastProcessedHeight = height;
+                                    applyAdHeight(height);
+                                    
+                                    if (lastMeasuredHeight === height) {
+                                        stableCount++;
+                                    } else {
+                                        stableCount = 0;
+                                        lastMeasuredHeight = height;
+                                    }
+
+                                    if (stableCount >= STABLE_THRESHOLD && observersActive) {
+                                        console.log("[NAM] Height stabilized - deactivating observers");
+                                        deactivateObservers();
+                                    }
+                                }
+                            });
+                        });
+                        resizeObserver.observe(observedIframe);
+                    }
+                    
+                    // MutationObserver 재시작
+                    if (!mutationObserver) {
+                        mutationObserver = new MutationObserver(() => {
+                            if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                                return;
+                            }
+                            if (!observersActive) return;
+                            findAndObserveIframe();
+                        });
+                        mutationObserver.observe(container, { childList: true, subtree: true });
+                    }
+                };
+                
+                // ✅ 현재 iframe의 높이를 다시 측정하는 함수
+                function remeasureHeight() {
+                    if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                        console.log("[NAM] remeasureHeight skipped (destroyed)");
+                        return;
+                    }
+                    if (!observedIframe) return;
+                    
+                    console.log("[NAM] Remeasuring height due to viewport change...");
+                    
+                    // ✅ Observer 재활성화 (높이 재측정 필요)
+                    reactivateObservers();
+                    
+                    // 약간의 지연 후 측정 (CSS transition 완료 대기)
+                    setTimeout(() => {
+                        if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) return;
+                        if (!observedIframe) return;
+                        const currentHeight = observedIframe.offsetHeight;
+                        if (currentHeight > 0) {
+                            console.log("[NAM] New height after viewport change:", currentHeight + "px");
+                            applyAdHeight(currentHeight);
+                        }
+                    }, 150);
+                }
+
+                function observeIframe(iframe) {
+                    if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                        console.log("[NAM] observeIframe skipped (destroyed)");
+                        return;
+                    }
+                    if (observedIframe === iframe && resizeObserver) return;
+                    
+                    if (resizeObserver) {
+                        try {
+                            resizeObserver.disconnect();
+                        } catch (e) {
+                            console.log("[NAM] ResizeObserver disconnect error in observeIframe:", e);
+                        }
+                        resizeObserver = null;
+                    }
+                    
+                    observedIframe = iframe;
+                    
+                    let rafId = null;
+                    let lastProcessedHeight = 0;
+
+                    resizeObserver = new ResizeObserver((entries) => {
+                        // ✅ 즉시 체크 (큐에서 꺼내자마자)
+                        if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                            console.log("[NAM] ResizeObserver callback skipped (destroyed)");
+                            return;
+                        }
+                        if (!observersActive) return;  // ✅ 비활성화되면 스킵
+                        
+                        // ✅ throttling
+                        if (rafId !== null) {
+                            cancelAnimationFrame(rafId);
+                        }
+                        
+                        // ✅ requestAnimationFrame으로 DOM 변경 지연 (루프 경고 방지)
+                        rafId = requestAnimationFrame(() => {
+                            rafId = null;
+                            
+                            // ✅ 다시 한 번 체크
+                            if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                                console.log("[NAM] ResizeObserver RAF skipped (destroyed)");
+                                return;
+                            }
+                            if (!observersActive) return;
+                            
+                            for (const entry of entries) {
+                                // ✅ 여러 방법으로 높이 측정 시도
+                                const borderBoxHeight = Math.round(entry.borderBoxSize?.[0]?.blockSize || 0);
+                                const contentBoxHeight = Math.round(entry.contentBoxSize?.[0]?.blockSize || 0);
+                                const contentRectHeight = Math.round(entry.contentRect.height);
+                                const offsetHeight = iframe.offsetHeight;
+                                const clientHeight = iframe.clientHeight;
+                                
+                                console.log("[NAM] Height measurements:", {
+                                    borderBox: borderBoxHeight,
+                                    contentBox: contentBoxHeight,
+                                    contentRect: contentRectHeight,
+                                    offset: offsetHeight,
+                                    client: clientHeight
+                                });
+                                
+                                // contentRect.height를 우선 사용 (가장 정확)
+                                let height = contentRectHeight || borderBoxHeight || contentBoxHeight || offsetHeight || clientHeight;
+                                
+                                if (height <= 0) continue;
+                                
+                                // ✅ 이전과 같은 높이면 스킵
+                                if (height === lastProcessedHeight) {
+                                    continue;
+                                }
+                                
+                                lastProcessedHeight = height;
+                                applyAdHeight(height);
+                                
+                                if (lastMeasuredHeight === height) {
+                                    stableCount++;
+                                } else {
+                                    stableCount = 0;
+                                    lastMeasuredHeight = height;
+                                }
+
+                                // ✅ 안정화되면 observer 비활성화 (기존 방식)
+                                if (stableCount >= STABLE_THRESHOLD && observersActive) {
+                                    console.log("[NAM] Height stabilized at:", height + "px - deactivating observers");
+                                    deactivateObservers();
+                                }
+                            }
+                        });
+                    });
+                    resizeObserver.observe(iframe);
+                    
+                    // ✅ iframe을 찾았으면 MutationObserver 정리
+                    if (mutationObserver) {
+                        mutationObserver.disconnect();
+                        mutationObserver = null;
+                        console.log("[NAM] MutationObserver stopped (iframe found)");
+                    }
+                    
+                    if (iframe.offsetHeight > 0) {
+                        applyAdHeight(iframe.offsetHeight);
+                    }
+                }
+
+                function findAndObserveIframe() {
+                    if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                        console.log("[NAM] findAndObserveIframe skipped (destroyed)");
+                        return false;
+                    }
+                    
+                    const iframe = container.querySelector("iframe");
+                    if (iframe) {
+                        observeIframe(iframe);
+                        return true;
+                    }
+                    
+                    if (observedIframe && !document.contains(observedIframe)) {
+                        console.log("[NAM] Observed iframe removed from DOM");
+                        teardown();
+                    }
+                    return false;
+                }
+
+                findAndObserveIframe();
+
+                mutationObserver = new MutationObserver(() => {
+                    if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                        console.log("[NAM] MutationObserver callback skipped (destroyed)");
+                        return;
+                    }
+                    if (!observersActive) return;  // ✅ 비활성화되면 스킵
+                    findAndObserveIframe();
+                });
+                mutationObserver.observe(container, { childList: true, subtree: true });
+                
+                // ✅ viewport 변경 시 높이 재측정 이벤트 리스너
+                viewportResizeHandler = () => {
+                    if (isDestroyed || (bodyElement && bodyElement.__namDestroyed)) {
+                        console.log("[NAM] Viewport resize handler skipped (destroyed)");
+                        return;
+                    }
+                    remeasureHeight();
+                };
+                window.addEventListener('nam-recalculate-height', viewportResizeHandler);
+                
+                window.addEventListener("pagehide", () => {
+                    teardown();
+                });
+                
+                // ✅ 전역에 노출 (네이티브에서 직접 호출 가능)
+                window.teardown = teardown;
+                
+                // ✅ container가 DOM에서 제거되는지 감지 (clearAd 대응)
+                containerObserver = new MutationObserver((mutations) => {
+                    for (const mutation of mutations) {
+                        for (const removedNode of mutation.removedNodes) {
+                            if (removedNode === container || removedNode.contains?.(container)) {
+                                console.log("[NAM] Container removed from DOM, cleaning up...");
+                                teardown();
+                                containerObserver.disconnect();
+                                return;
+                            }
+                        }
+                    }
+                });
+                
+                if (container.parentElement) {
+                    containerObserver.observe(container.parentElement, { childList: true, subtree: true });
+                }
+            })();
+        </script>
+        
+        <script>
+            const loadNAMAd = () => {
+                window.gladsdk = window.gladsdk || { cmd: [] };
+
+                window.gladsdk.cmd.push(function () {
+                    var adSlotInfo = {
+                        adUnitId: window.__NAM_CONFIG__.namPlacementId,
+                        adSlotElementId: elementId
+                    };
+                    
+                    let adState = {
+                        loaded: false,
+                        error: false,
+                        empty: false,
+                        finalized: false
+                    };
+                    
+                    window.gladsdk.addEventListener(window.gladsdk.event.AD_LOADED, function (ad) {
+                        var adSlot = ad.slot;
+                        var adUnitId = adSlot.getAdUnitId();
+                        console.log("[NAM] AD_LOADED:", adUnitId);
+                        
+                        adState.loaded = true;
+                        
+                        // ✅ ERROR/EMPTY가 이미 왔으면 무시
+                        if (adState.error || adState.empty) {
+                            console.log("[NAM] ERROR/EMPTY already received, ignoring LOADED");
+                            return;
+                        }
+                        
+                        // ✅ 200ms 대기 후 ERROR/EMPTY 체크
+                        setTimeout(function() {
+                            if (adState.finalized) return;
+                            
+                            if (adState.error || adState.empty) {
+                                adState.finalized = true;
+                                console.log("[NAM] ❌ ERROR/EMPTY came after LOADED");
+                                
+                                // ✅ exlItlInfo 생성
+                                var exlItlInfo = [];
+                                if (window.__NAM_CONFIG__.unitId) {
+                                    exlItlInfo.push({
+                                        sortlist: window.__NAM_CONFIG__.sortlist || "",
+                                        unitId: window.__NAM_CONFIG__.unitId,
+                                        exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                    });
+                                }
+                                
+                                AdManager.noAd("nam_fallback_no_ad", {
+                                    sessionId: window.__NAM_CONFIG__.sessionId || "",
+                                    advrtsPrdtCode: window.__NAM_CONFIG__.advrtsPrdtCode || "01",
+                                    zone: window.__NAM_CONFIG__.zoneId,
+                                    zone_type: window.__NAM_CONFIG__.zoneType,
+                                    width: parseInt(window.__NAM_CONFIG__.width),
+                                    height: parseInt(window.__NAM_CONFIG__.height),
+                                    exlItlInfo: exlItlInfo
+                                });
+                            } else {
+                                adState.finalized = true;
+                                console.log("[NAM] ✅ Ad loaded successfully");
+                                var exlItlInfo = [];
+                                if (window.__NAM_CONFIG__.unitId) {
+                                    exlItlInfo.push({
+                                        sortlist: window.__NAM_CONFIG__.sortlist || "",
+                                        unitId: window.__NAM_CONFIG__.unitId,
+                                        exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                    });
+                                }
+                                
+                                AdManager.adLoaded({
+                                    zone: window.__NAM_CONFIG__.zoneId,
+                                    zone_type: window.__NAM_CONFIG__.zoneType,
+                                    exlItlInfo: exlItlInfo
+                                });
+                            }
+                        }, 200);
+                    });
+                    
+                    window.gladsdk.addEventListener(window.gladsdk.event.ERROR, function (ad, error) {
+                        console.log("[NAM] ERROR event");
+                        console.log("[NAM] ERROR detail:", error);
+                        
+                        adState.error = true;
+                        
+                        if (!adState.finalized) {
+                            adState.finalized = true;
+                            
+                            // ✅ exlItlInfo 생성
+                            var exlItlInfo = [];
+                            if (window.__NAM_CONFIG__.unitId) {
+                                exlItlInfo.push({
+                                    sortlist: window.__NAM_CONFIG__.sortlist || "",
+                                    unitId: window.__NAM_CONFIG__.unitId,
+                                    exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                });
+                            }
+                            
+                            AdManager.noAd("nam_fallback_no_ad", {
+                                sessionId: window.__NAM_CONFIG__.sessionId || "",
+                                advrtsPrdtCode: window.__NAM_CONFIG__.advrtsPrdtCode || "01",
+                                zone: window.__NAM_CONFIG__.zoneId,
+                                zone_type: window.__NAM_CONFIG__.zoneType,
+                                width: parseInt(window.__NAM_CONFIG__.width),
+                                height: parseInt(window.__NAM_CONFIG__.height),
+                                exlItlInfo: exlItlInfo
+                            });
+                        }
+                    });
+                    
+                    window.gladsdk.addEventListener(window.gladsdk.event.EMPTY, function (ad, error) {
+                        console.log("[NAM] EMPTY event");
+                        console.log("[NAM] EMPTY detail:", error);
+                        
+                        adState.empty = true;
+                        
+                        if (!adState.finalized) {
+                            adState.finalized = true;
+                            
+                            // ✅ exlItlInfo 생성
+                            var exlItlInfo = [];
+                            if (window.__NAM_CONFIG__.placementId) {
+                                exlItlInfo.push({
+                                    sortlist: window.__NAM_CONFIG__.sortlist || "",
+                                    unitId: window.__NAM_CONFIG__.placementId,
+                                    exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                });
+                            }
+                            
+                            AdManager.noAd("nam_fallback_no_ad_empty", {
+                                sessionId: window.__NAM_CONFIG__.sessionId || "",
+                                advrtsPrdtCode: window.__NAM_CONFIG__.advrtsPrdtCode || "01",
+                                zone: window.__NAM_CONFIG__.zoneId,
+                                zone_type: window.__NAM_CONFIG__.zoneType,
+                                width: parseInt(window.__NAM_CONFIG__.width),
+                                height: parseInt(window.__NAM_CONFIG__.height),
+                                exlItlInfo: exlItlInfo
+                            });
+                        }
+                    });
+
+                    var adSlot = window.gladsdk.defineAdSlot(adSlotInfo);
+                    adSlot.setClickHandler(function (curl, furl, extra) {
+                        console.log("[NAM] AD_CLICKED");
+                        AdManager.clicked(curl);
+                    });
+                    window.gladsdk.displayAd(adSlot);
+                });
+            }
+            
+            loadNAMAd();
+        </script>
+
+    </body>
+</html>

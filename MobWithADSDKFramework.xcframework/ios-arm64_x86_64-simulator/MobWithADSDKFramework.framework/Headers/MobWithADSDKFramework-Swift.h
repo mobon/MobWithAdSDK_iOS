@@ -465,7 +465,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
 SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMSplashAd")
 @interface MMSplashAd : NSObject
 @property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
-@property (nonatomic) BOOL useFullScreenAd;
 @property (nonatomic) NSInteger timeOutSec;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -553,6 +552,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// SDK 정보를 초기화 한다.
 - (void)initSDK SWIFT_METHOD_FAMILY(none);
 - (void)enableLog:(BOOL)enable;
+- (void)enableDebugMode:(BOOL)enable;
 - (void)setAdPopcornAppKey:(NSString * _Nonnull)appKey;
 - (void)setLevelPlaySDKAppKey:(NSString * _Nonnull)appKey;
 - (void)setPangleAppIdWithAppId:(NSString * _Nonnull)appId;
@@ -1202,7 +1202,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
 SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMSplashAd")
 @interface MMSplashAd : NSObject
 @property (nonatomic, weak) id <MMSplashAdDelegate> _Nullable delegate;
-@property (nonatomic) BOOL useFullScreenAd;
 @property (nonatomic) NSInteger timeOutSec;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1290,6 +1289,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// SDK 정보를 초기화 한다.
 - (void)initSDK SWIFT_METHOD_FAMILY(none);
 - (void)enableLog:(BOOL)enable;
+- (void)enableDebugMode:(BOOL)enable;
 - (void)setAdPopcornAppKey:(NSString * _Nonnull)appKey;
 - (void)setLevelPlaySDKAppKey:(NSString * _Nonnull)appKey;
 - (void)setPangleAppIdWithAppId:(NSString * _Nonnull)appId;

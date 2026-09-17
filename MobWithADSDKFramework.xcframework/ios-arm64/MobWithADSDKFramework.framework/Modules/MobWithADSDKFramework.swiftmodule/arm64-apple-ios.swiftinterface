@@ -928,7 +928,6 @@ extension MobWithADSDKFramework.VastPricing : Swift.Equatable {
 }
 @objc public class MMSplashAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any MobWithADSDKFramework.MMSplashAdDelegate)?
-  @objc public var useFullScreenAd: Swift.Bool
   @objc public var timeOutSec: Swift.Int
   public init(viewController: UIKit.UIViewController, unitId: Swift.String)
   public func loadAd()
@@ -1097,6 +1096,7 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   }
   @objc public func initSDK()
   @objc public func enableLog(_ enable: Swift.Bool)
+  @objc public func enableDebugMode(_ enable: Swift.Bool)
   @objc public func setAdPopcornAppKey(_ appKey: Swift.String)
   @objc public func setLevelPlaySDKAppKey(_ appKey: Swift.String)
   @objc public func setPangleAppId(appId: Swift.String)
