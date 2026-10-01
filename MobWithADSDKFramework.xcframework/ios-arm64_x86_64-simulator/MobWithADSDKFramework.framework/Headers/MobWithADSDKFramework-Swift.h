@@ -573,6 +573,8 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 - (void)mobWithAdViewDidFailToReceiveAd;
 /// 닫기 버튼 사용시 구현 - 닫기 버튼 클릭시 전달
 - (void)mobWithAdViewClose:(MobWithAdView * _Nullable)banner;
+- (void)mobWithAdViewCanReward:(MobWithAdView * _Nullable)banner;
+- (void)mobWithNativeAdViewCanReward:(MMNativeAdView * _Nullable)nativeAdView;
 @end
 
 @class UIWindow;
@@ -1310,6 +1312,8 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 - (void)mobWithAdViewDidFailToReceiveAd;
 /// 닫기 버튼 사용시 구현 - 닫기 버튼 클릭시 전달
 - (void)mobWithAdViewClose:(MobWithAdView * _Nullable)banner;
+- (void)mobWithAdViewCanReward:(MobWithAdView * _Nullable)banner;
+- (void)mobWithNativeAdViewCanReward:(MMNativeAdView * _Nullable)nativeAdView;
 @end
 
 @class UIWindow;
