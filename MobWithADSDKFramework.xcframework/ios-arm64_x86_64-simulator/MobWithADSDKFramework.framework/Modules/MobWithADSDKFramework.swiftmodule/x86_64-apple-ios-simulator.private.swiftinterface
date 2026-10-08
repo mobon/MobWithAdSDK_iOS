@@ -6,12 +6,10 @@ import AVFoundation
 import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
-import DeveloperToolsSupport
 import Foundation
 import OSLog
 import StoreKit
 import Swift
-import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
@@ -1270,22 +1268,6 @@ extension UIKit.UIView {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func showDHToast(message: Swift.String, showIcon: Swift.Bool = false, bottomOffset: CoreFoundation.CGFloat = 20.0, _ callback: (() -> Swift.Void)? = nil)
   #endif
-}
-extension Swift.String {
-  public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String
-  public var dictionary: Swift.Dictionary<Swift.String, Any> {
-    get
-    set
-  }
-  public func height(withConstrainedWidth width: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
-  public func width(withConstrainedHeight height: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func image(width: CoreFoundation.CGFloat = 40, height: CoreFoundation.CGFloat = 40) -> UIKit.UIImage?
-  #endif
-  public func toFormattedCurrency() -> Swift.String
-  public func isValidPCode() -> Swift.Bool
-  public func urlQueryEncoded() -> Swift.String
-  public func strictQueryEncode(_ value: Swift.String) -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers public class MobWithRewardAd : ObjectiveC.NSObject {
   @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithRewardAdDelegate)?

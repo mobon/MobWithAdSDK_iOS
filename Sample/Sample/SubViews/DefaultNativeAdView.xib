@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="365" height="347"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qr-4z-srE" customClass="BIDMADNativeAdView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qr-4z-srE">
                     <rect key="frame" x="0.0" y="0.0" width="365" height="347"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-P6-0NK">
@@ -88,11 +88,6 @@
                         <constraint firstItem="zw3-Ts-QR1" firstAttribute="leading" secondItem="7Qr-4z-srE" secondAttribute="leading" id="w8i-8k-r7A"/>
                         <constraint firstItem="6YU-wv-KmR" firstAttribute="height" secondItem="tt4-3f-9H0" secondAttribute="height" id="zgv-Jo-w4Q"/>
                     </constraints>
-                    <connections>
-                        <outlet property="bodyViewCustom" destination="6YU-wv-KmR" id="ADV-VW-CT2"/>
-                        <outlet property="headlineViewCustom" destination="tt4-3f-9H0" id="ADV-VW-CT4"/>
-                        <outlet property="mediaViewCustom" destination="cl1-P6-0NK" id="ADV-VW-CT6"/>
-                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="U0y-80-SvI"/>

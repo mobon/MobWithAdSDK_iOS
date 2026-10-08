@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		uHNu9TFjxWNyChzHqQJz4t4f6Gg=
+		2vDRff68ZlMBCFVbUUaJnPkHMG8=
 		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/+BuMHpTxyt84OP5NjkAoMFvn7Y=
+		+0cVXAjbTaDxINO5hxtmrtqWnrE=
 		</data>
 		<key>MWFullBannerDefaultView.nib</key>
 		<data>
-		ZoaqasPpH/TLV2h+QAKPUjXb37A=
+		/zmvT/xHSy3a3Cg681mk93f/MGM=
 		</data>
 		<key>MWFullBannerNonProductView.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>MWFullVideoHTextView.nib</key>
 		<data>
-		VC4f4jD+wL9HY7bxtFRghtM6/q4=
+		sq4rrVdMkQVVdCV4O25Ztvf/jHU=
 		</data>
 		<key>MWFullVideoVFullView.nib</key>
 		<data>
@@ -42,23 +42,23 @@
 		</data>
 		<key>MWFullVideoVTextView.nib</key>
 		<data>
-		fWGJ3H7XJzdGz9zC7i+zDGvJqJE=
+		7f20zDALqxviCJDKySZ6qnmssX4=
 		</data>
 		<key>MWModalBannerDefaultView.nib</key>
 		<data>
-		HqDrEFpmHCpkUguZQkSElTcN+lE=
+		VEB5NoJphKquPfsNM99Yz8ffCz4=
 		</data>
 		<key>MWModalBannerNonProductView.nib</key>
 		<data>
-		JmP1Bj04k1WshgvENAqQ+lE83sw=
+		lBpboPFSqH3wXwIzu8mS0s4dACo=
 		</data>
 		<key>MWModalBannerProductView.nib</key>
 		<data>
-		W4bL1Vbgbf7f1r4nP5lPMBm1TxE=
+		pp7WDY33IMgIWE1n1ZoJ+1zXqIw=
 		</data>
 		<key>MWModalVideoHTextView.nib</key>
 		<data>
-		vQlGiJL3QG17LV64dVRyKGLeQUY=
+		KtqSdBi0rJYodQ29AYf82dKGTIg=
 		</data>
 		<key>MWModalVideoVFullView.nib</key>
 		<data>
@@ -70,75 +70,75 @@
 		</data>
 		<key>MWModalVideoVTextView.nib</key>
 		<data>
-		XLEjLSTdIaejEOscHPghR3OaT2Q=
+		kusszjvRwf/nMz5kLF2a4Xzi7/c=
 		</data>
 		<key>MWRewardFullBannerDefaultView.nib</key>
 		<data>
-		ttBQFzjxrIRu23Kvt4toYGaQmwQ=
+		wUkB/FLjYzzLe5IjnB783DfBgWs=
 		</data>
 		<key>MWRewardFullBannerNonProductView.nib</key>
 		<data>
-		b15B4TY4ibQqEReVdL53wEzGaWs=
+		7NpH6u1mELGVexgE/O4JC9zVn3M=
 		</data>
 		<key>MWRewardFullBannerProductView.nib</key>
 		<data>
-		Q7oHkx2ctd2TrRsHOHvsu1xTync=
+		BRy3dYFvjpDHGlUmSoGu+U+dIgo=
 		</data>
 		<key>MWRewardFullVideoHFullView.nib</key>
 		<data>
-		yLVBMHRzDIbRboJ4gKjxNsIB18U=
+		r4pygL0hw10n06nUwY4udExKazU=
 		</data>
 		<key>MWRewardFullVideoVFullView.nib</key>
 		<data>
-		49VFQ3nKaMlT+IlHBBhvob6E4x4=
+		r2gGPJkDqAGtfhffPaHVeMHyEXg=
 		</data>
 		<key>MWRewardModalBannerDefaultView.nib</key>
 		<data>
-		3jrn4pyj3YTj7EfShCX1WqLPCdI=
+		Hi5tPrG9b1Ffs+OobsoTlHy7AJY=
 		</data>
 		<key>MWRewardModalBannerNonProductView.nib</key>
 		<data>
-		0GH1o2QVY0f/gMbF6+vgEhqNVKg=
+		p8207d2Q3PpElTaFSorIylEyjYU=
 		</data>
 		<key>MWRewardModalBannerProductView.nib</key>
 		<data>
-		CMMchJWQZeBW4/qVZ/FtoREbrX4=
+		fNt1qpqeexw0vMHSt0e9ifAmm2Y=
 		</data>
 		<key>MWRewardModalVideoHFullView.nib</key>
 		<data>
-		YertQi/tVryYyEQA2OBnKzRBoyc=
+		3rcf2qyN5Sg7MpGxwfS1nLnXLIY=
 		</data>
 		<key>MWRewardModalVideoVFullView.nib</key>
 		<data>
-		PPaXDei8bTo79JB3840S6aKFlFo=
+		CFHVU8U4MXeFZZ3SaX3emMnRVhw=
 		</data>
 		<key>MWSplashVideoType.nib</key>
 		<data>
 		E7cG77Xpt5oUHUY484uAV68JpxQ=
 		</data>
-		<key>MixerVideoViewController.nib</key>
+		<key>MWVideoAdView.nib</key>
 		<data>
-		kpwt2ezBjznr8CT16ByPmQPCGJM=
+		ncZvD2S3M2XywtARkJUBvGyJdtg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gGvXIjaFXxAdcm+ubV1AjhlgrEA=
+		rGIkvpr2XB6yxq77vyLeEmV7L+U=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		D17Iaq5BPdgBGj3OTntaeGP1eTs=
+		4cvh3ErzIFbJUYFQjMG017L2jCY=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZuDANBP/0L6Rvj++IGh/Pq0HHPA=
+		hw20mEV7RULiqUOgZftk/nlRU3U=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		D17Iaq5BPdgBGj3OTntaeGP1eTs=
+		4cvh3ErzIFbJUYFQjMG017L2jCY=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RJ5BocX2x+5nQj3o3uOXktUmO0A=
+		GX6Kz/LpxE8hJGLdROt06GqY0n4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -148,37 +148,36 @@
 		<data>
 		2PROPrn2uC2/JmrsipdrXh6Aq/4=
 		</data>
-		<key>RewardBannerProductView.nib</key>
-		<data>
-		OCp7NkW5h27qRlPY4pBfG4VeGXg=
-		</data>
-		<key>RewardBannerView.nib</key>
-		<data>
-		vx9RIqkIPDTPCux2kUzvwmKMoYI=
-		</data>
-		<key>RewardBannerViewController.nib</key>
-		<data>
-		scOiqoYwb9mo2EB3w8+RAngvguc=
-		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vcaipfydUQCGE6WmnYy468g+agc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tqtJ9vX5zuI670uL+jxe9gOFcW0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vcaipfydUQCGE6WmnYy468g+agc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>mobwith_render.js</key>
 		<data>
 		4NvKbgzSvFIF3Rlkyx/waReYzrw=
-		</data>
-		<key>mobwith_reward_ad_title1.png</key>
-		<data>
-		gSQZaG5EXq92p90zhnnr0HkhMbY=
-		</data>
-		<key>mobwith_reward_ad_title1_1.png</key>
-		<data>
-		3kj1/BFHzxaQG8xPKBsJD7Rkx30=
-		</data>
-		<key>mobwith_reward_ad_title2.png</key>
-		<data>
-		Jg3cBB23zbe12m2zS59bbV7jg6o=
-		</data>
-		<key>mobwith_reward_ad_title2_1.png</key>
-		<data>
-		4KXRW3913fKGMzweVdEBA676F3k=
 		</data>
 		<key>mobwith_reward_x.png</key>
 		<data>
@@ -188,29 +187,9 @@
 		<data>
 		jA9DxqxKJu5+PH+V3Uce8ThEcR4=
 		</data>
-		<key>reward_bubble.png</key>
-		<data>
-		cigJen5/5dG2o16Q0W+dfubYgdo=
-		</data>
 		<key>reward_close_bg.png</key>
 		<data>
 		ZYyWfcssnW/kpCBD5LRz7nebHd4=
-		</data>
-		<key>reward_pointv_icon.png</key>
-		<data>
-		ZL259QBErUOiKJrs3zPtJjY1KmM=
-		</data>
-		<key>reward_video_info.png</key>
-		<data>
-		42tVFm3d7XAG6+Gk5MYERsnP5XY=
-		</data>
-		<key>reward_video_title.png</key>
-		<data>
-		psRl+I9yL9borIuB8Hqru/Pzoz0=
-		</data>
-		<key>reward_video_title_1.png</key>
-		<data>
-		dWbo64wp7bu+qUFR7gKZ4ERiei0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -219,7 +198,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1VeI/NwRFUANCFXd1/9K+Wx3JqxDI/GkwmdEe3+8MY=
+			Y7oC0WFSMYvNEyg5rjgwOpp7dQydshzLZQpiIe3nXsw=
 			</data>
 		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
@@ -233,7 +212,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			voUCUOqDN9Ywuhvbu41VY4eFXCtWbiiNR7NPMhz+9oI=
+			tV5Hxr1qvF0AXFp5Ev7hLTRmxCVLfdYphGS6//jQ0Fw=
 			</data>
 		</dict>
 		<key>MWFullBannerNonProductView.nib</key>
@@ -254,7 +233,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zgVshMtAgIHhztZRYPxZiIFWp3gErvrhRohP7i5lw0A=
+			jEtZgWACoQoMTrhgPPebmg6Bhas1Pe8EdSDIhcJbhEE=
 			</data>
 		</dict>
 		<key>MWFullVideoVFullView.nib</key>
@@ -275,35 +254,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kDUvcQzsgAVyaev7oVyPaEuTFVnkwaFOWE6yQnnVMiI=
+			rNc3+ZAYSrptD/BW586N60Uslbk9Pyjd5lf9uvnU3tM=
 			</data>
 		</dict>
 		<key>MWModalBannerDefaultView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y6FtfQb59ZlNWGOnZyu66mEQ7zWdNrhiJTiSkiKD0uo=
+			wRVkCZy8SHe3zFaZHXfgmlZ2H9GwtaivAqFPTqq5q3Y=
 			</data>
 		</dict>
 		<key>MWModalBannerNonProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8QqO2q9DqDdJSByTDiBOAKQMYbkztlYUGoLxsmADCCA=
+			KGCshd9MOolRGDixDpEAbZXPBjI2Lmv+oNXaoblyTc8=
 			</data>
 		</dict>
 		<key>MWModalBannerProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LMNf+5DE4W4sbQJPm5fcWAzyPJ6MQ/BZakyLhdy1wQQ=
+			rkikENChYF8Is9mi2AuVypONGlbhNA1/Ky2OWULOjko=
 			</data>
 		</dict>
 		<key>MWModalVideoHTextView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0pzpuvupW/u+qhMRhKDGBfqdLMAJsJ9pUGFlQAVoVaY=
+			6kAE7UAHASEPeXfPY1kDBE5W0xyUUwsk6e0OpMh4ltA=
 			</data>
 		</dict>
 		<key>MWModalVideoVFullView.nib</key>
@@ -324,77 +303,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tAHOaZDsg4r4KJ7DQ90yR5gXDOvEv0o0LFQ+BTQvXaM=
+			lKf3o3mn3MIeKNT03RJaqj1zq0L+WsXbWcC/C+TJIJA=
 			</data>
 		</dict>
 		<key>MWRewardFullBannerDefaultView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Do80gY+afHmAnCOxM5VAlp83nV9jR8KRlXebkdEYqY=
+			EpzBcNtgxG3Xw5mNDKIh1Ixoth4DvSgVXdp2GX0j9D8=
 			</data>
 		</dict>
 		<key>MWRewardFullBannerNonProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gMrQ7EL6qaIlRRfSfh78zdC5v8DJZ72Nc/4fUMhQSak=
+			PP2R/xdB1YanzKuW6as6LnBS9bwShwAw/WjQxOvzogM=
 			</data>
 		</dict>
 		<key>MWRewardFullBannerProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1THwh2f0CQKOIGHA0MmHO2HaICu9M8vFAi30F3+s+SY=
+			x/+q5LfnBYqC/yP+3RjjtW9rLK7zupAxFRlRdg/Ejv4=
 			</data>
 		</dict>
 		<key>MWRewardFullVideoHFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CdNIIYMp+S7zgtfLvQ08+jkIkAZU4Qj4P+wCMesosT0=
+			m9S1wwSJSKPva/+Wpsf2mqaF69DISxOozWLbY/KJ9O4=
 			</data>
 		</dict>
 		<key>MWRewardFullVideoVFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dKy3dcnRaiZrGxo4yet0/k5VHQfvI+MmbMOlHBl10lc=
+			zLYgZoJICqwavZt6gYAOBm6ip3hYvNQQ1cD73TUiZnU=
 			</data>
 		</dict>
 		<key>MWRewardModalBannerDefaultView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbJYi0jtCfLQTyEJwZFSzZAfAhJ258RuPc5uYtFunxo=
+			Kt/oIzUinmwcJhnZhsoVz8fIfk65BWcVOicY1JRm988=
 			</data>
 		</dict>
 		<key>MWRewardModalBannerNonProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			auUAAcgKgfkqRg+DW/p+XtVMJ1iryjbEi9DBPc2KlYI=
+			kLO+gadbaHFSFmuynGP4ckyn6iG+D71PLWwraoafYjI=
 			</data>
 		</dict>
 		<key>MWRewardModalBannerProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NCa+l5rZUw/fp+iOz+5SdtTFbYXm5+ohsab4JL5k8qE=
+			xMJqicT9ogPM093ijAajvi4ed9LXN7yx8i3w45UDdH4=
 			</data>
 		</dict>
 		<key>MWRewardModalVideoHFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W5vF9KYbT9T8GR0r3tixfMTZ3gkDUqJ4NcOAhlCJ6Ks=
+			2AQ2NBF5WbWKgnq3OtagYYHF/FpN6Z5MwD3bwH5jPYI=
 			</data>
 		</dict>
 		<key>MWRewardModalVideoVFullView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T1go+eNj5FHRoWxcBm3XN1MQeN3Mk1pLJUCqIlkeuhU=
+			01ww8353T00U6xkzHONXkW8t0USppis9F9BFz5vrxb8=
 			</data>
 		</dict>
 		<key>MWSplashVideoType.nib</key>
@@ -404,46 +383,46 @@
 			2r+YvcR9ICY3Q8G1gg0unJvAZaV6AeJovcB4tlBhdXw=
 			</data>
 		</dict>
-		<key>MixerVideoViewController.nib</key>
+		<key>MWVideoAdView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jrO0wHvUut1IBw67p6onO/HiIwbx1/Z4r8F+pO6fti4=
+			poUV7fId5d8zy0/WjVdhhhR8M7HrN9zVDR2NSicKTZs=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+xY0wP4UMG4N79J+33JUCMUIFH9iWDoJc9mbh5FxCb8=
+			jenrBx88/Lgh4FQtbGwF2gGLM7+8Akn7KFEdpFPjZHk=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YoHhKlAYnZQJdFy2eNYWFWcshvi2ByGDk/XS5jKG3QA=
+			CcU5FXu6i1ehR6awKUXIrIlOkFShWky6N/antnlY+lw=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CJgoiZ3l5k1H+6yx2swc8omleUm83VVfQ+WrHaqqL9M=
+			6S/Hh7lyf/wNkLiQDiQVlrRzDssIiap1bde17WyHMXM=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YoHhKlAYnZQJdFy2eNYWFWcshvi2ByGDk/XS5jKG3QA=
+			CcU5FXu6i1ehR6awKUXIrIlOkFShWky6N/antnlY+lw=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w5Q+f0nby0ePvnQE4WLtmov+zls7XLF/Cvg+JE9rbZQ=
+			0rldLVxw1O+wblraZdrhdHUkoelrbtDf5TWQL7g0nWM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -460,60 +439,38 @@
 			o3mWY69NF22M4dh7jwYd7d2OvnCD3mTvVAb55IRNMPI=
 			</data>
 		</dict>
-		<key>RewardBannerProductView.nib</key>
+		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lSgiTtRWQSEwez+y3wpbcWHgUFPnf5XTwU7VuU4NpyU=
+			9FcIlf+0yTFp6onh8VJc1XB8XeW5qzwrxDWnbO57oh0=
 			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
-		<key>RewardBannerView.nib</key>
+		<key>ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k9Bg9ieJiJxlbgKT13YADzlnKHaL3hqgQj1IwduY3wY=
+			leYKO8wWEZ1NuMtyPcU1YDZfBtw4YTYLdC6uw271pfo=
 			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
-		<key>RewardBannerViewController.nib</key>
+		<key>ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Dzewo8JREOu+0notOM/IyXTGjjBaGdpvPiyRpTbeCI=
+			9FcIlf+0yTFp6onh8VJc1XB8XeW5qzwrxDWnbO57oh0=
 			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>mobwith_render.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			K9zRtI0TxG6j+BLtxuixKn/DtI6VzAcDKubffC2OAF8=
-			</data>
-		</dict>
-		<key>mobwith_reward_ad_title1.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TSpfRuA88/rag76dHFgpIrx1aW4tijOopsAyPQzLBSo=
-			</data>
-		</dict>
-		<key>mobwith_reward_ad_title1_1.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IHIbvSfqL5GUZ8vYJpZ6PCG2ZYzEEujqqgrLXFoOuoE=
-			</data>
-		</dict>
-		<key>mobwith_reward_ad_title2.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2z2y9f5NixK1ZPhdf6AEoW3J7/eGhpy1WIrpZeV0gpI=
-			</data>
-		</dict>
-		<key>mobwith_reward_ad_title2_1.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ysxkv2U6Vd2qXnWW7j9emwDQqMJVUms4bpAZnxEg+mc=
 			</data>
 		</dict>
 		<key>mobwith_reward_x.png</key>
@@ -530,46 +487,11 @@
 			Y5tA/WSRKEFgrKo9htEat41nXTeuFFwntuLQtP3RGC8=
 			</data>
 		</dict>
-		<key>reward_bubble.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			i9L0LoGQlLdiQDD3YbrbVm9Y3UBZInrCI9twBBSy4As=
-			</data>
-		</dict>
 		<key>reward_close_bg.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			gkxHvfp/ik24E/4yx50YeuNDjHnXw8cRi44oFQba//w=
-			</data>
-		</dict>
-		<key>reward_pointv_icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fOCPwRx4i8aG4l9Sd9ab9elz55uoLSII/2IV+H11lfI=
-			</data>
-		</dict>
-		<key>reward_video_info.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dQD2oux9Pu1bpOUbnGODFF7opv3efz0TgTWnRPJAu5M=
-			</data>
-		</dict>
-		<key>reward_video_title.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nJeZbC8bLaVOJxPiWlVFzcdx4I5IM+vGR3/zGeJXSKE=
-			</data>
-		</dict>
-		<key>reward_video_title_1.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QJzRaqZEtVv6Rn79ClfNQ4BQu4CS4Aq1IVHaGnts5No=
 			</data>
 		</dict>
 	</dict>

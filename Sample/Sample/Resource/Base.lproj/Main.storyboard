@@ -348,6 +348,7 @@
                                     <constraint firstAttribute="trailing" secondItem="L2u-T0-ame" secondAttribute="trailing" id="dzJ-py-2Ki"/>
                                     <constraint firstItem="L2u-T0-ame" firstAttribute="top" secondItem="zAj-Z5-RKZ" secondAttribute="top" id="fdJ-WJ-Jd4"/>
                                     <constraint firstItem="L2u-T0-ame" firstAttribute="leading" secondItem="zAj-Z5-RKZ" secondAttribute="leading" id="oQB-PW-aUb"/>
+                                    <constraint firstAttribute="height" constant="319" id="rKm-B3-RL3"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UnitID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-UF-smC">

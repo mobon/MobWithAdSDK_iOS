@@ -11943,16 +11943,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -35749,6 +35739,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -38254,16 +38254,6 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "Preconcurrency"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -42582,16 +42572,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -42759,23 +42739,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
       },
       {
         "kind": "Import",
@@ -44497,16 +44460,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -46174,34 +46127,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "DeveloperToolsSupport",
-        "printedName": "DeveloperToolsSupport",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
         "kind": "TypeDecl",
         "name": "String",
         "printedName": "String",
@@ -46263,375 +46188,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "from",
-            "printedName": "from(dict:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE4from4dictSSSDySSypG_tFZ",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE4from4dictSSSDySSypG_tFZ",
-            "moduleName": "MobWithADSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "dictionary",
-            "printedName": "dictionary",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:SS21MobWithADSDKFrameworkE10dictionarySDySSypGvp",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE10dictionarySDySSypGvp",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:SS21MobWithADSDKFrameworkE10dictionarySDySSypGvg",
-                "mangledName": "$sSS21MobWithADSDKFrameworkE10dictionarySDySSypGvg",
-                "moduleName": "MobWithADSDKFramework",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:SS21MobWithADSDKFrameworkE10dictionarySDySSypGvs",
-                "mangledName": "$sSS21MobWithADSDKFrameworkE10dictionarySDySSypGvs",
-                "moduleName": "MobWithADSDKFramework",
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:SS21MobWithADSDKFrameworkE10dictionarySDySSypGvM",
-                "mangledName": "$sSS21MobWithADSDKFrameworkE10dictionarySDySSypGvM",
-                "moduleName": "MobWithADSDKFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "height",
-            "printedName": "height(withConstrainedWidth:font:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIFont",
-                "printedName": "UIKit.UIFont",
-                "usr": "c:objc(cs)UIFont"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE6height20withConstrainedWidth4font14CoreFoundation7CGFloatVAG_So6UIFontCtF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE6height20withConstrainedWidth4font12CoreGraphics7CGFloatVAG_So6UIFontCtF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "width",
-            "printedName": "width(withConstrainedHeight:font:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIFont",
-                "printedName": "UIKit.UIFont",
-                "usr": "c:objc(cs)UIFont"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE5width21withConstrainedHeight4font14CoreFoundation7CGFloatVAG_So6UIFontCtF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE5width21withConstrainedHeight4font12CoreGraphics7CGFloatVAG_So6UIFontCtF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "image",
-            "printedName": "image(width:height:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIImage?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE5image5width6heightSo7UIImageCSg14CoreFoundation7CGFloatV_AJtF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE5image5width6heightSo7UIImageCSg12CoreGraphics7CGFloatV_AJtF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "toFormattedCurrency",
-            "printedName": "toFormattedCurrency()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE19toFormattedCurrencySSyF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE19toFormattedCurrencySSyF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isValidPCode",
-            "printedName": "isValidPCode()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE12isValidPCodeSbyF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE12isValidPCodeSbyF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "urlQueryEncoded",
-            "printedName": "urlQueryEncoded()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE15urlQueryEncodedSSyF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE15urlQueryEncodedSSyF",
-            "moduleName": "MobWithADSDKFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "strictQueryEncode",
-            "printedName": "strictQueryEncode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS21MobWithADSDKFrameworkE17strictQueryEncodeyS2SF",
-            "mangledName": "$sSS21MobWithADSDKFrameworkE17strictQueryEncodeyS2SF",
-            "moduleName": "MobWithADSDKFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -47212,6 +46768,210 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIImage",
+        "printedName": "UIImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getColors",
+            "printedName": "getColors(quality:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MOImageColorsQuality",
+                "printedName": "MobWithADSDKFramework.MOImageColorsQuality",
+                "hasDefaultArg": true,
+                "usr": "s:21MobWithADSDKFramework20MOImageColorsQualityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MOImageColors?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MobWithADSDKFramework.MOImageColors?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MOImageColors",
+                        "printedName": "MobWithADSDKFramework.MOImageColors",
+                        "usr": "s:21MobWithADSDKFramework13MOImageColorsV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UIImageC21MobWithADSDKFrameworkE9getColors7quality_yAC07MOImageF7QualityO_yAC0hF0VSgctF",
+            "mangledName": "$sSo7UIImageC21MobWithADSDKFrameworkE9getColors7quality_yAC07MOImageF7QualityO_yAC0hF0VSgctF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getColors",
+            "printedName": "getColors(quality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MOImageColors?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MOImageColors",
+                    "printedName": "MobWithADSDKFramework.MOImageColors",
+                    "usr": "s:21MobWithADSDKFramework13MOImageColorsV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MOImageColorsQuality",
+                "printedName": "MobWithADSDKFramework.MOImageColorsQuality",
+                "hasDefaultArg": true,
+                "usr": "s:21MobWithADSDKFramework20MOImageColorsQualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UIImageC21MobWithADSDKFrameworkE9getColors7qualityAC07MOImageF0VSgAC0hF7QualityO_tF",
+            "mangledName": "$sSo7UIImageC21MobWithADSDKFrameworkE9getColors7qualityAC07MOImageF0VSgAC0hF7QualityO_tF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImage",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImage",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByImageLiteral",
+            "printedName": "_ExpressibleByImageLiteral",
+            "usr": "s:s26_ExpressibleByImageLiteralP",
+            "mangledName": "$ss26_ExpressibleByImageLiteralP"
           }
         ]
       },
@@ -47862,210 +47622,6 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIImage",
-        "printedName": "UIImage",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "getColors",
-            "printedName": "getColors(quality:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MOImageColorsQuality",
-                "printedName": "MobWithADSDKFramework.MOImageColorsQuality",
-                "hasDefaultArg": true,
-                "usr": "s:21MobWithADSDKFramework20MOImageColorsQualityO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MobWithADSDKFramework.MOImageColors?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "MobWithADSDKFramework.MOImageColors?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MOImageColors",
-                        "printedName": "MobWithADSDKFramework.MOImageColors",
-                        "usr": "s:21MobWithADSDKFramework13MOImageColorsV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So7UIImageC21MobWithADSDKFrameworkE9getColors7quality_yAC07MOImageF7QualityO_yAC0hF0VSgctF",
-            "mangledName": "$sSo7UIImageC21MobWithADSDKFrameworkE9getColors7quality_yAC07MOImageF7QualityO_yAC0hF0VSgctF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getColors",
-            "printedName": "getColors(quality:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MobWithADSDKFramework.MOImageColors?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MOImageColors",
-                    "printedName": "MobWithADSDKFramework.MOImageColors",
-                    "usr": "s:21MobWithADSDKFramework13MOImageColorsV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MOImageColorsQuality",
-                "printedName": "MobWithADSDKFramework.MOImageColorsQuality",
-                "hasDefaultArg": true,
-                "usr": "s:21MobWithADSDKFramework20MOImageColorsQualityO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So7UIImageC21MobWithADSDKFrameworkE9getColors7qualityAC07MOImageF0VSgAC0hF7QualityO_tF",
-            "mangledName": "$sSo7UIImageC21MobWithADSDKFrameworkE9getColors7qualityAC07MOImageF0VSgAC0hF7QualityO_tF",
-            "moduleName": "MobWithADSDKFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIImage",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIImage",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "SynthesizedProtocol",
-          "NonSendable",
-          "Sendable",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByImageLiteral",
-            "printedName": "_ExpressibleByImageLiteral",
-            "usr": "s:s26_ExpressibleByImageLiteralP",
-            "mangledName": "$ss26_ExpressibleByImageLiteralP"
           }
         ]
       }
@@ -49022,167 +48578,174 @@
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 342,
+      "offset": 415,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 423,
+      "offset": 496,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 507,
+      "offset": 580,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 602,
+      "offset": 675,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 707,
+      "offset": 780,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 815,
+      "offset": 888,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 925,
+      "offset": 998,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1006,
+      "offset": 1079,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1090,
+      "offset": 1163,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1177,
+      "offset": 1250,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1275,
+      "offset": 1348,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1383,
+      "offset": 1456,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1494,
+      "offset": 1567,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1607,
+      "offset": 1680,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1688,
+      "offset": 1761,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1773,
+      "offset": 1846,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1861,
+      "offset": 1934,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1949,
+      "offset": 2022,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2042,
+      "offset": 2115,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2126,
+      "offset": 2199,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2214,
+      "offset": 2287,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2305,
+      "offset": 2378,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/InterstitialViewType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2396,
+      "offset": 2469,
       "length": 2,
       "value": "24"
     },
@@ -49822,76 +49385,6 @@
       "offset": 3313,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1344,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1392,
-      "length": 5,
-      "value": "236.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1398,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1412,
-      "length": 5,
-      "value": "236.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1418,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1431,
-      "length": 5,
-      "value": "236.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1437,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1451,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1482,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1513,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/VastClient\/models\/VastCreativeParameter.swift",
@@ -51100,42 +50593,42 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16017,
+      "offset": 15183,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16052,
+      "offset": 15218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16102,
+      "offset": 15268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16137,
+      "offset": 15303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16179,
+      "offset": 15345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16214,
+      "offset": 15380,
       "length": 5,
       "value": "false"
     },
@@ -52177,22 +51670,29 @@
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1378,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
       "kind": "StringLiteral",
-      "offset": 5769,
+      "offset": 6567,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7916,
+      "offset": 8746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7941,
+      "offset": 8771,
       "length": 1,
       "value": "0"
     },
@@ -52416,7 +51916,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5288,
+      "offset": 5350,
       "length": 2,
       "value": "\"\""
     },
@@ -52528,14 +52028,14 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Extensions\/String+DHLee.swift",
       "kind": "IntegerLiteral",
-      "offset": 3005,
+      "offset": 2998,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Extensions\/String+DHLee.swift",
       "kind": "IntegerLiteral",
-      "offset": 3026,
+      "offset": 3019,
       "length": 2,
       "value": "40"
     },
@@ -52825,55 +52325,6 @@
       "offset": 2617,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 983,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1027,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1201,
-      "length": 4,
-      "value": "30.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1313,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1316,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1319,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1323,
-      "length": 2,
-      "value": "32"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
@@ -53359,76 +52810,6 @@
       "value": "\"mImg320_480\""
     },
     {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1024,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1371,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1406,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1456,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1503,
-      "length": 4,
-      "value": "15.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1615,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1618,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1621,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1625,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1716,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/Native\/NativeAdViewItem.swift",
       "kind": "BooleanLiteral",
       "offset": 581,
@@ -53504,139 +52885,6 @@
       "offset": 999,
       "length": 21,
       "value": "\"yyyy-MM-dd HH:mm:ss\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1419,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1462,
-      "length": 3,
-      "value": "249"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1466,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1480,
-      "length": 3,
-      "value": "249"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1484,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1497,
-      "length": 3,
-      "value": "249"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1501,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1515,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1546,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1578,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1730,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1804,
-      "length": 3,
-      "value": "0.2"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1877,
-      "length": 5,
-      "value": "0.639"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "Array",
-      "offset": 1951,
-      "length": 15,
-      "value": "[0.0, 0.5, 1.0]"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2048,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2056,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2119,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2127,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerProductView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2213,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixAuidModel.swift",
@@ -54054,56 +53302,56 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1305,
+      "offset": 1538,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1350,
+      "offset": 1583,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1626,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1433,
+      "offset": 1666,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1474,
+      "offset": 1707,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1509,
+      "offset": 1742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1634,
+      "offset": 1867,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS Split\/MobMixerFramework\/MobMixerFramework\/Views\/InterstitialType\/MWRewardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1672,
+      "offset": 1905,
       "length": 5,
       "value": "false"
     },
@@ -54155,97 +53403,6 @@
       "offset": 408,
       "length": 6,
       "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
-      "length": 17,
-      "value": "\"affordanceCheck\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 880,
-      "length": 7,
-      "value": "\"bt001\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1007,
-      "length": 7,
-      "value": "\"bt003\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1138,
-      "length": 9,
-      "value": "\"closeBg\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1275,
-      "length": 11,
-      "value": "\"closeIcon\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1412,
-      "length": 10,
-      "value": "\"iconAd01\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1550,
-      "length": 11,
-      "value": "\"iconAdB01\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1689,
-      "length": 11,
-      "value": "\"iconAdS02\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1828,
-      "length": 11,
-      "value": "\"iconClose\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1975,
-      "length": 15,
-      "value": "\"iconCloseFull\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2128,
-      "length": 16,
-      "value": "\"iconCloseFull2\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2278,
-      "length": 14,
-      "value": "\"iconSoundOff\""
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Library\/Developer\/Xcode\/DerivedData\/MobwithSDK-bcymfluaiekwdjdnnsaemovdbuct\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MobWithADSDKFramework\/IntermediateBuildFilesPath\/MobWithADSDKFramework.build\/Release-iphoneos\/MobWithADSDKFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2424,
-      "length": 13,
-      "value": "\"iconSoundOn\""
     }
   ]
 }

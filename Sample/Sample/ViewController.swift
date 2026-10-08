@@ -12,7 +12,7 @@ import MobWithADSDKFramework
 import AdSupport
 import AppTrackingTransparency
 
-import OpenBiddingHelper
+//import OpenBiddingHelper
 
 class ViewController: UIViewController {
     
@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         MobWithADSDK.standard.enableLog(true)
         
         MobWithADSDK.standard.initSDK()
+        MobWithADSDK.standard.setAdPopcornAppKey("293968044")
+        
 //        MobWithADSDK.standard.setLevelPlaySDKAppKey(" {LevelPlay AppKey }")
 //        MobWithADSDK.standard.setPangleAppId(appId: "{ Pangle App ID }")
 //        MobWithADSDK.standard.setDTExchangeAppID(appId: "{ DT Exchange App ID }")
