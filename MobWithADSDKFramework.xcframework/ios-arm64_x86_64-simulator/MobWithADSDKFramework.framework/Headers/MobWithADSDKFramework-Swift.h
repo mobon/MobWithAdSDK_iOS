@@ -376,12 +376,18 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework20MMHybridBannerBridge")
 @interface MMHybridBannerBridge : NSObject
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable campaignCodes;
+@property (nonatomic, copy) NSString * _Nullable userKey;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// ⚠️ 주의: 이 프로토콜을 직접 채택하지 마세요.
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework27MobWithInappLandingDelegate_")
+@protocol MobWithInappLandingDelegate
+@end
+
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MMHybridBannerBridgeDelegate_")
-@protocol MMHybridBannerBridgeDelegate
+@protocol MMHybridBannerBridgeDelegate <MobWithInappLandingDelegate>
 @optional
 - (void)mobWithHybridBannerBridgeAdClicked:(MMHybridBannerBridge * _Nullable)bridge;
 - (void)mobWithHybridBannerBridgeAdLoadFailed:(MMHybridBannerBridge * _Nullable)bridge zoneId:(NSString * _Nonnull)zoneId zoneType:(NSString * _Nonnull)zoneType;
@@ -419,6 +425,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 ///
 - (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView mediaView:(UIView * _Nullable)mediaView OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nibNameForDefault:(NSString * _Nonnull)nibNameForDefault nibNameForDirectAd:(NSString * _Nonnull)nibNameForDirectAd bundle:(NSBundle * _Nullable)bundle OBJC_DESIGNATED_INITIALIZER;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (void)loadAd;
 - (void)destroy;
 @end
@@ -530,6 +537,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MWSignalInitializable_")
 @protocol MWSignalInitializable
 + (void)initializeSDKWithConfig:(NSDictionary<NSString *, id> * _Nullable)config;
 + (NSData * _Nullable)getSignalData SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getSignalSDKVersion SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -563,7 +571,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 @class MobWithAdView;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
-@protocol MobWithADViewDelegate
+@protocol MobWithADViewDelegate <MobWithInappLandingDelegate>
 @optional
 /// 광고를 클릭한 경우 전달됨
 - (void)mobWithAdViewClickedAd;
@@ -597,32 +605,49 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 @end
 
-@class MobWithInterstitailAd;
-SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
-@protocol MobWithIntersitialAdDelegate
+@class MobWithInterstitialAd;
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithInterstitialAdDelegate_")
+@protocol MobWithInterstitialAdDelegate <MobWithInappLandingDelegate>
 @optional
 /// 광고를 클릭한 경우 전달됨
-- (void)mobWithIntersitialAdClicked:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdClicked:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 광고를 수신한 경우 전달됨
-- (void)mobWithIntersitialAdDidReceived:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidReceived:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 광고 수신 실패시 전달
-- (void)mobWithIntersitialAdDidFailToReceive:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidFailToReceive:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
-- (void)mobWithIntersitialAdDidOpend:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidOpened:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 전면광고오픈 실패시 전달됨.
-- (void)mobWithIntersitialAdDidOpenFailed:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidOpenFailed:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 전면광고 창이 닫힌 경우 호출된다.
-- (void)mobWithIntersitialAdDidClosed:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidClosed:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 광고를 클릭한 경우 전달됨
+- (void)mobWithIntersitialAdClicked:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 광고를 수신한 경우 전달됨
+- (void)mobWithIntersitialAdDidReceived:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 광고 수신 실패시 전달
+- (void)mobWithIntersitialAdDidFailToReceive:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
+- (void)mobWithIntersitialAdDidOpend:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 전면광고오픈 실패시 전달됨.
+- (void)mobWithIntersitialAdDidOpenFailed:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 전면광고 창이 닫힌 경우 호출된다.
+- (void)mobWithIntersitialAdDidClosed:(MobWithInterstitialAd * _Nullable)interstitialAd;
 @end
 
-SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
-@interface MobWithInterstitailAd : NSObject
-@property (nonatomic, weak) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@protocol MobWithIntersitialAdDelegate <MobWithInterstitialAdDelegate>
+@end
+
+/// /////
+SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitialAd")
+@interface MobWithInterstitialAd : NSObject
+@property (nonatomic, weak) id <MobWithInterstitialAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end
 
-@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
+@interface MobWithInterstitialAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
 - (void)mwAdapterDidReceivedAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 - (void)mwAdapterDidFailToReceiveAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter error:(NSError * _Nullable)error;
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
@@ -647,7 +672,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithNativeAdLoader")
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
-@protocol MobWithNativeAdLoaderDelegate
+@protocol MobWithNativeAdLoaderDelegate <MobWithInappLandingDelegate>
 @optional
 - (void)mobWithNativeAdViewClickedAd;
 - (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
@@ -696,7 +721,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework23MobWithRewardAdDelegate_")
-@protocol MobWithRewardAdDelegate
+@protocol MobWithRewardAdDelegate <MobWithInappLandingDelegate>
 @optional
 /// 광고를 클릭한 경우 전달됨
 - (void)mobWithRewardAdClicked:(MobWithRewardAd * _Nullable)rewardAd;
@@ -1115,12 +1140,18 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework20MMHybridBannerBridge")
 @interface MMHybridBannerBridge : NSObject
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable campaignCodes;
+@property (nonatomic, copy) NSString * _Nullable userKey;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// ⚠️ 주의: 이 프로토콜을 직접 채택하지 마세요.
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework27MobWithInappLandingDelegate_")
+@protocol MobWithInappLandingDelegate
+@end
+
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MMHybridBannerBridgeDelegate_")
-@protocol MMHybridBannerBridgeDelegate
+@protocol MMHybridBannerBridgeDelegate <MobWithInappLandingDelegate>
 @optional
 - (void)mobWithHybridBannerBridgeAdClicked:(MMHybridBannerBridge * _Nullable)bridge;
 - (void)mobWithHybridBannerBridgeAdLoadFailed:(MMHybridBannerBridge * _Nullable)bridge zoneId:(NSString * _Nonnull)zoneId zoneType:(NSString * _Nonnull)zoneType;
@@ -1158,6 +1189,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 ///
 - (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView mediaView:(UIView * _Nullable)mediaView OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nibNameForDefault:(NSString * _Nonnull)nibNameForDefault nibNameForDirectAd:(NSString * _Nonnull)nibNameForDirectAd bundle:(NSBundle * _Nullable)bundle OBJC_DESIGNATED_INITIALIZER;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (void)loadAd;
 - (void)destroy;
 @end
@@ -1269,6 +1301,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MWSignalInitializable_")
 @protocol MWSignalInitializable
 + (void)initializeSDKWithConfig:(NSDictionary<NSString *, id> * _Nullable)config;
 + (NSData * _Nullable)getSignalData SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getSignalSDKVersion SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1302,7 +1335,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 @class MobWithAdView;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
-@protocol MobWithADViewDelegate
+@protocol MobWithADViewDelegate <MobWithInappLandingDelegate>
 @optional
 /// 광고를 클릭한 경우 전달됨
 - (void)mobWithAdViewClickedAd;
@@ -1336,32 +1369,49 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 @end
 
-@class MobWithInterstitailAd;
-SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
-@protocol MobWithIntersitialAdDelegate
+@class MobWithInterstitialAd;
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithInterstitialAdDelegate_")
+@protocol MobWithInterstitialAdDelegate <MobWithInappLandingDelegate>
 @optional
 /// 광고를 클릭한 경우 전달됨
-- (void)mobWithIntersitialAdClicked:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdClicked:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 광고를 수신한 경우 전달됨
-- (void)mobWithIntersitialAdDidReceived:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidReceived:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 광고 수신 실패시 전달
-- (void)mobWithIntersitialAdDidFailToReceive:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidFailToReceive:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
-- (void)mobWithIntersitialAdDidOpend:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidOpened:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 전면광고오픈 실패시 전달됨.
-- (void)mobWithIntersitialAdDidOpenFailed:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidOpenFailed:(MobWithInterstitialAd * _Nullable)interstitialAd;
 /// 전면광고 창이 닫힌 경우 호출된다.
-- (void)mobWithIntersitialAdDidClosed:(MobWithInterstitailAd * _Nullable)interstitialAd;
+- (void)mobWithInterstitialAdDidClosed:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 광고를 클릭한 경우 전달됨
+- (void)mobWithIntersitialAdClicked:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 광고를 수신한 경우 전달됨
+- (void)mobWithIntersitialAdDidReceived:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 광고 수신 실패시 전달
+- (void)mobWithIntersitialAdDidFailToReceive:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
+- (void)mobWithIntersitialAdDidOpend:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 전면광고오픈 실패시 전달됨.
+- (void)mobWithIntersitialAdDidOpenFailed:(MobWithInterstitialAd * _Nullable)interstitialAd;
+/// 전면광고 창이 닫힌 경우 호출된다.
+- (void)mobWithIntersitialAdDidClosed:(MobWithInterstitialAd * _Nullable)interstitialAd;
 @end
 
-SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
-@interface MobWithInterstitailAd : NSObject
-@property (nonatomic, weak) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@protocol MobWithIntersitialAdDelegate <MobWithInterstitialAdDelegate>
+@end
+
+/// /////
+SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitialAd")
+@interface MobWithInterstitialAd : NSObject
+@property (nonatomic, weak) id <MobWithInterstitialAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end
 
-@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
+@interface MobWithInterstitialAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
 - (void)mwAdapterDidReceivedAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 - (void)mwAdapterDidFailToReceiveAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter error:(NSError * _Nullable)error;
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
@@ -1386,7 +1436,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithNativeAdLoader")
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
-@protocol MobWithNativeAdLoaderDelegate
+@protocol MobWithNativeAdLoaderDelegate <MobWithInappLandingDelegate>
 @optional
 - (void)mobWithNativeAdViewClickedAd;
 - (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
@@ -1435,7 +1485,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework23MobWithRewardAdDelegate_")
-@protocol MobWithRewardAdDelegate
+@protocol MobWithRewardAdDelegate <MobWithInappLandingDelegate>
 @optional
 /// 광고를 클릭한 경우 전달됨
 - (void)mobWithRewardAdClicked:(MobWithRewardAd * _Nullable)rewardAd;

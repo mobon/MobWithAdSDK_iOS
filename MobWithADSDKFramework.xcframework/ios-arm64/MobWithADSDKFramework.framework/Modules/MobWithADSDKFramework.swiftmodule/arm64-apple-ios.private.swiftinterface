@@ -35,10 +35,13 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   @objc static func getSignalData() -> Foundation.Data?
   #endif
+  @objc static func getSignalSDKVersion() -> Swift.String
   @objc static func getVersion() -> Swift.String
 }
-@objc @_inheritsConvenienceInitializers public class MobWithInterstitailAd : ObjectiveC.NSObject {
-  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?
+@available(swift, deprecated: 5.0, renamed: "MobWithInterstitialAd", message: "클래스 이름의 오타가 수정되었습니다 ('Interstitail' → 'Interstitial'). MobWithInterstitialAd를 사용해주세요. Objective-C 지원은 제거되었습니다.")
+public typealias MobWithInterstitailAd = MobWithADSDKFramework.MobWithInterstitialAd
+@objc @_inheritsConvenienceInitializers public class MobWithInterstitialAd : ObjectiveC.NSObject {
+  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithInterstitialAdDelegate)?
   weak public var rootViewController: UIKit.UIViewController? {
     get
     set
@@ -50,7 +53,7 @@ import _SwiftConcurrencyShims
   public func isLoaded() -> Swift.Bool
   public func show()
 }
-extension MobWithADSDKFramework.MobWithInterstitailAd : MobWithADSDKFramework.MWAdapterDelegate {
+extension MobWithADSDKFramework.MobWithInterstitialAd : MobWithADSDKFramework.MWAdapterDelegate {
   @objc dynamic public func mwAdapterDidReceivedAd(adapter: any MobWithADSDKFramework.MWAdapterBase)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func mwAdapterDidFailToReceiveAd(adapter: any MobWithADSDKFramework.MWAdapterBase, error: (any Swift.Error)?)
@@ -61,6 +64,9 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : MobWithADSDKFramework.MW
   @objc dynamic public func mwAdapterAdDidOpenFailed(adapter: any MobWithADSDKFramework.MWAdapterBase, error: (any Swift.Error)?)
   #endif
   @objc dynamic public func mwAdapterAdClosed(adapter: any MobWithADSDKFramework.MWAdapterBase)
+}
+extension MobWithADSDKFramework.MobWithInterstitialAd {
+  public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
   @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
@@ -84,6 +90,7 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
   #endif
+  public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 public enum ApiError : Swift.Error {
   case invalidURL
@@ -117,9 +124,12 @@ public enum ApiError : Swift.Error {
   public var advertiser: Swift.String {
     get
   }
+  public var videoView: UIKit.UIView?
   @objc public init(bannerUnitId: Swift.String)
   @objc public func loadAd()
   public func showNextAd()
+  public func startVideo()
+  public func pauseVideo()
   @objc deinit
 }
 extension MobWithADSDKFramework.MMAdLoader {
@@ -347,6 +357,22 @@ public struct VastWrapper : Swift.Codable {
 extension MobWithADSDKFramework.VastWrapper : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastWrapper, b: MobWithADSDKFramework.VastWrapper) -> Swift.Bool
 }
+public struct MWAffordanceConfiguration {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(size: CoreFoundation.CGFloat, position: MobWithADSDKFramework.MWAffordancePosition? = nil, font: UIKit.UIFont? = nil, backgroundColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil, rewardedIcon: UIKit.UIImage? = nil, padding: CoreFoundation.CGFloat? = nil)
+  #endif
+}
+public enum MWAffordancePosition {
+  case topRight
+  case topLeft
+  case bottomRight
+  case bottomLeft
+  public static func == (a: MobWithADSDKFramework.MWAffordancePosition, b: MobWithADSDKFramework.MWAffordancePosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct VastNonLinearAdsCreative : Swift.Codable {
   public var trackingEvents: [MobWithADSDKFramework.VastTrackingEvent]
   public var nonLinear: [MobWithADSDKFramework.VastNonLinear]
@@ -559,7 +585,7 @@ public struct VastAdSystem : Swift.Codable {
 extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastAdSystem, b: MobWithADSDKFramework.VastAdSystem) -> Swift.Bool
 }
-@objc public protocol MMHybridBannerBridgeDelegate {
+@objc public protocol MMHybridBannerBridgeDelegate : MobWithADSDKFramework.MobWithInappLandingDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func mobWithHybridBannerBridgeAdClicked(_ bridge: MobWithADSDKFramework.MMHybridBannerBridge?)
   #endif
@@ -572,9 +598,14 @@ extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
   weak public var adDelegate: (any MobWithADSDKFramework.MMHybridBannerBridgeDelegate)?
   @objc public var category: [Swift.String]?
   @objc public var campaignCodes: [Swift.String]?
+  @objc public var userKey: Swift.String?
+  @available(*, deprecated, renamed: "init(webView:)", message: "파라미터 이름 오타로 인해 deprecated 되었습니다. init(webView:)를 사용하세요. (v1.3.34부터 deprecated)")
   public init(webVeiw: WebKit.WKWebView)
+  public init(webView: WebKit.WKWebView)
   public func webViewFinishLoad(_ view: WebKit.WKWebView, isLoadAd: Swift.Bool = true)
-  public func requestAd(placementId: Swift.String, adType: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func requestAd(placementId: Swift.String, adType: Swift.String, mediaId: Swift.String?, serviceId: Swift.String?)
+  #endif
   public func destroy()
   public func handleBridgeMessage(_ message: WebKit.WKScriptMessage) -> Swift.Bool
   @objc deinit
@@ -724,6 +755,8 @@ extension MobWithADSDKFramework.VastTracker {
   public func error(withReason code: MobWithADSDKFramework.VastErrorCodes?) throws
   #endif
   public func trackViewability(type: MobWithADSDKFramework.VastViewableImpressionType) throws
+}
+@objc public protocol MobWithInappLandingDelegate {
 }
 public struct IconClicks : Swift.Codable {
   public var iconClickThrough: Foundation.URL?
@@ -1062,7 +1095,7 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc public protocol MobWithADViewDelegate {
+@objc public protocol MobWithADViewDelegate : MobWithADSDKFramework.MobWithInappLandingDelegate {
   @objc optional func mobWithAdViewClickedAd()
   @objc optional func mobWithAdViewDidReceivedAd()
   @objc optional func mobWithAdViewDidFailToReceiveAd()
@@ -1076,7 +1109,7 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   @objc optional func mobWithNativeAdViewCanReward(_ nativeAdView: MobWithADSDKFramework.MMNativeAdView?)
   #endif
 }
-@objc public protocol MobWithNativeAdLoaderDelegate {
+@objc public protocol MobWithNativeAdLoaderDelegate : MobWithADSDKFramework.MobWithInappLandingDelegate {
   @objc optional func mobWithNativeAdViewClickedAd()
   #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func mobWithNativeAdViewDidReceivedAd(At index: Foundation.IndexPath?)
@@ -1121,6 +1154,10 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @_Concurrency.MainActor @preconcurrency public var interval: Swift.Int
   @objc @_Concurrency.MainActor @preconcurrency public var useCloseButton: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var affordanceConfig: MobWithADSDKFramework.MWAffordanceConfiguration? {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency public var mediaId: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var serviceId: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var userKey: Swift.String?
@@ -1143,10 +1180,13 @@ extension MobWithADSDKFramework.MobWithAdView : MobWithADSDKFramework.MWAdapterD
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func mwAdapterAdClicked(adapter: any MobWithADSDKFramework.MWAdapterBase)
 }
 extension MobWithADSDKFramework.MobWithAdView {
+  @_Concurrency.MainActor @preconcurrency public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+}
+extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func restart()
   @_Concurrency.MainActor @preconcurrency public func stop()
 }
-@objc public protocol MobWithRewardAdDelegate {
+@objc public protocol MobWithRewardAdDelegate : MobWithADSDKFramework.MobWithInappLandingDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func mobWithRewardAdClicked(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
   #endif
@@ -1178,6 +1218,10 @@ extension MobWithADSDKFramework.MobWithAdView {
   @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @objc @_Concurrency.MainActor @preconcurrency public var category: [Swift.String]?
   @objc @_Concurrency.MainActor @preconcurrency public var campaignCodes: [Swift.String]?
+  @_Concurrency.MainActor @preconcurrency public var affordanceConfig: MobWithADSDKFramework.MWAffordanceConfiguration? {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency public var mediaId: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var serviceId: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var userKey: Swift.String?
@@ -1188,10 +1232,13 @@ extension MobWithADSDKFramework.MobWithAdView {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nibNameForDefault: Swift.String, nibNameForDirectAd: Swift.String = "", bundle: Foundation.Bundle?)
   #endif
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @_Concurrency.MainActor @preconcurrency public func showNextAd()
   @objc @_Concurrency.MainActor @preconcurrency public func destroy()
-  @objc deinit
 }
 extension MobWithADSDKFramework.MMNativeAdView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func performAdClicked()
@@ -1203,24 +1250,55 @@ extension MobWithADSDKFramework.MMNativeAdView : MobWithADSDKFramework.MWAdapter
   #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func mwAdapterAdClicked(adapter: any MobWithADSDKFramework.MWAdapterBase)
 }
-@objc public protocol MobWithIntersitialAdDelegate {
+extension MobWithADSDKFramework.MMNativeAdView {
+  @_Concurrency.MainActor @preconcurrency public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+}
+@available(iOS 13.0, *)
+@available(swift, deprecated: 5.0, renamed: "MobWithInterstitialAdDelegate", message: "프로토콜 이름의 오타가 수정되었습니다 ('Interstitail' → 'Interstitial'). MobWithInterstitialAdDelegate를 사용해주세요.  (v1.3.34부터 deprecated)")
+@objc public protocol MobWithIntersitialAdDelegate : MobWithADSDKFramework.MobWithInterstitialAdDelegate {
+}
+@objc public protocol MobWithInterstitialAdDelegate : MobWithADSDKFramework.MobWithInappLandingDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithIntersitialAdClicked(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithInterstitialAdClicked(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithIntersitialAdDidReceived(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithInterstitialAdDidReceived(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithIntersitialAdDidFailToReceive(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithInterstitialAdDidFailToReceive(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithIntersitialAdDidOpend(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithInterstitialAdDidOpened(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithIntersitialAdDidOpenFailed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithInterstitialAdDidOpenFailed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func mobWithIntersitialAdDidClosed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithInterstitialAdDidClosed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.0, renamed: "mobWithInterstitialAdClicked(_:)", message: "메서드 이름의 오타가 수정되었습니다. mobWithInterstitialAdClicked(_:)를 사용해주세요.")
+  @objc optional func mobWithIntersitialAdClicked(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.0, renamed: "mobWithInterstitialAdDidReceived(_:)", message: "메서드 이름의 오타가 수정되었습니다. mobWithInterstitialAdDidReceived(_:)를 사용해주세요.")
+  @objc optional func mobWithIntersitialAdDidReceived(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.0, renamed: "mobWithInterstitialAdDidFailToReceive(_:)", message: "메서드 이름의 오타가 수정되었습니다. mobWithInterstitialAdDidFailToReceive(_:)를 사용해주세요.")
+  @objc optional func mobWithIntersitialAdDidFailToReceive(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.0, renamed: "mobWithInterstitialAdDidOpened(_:)", message: "메서드 이름의 오타가 수정되었습니다. mobWithInterstitialAdDidOpened(_:)를 사용해주세요.")
+  @objc optional func mobWithIntersitialAdDidOpend(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.0, renamed: "mobWithInterstitialAdDidOpenFailed(_:)", message: "메서드 이름의 오타가 수정되었습니다. mobWithInterstitialAdDidOpenFailed(_:)를 사용해주세요.")
+  @objc optional func mobWithIntersitialAdDidOpenFailed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.0, renamed: "mobWithInterstitialAdDidClosed(_:)", message: "메서드 이름의 오타가 수정되었습니다. mobWithInterstitialAdDidClosed(_:)를 사용해주세요.")
+  @objc optional func mobWithIntersitialAdDidClosed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitialAd?)
   #endif
 }
 @objc public protocol MWAdapterDelegate {
@@ -1294,6 +1372,9 @@ extension MobWithADSDKFramework.MobWithRewardAd : MobWithADSDKFramework.MWAdapte
   #endif
   @objc dynamic public func mwAdapterAdClosed(adapter: any MobWithADSDKFramework.MWAdapterBase)
   @objc dynamic public func mwAdapterAdCanReward(adapter: any MobWithADSDKFramework.MWAdapterBase)
+}
+extension MobWithADSDKFramework.MobWithRewardAd {
+  public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 @_hasMissingDesignatedInitializers public class MobMixAdDataModel : Swift.Codable {
   @objc deinit
@@ -1416,8 +1497,10 @@ extension UIKit.UIImage {
 extension MobWithADSDKFramework.MWSignalType : Swift.Equatable {}
 extension MobWithADSDKFramework.MWSignalType : Swift.Hashable {}
 extension MobWithADSDKFramework.MWSignalType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MobWithInterstitialAd : MobWithADSDKFramework.MobWithInappLandingDelegate {}
 extension MobWithADSDKFramework.ApiError : Swift.Equatable {}
 extension MobWithADSDKFramework.ApiError : Swift.Hashable {}
+extension MobWithADSDKFramework.MMAdLoader : MobWithADSDKFramework.MobWithInappLandingDelegate {}
 extension MobWithADSDKFramework.MMAdType : Swift.Equatable {}
 extension MobWithADSDKFramework.MMAdType : Swift.Hashable {}
 extension MobWithADSDKFramework.MMAdType : Swift.RawRepresentable {}
@@ -1433,6 +1516,8 @@ extension MobWithADSDKFramework.VMAPErrorCodes : Swift.RawRepresentable {}
 extension MobWithADSDKFramework.VMAPAdBreakType : Swift.Equatable {}
 extension MobWithADSDKFramework.VMAPAdBreakType : Swift.Hashable {}
 extension MobWithADSDKFramework.VMAPAdBreakType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MWAffordancePosition : Swift.Equatable {}
+extension MobWithADSDKFramework.MWAffordancePosition : Swift.Hashable {}
 extension MobWithADSDKFramework.VMAPTrackingEventType : Swift.Equatable {}
 extension MobWithADSDKFramework.VMAPTrackingEventType : Swift.Hashable {}
 extension MobWithADSDKFramework.VMAPTrackingEventType : Swift.RawRepresentable {}
@@ -1461,9 +1546,12 @@ extension MobWithADSDKFramework.VMAPAdSourceTemplate : Swift.RawRepresentable {}
 extension MobWithADSDKFramework.CompanionsRequirement : Swift.Equatable {}
 extension MobWithADSDKFramework.CompanionsRequirement : Swift.Hashable {}
 extension MobWithADSDKFramework.CompanionsRequirement : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MobWithAdView : MobWithADSDKFramework.MobWithInappLandingDelegate {}
+extension MobWithADSDKFramework.MMNativeAdView : MobWithADSDKFramework.MobWithInappLandingDelegate {}
 extension MobWithADSDKFramework.MMBannerType : Swift.Equatable {}
 extension MobWithADSDKFramework.MMBannerType : Swift.Hashable {}
 extension MobWithADSDKFramework.MMBannerType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MobWithRewardAd : MobWithADSDKFramework.MobWithInappLandingDelegate {}
 extension MobWithADSDKFramework.MOImageColorsQuality : Swift.Equatable {}
 extension MobWithADSDKFramework.MOImageColorsQuality : Swift.Hashable {}
 extension MobWithADSDKFramework.MOImageColorsQuality : Swift.RawRepresentable {}
