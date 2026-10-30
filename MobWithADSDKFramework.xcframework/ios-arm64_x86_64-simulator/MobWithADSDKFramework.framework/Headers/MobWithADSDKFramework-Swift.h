@@ -384,6 +384,8 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework20MMHybridBannerBridge")
 /// ⚠️ 주의: 이 프로토콜을 직접 채택하지 마세요.
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework27MobWithInappLandingDelegate_")
 @protocol MobWithInappLandingDelegate
+@optional
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MMHybridBannerBridgeDelegate_")
@@ -461,6 +463,10 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework17MWAdapterDelegate_")
 - (void)mwAdapterDidReceivedAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 - (void)mwAdapterDidFailToReceiveAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter error:(NSError * _Nullable)error;
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
+@end
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
@@ -605,6 +611,10 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 @end
 
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
+@end
+
 @class MobWithInterstitialAd;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithInterstitialAdDelegate_")
 @protocol MobWithInterstitialAdDelegate <MobWithInappLandingDelegate>
@@ -647,6 +657,10 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitialAd")
 - (void)loadAd;
 @end
 
+@interface MobWithInterstitialAd (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
+@end
+
 @interface MobWithInterstitialAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
 - (void)mwAdapterDidReceivedAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 - (void)mwAdapterDidFailToReceiveAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter error:(NSError * _Nullable)error;
@@ -683,6 +697,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 - (void)mobWithNativeAdViewClickedAd;
 - (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
 - (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework22MobWithPopupAdDelegate_")
@@ -708,6 +723,10 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 @property (nonatomic, weak) id <MobWithRewardAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
+@end
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 @interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
@@ -1148,6 +1167,8 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework20MMHybridBannerBridge")
 /// ⚠️ 주의: 이 프로토콜을 직접 채택하지 마세요.
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework27MobWithInappLandingDelegate_")
 @protocol MobWithInappLandingDelegate
+@optional
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MMHybridBannerBridgeDelegate_")
@@ -1225,6 +1246,10 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework17MWAdapterDelegate_")
 - (void)mwAdapterDidReceivedAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 - (void)mwAdapterDidFailToReceiveAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter error:(NSError * _Nullable)error;
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
+@end
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
@@ -1369,6 +1394,10 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)mwAdapterAdClickedWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 @end
 
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
+@end
+
 @class MobWithInterstitialAd;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithInterstitialAdDelegate_")
 @protocol MobWithInterstitialAdDelegate <MobWithInappLandingDelegate>
@@ -1411,6 +1440,10 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitialAd")
 - (void)loadAd;
 @end
 
+@interface MobWithInterstitialAd (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
+@end
+
 @interface MobWithInterstitialAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>
 - (void)mwAdapterDidReceivedAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter;
 - (void)mwAdapterDidFailToReceiveAdWithAdapter:(id <MWAdapterBase> _Nonnull)adapter error:(NSError * _Nullable)error;
@@ -1447,6 +1480,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 - (void)mobWithNativeAdViewClickedAd;
 - (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
 - (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework22MobWithPopupAdDelegate_")
@@ -1472,6 +1506,10 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 @property (nonatomic, weak) id <MobWithRewardAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
+@end
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework))
+- (void)mobwithAdViewOpenInAppLandingWithAd:(id _Nonnull)ad params:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
 @end
 
 @interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <MWAdapterDelegate>

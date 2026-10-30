@@ -66,7 +66,7 @@ extension MobWithADSDKFramework.MobWithInterstitialAd : MobWithADSDKFramework.MW
   @objc dynamic public func mwAdapterAdClosed(adapter: any MobWithADSDKFramework.MWAdapterBase)
 }
 extension MobWithADSDKFramework.MobWithInterstitialAd {
-  public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+  @objc dynamic public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
   @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
@@ -90,7 +90,7 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
   #endif
-  public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+  @objc dynamic public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 public enum ApiError : Swift.Error {
   case invalidURL
@@ -757,6 +757,7 @@ extension MobWithADSDKFramework.VastTracker {
   public func trackViewability(type: MobWithADSDKFramework.VastViewableImpressionType) throws
 }
 @objc public protocol MobWithInappLandingDelegate {
+  @objc optional func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 public struct IconClicks : Swift.Codable {
   public var iconClickThrough: Foundation.URL?
@@ -1180,7 +1181,7 @@ extension MobWithADSDKFramework.MobWithAdView : MobWithADSDKFramework.MWAdapterD
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func mwAdapterAdClicked(adapter: any MobWithADSDKFramework.MWAdapterBase)
 }
 extension MobWithADSDKFramework.MobWithAdView {
-  @_Concurrency.MainActor @preconcurrency public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func restart()
@@ -1251,7 +1252,7 @@ extension MobWithADSDKFramework.MMNativeAdView : MobWithADSDKFramework.MWAdapter
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func mwAdapterAdClicked(adapter: any MobWithADSDKFramework.MWAdapterBase)
 }
 extension MobWithADSDKFramework.MMNativeAdView {
-  @_Concurrency.MainActor @preconcurrency public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 @available(iOS 13.0, *)
 @available(swift, deprecated: 5.0, renamed: "MobWithInterstitialAdDelegate", message: "프로토콜 이름의 오타가 수정되었습니다 ('Interstitail' → 'Interstitial'). MobWithInterstitialAdDelegate를 사용해주세요.  (v1.3.34부터 deprecated)")
@@ -1374,7 +1375,7 @@ extension MobWithADSDKFramework.MobWithRewardAd : MobWithADSDKFramework.MWAdapte
   @objc dynamic public func mwAdapterAdCanReward(adapter: any MobWithADSDKFramework.MWAdapterBase)
 }
 extension MobWithADSDKFramework.MobWithRewardAd {
-  public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
+  @objc dynamic public func mobwithAdViewOpenInAppLanding(ad: Swift.AnyObject, params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 @_hasMissingDesignatedInitializers public class MobMixAdDataModel : Swift.Codable {
   @objc deinit
@@ -1447,6 +1448,9 @@ extension Swift.Dictionary {
   public var jsonString: Swift.String {
     get
     set
+  }
+  public var jsonPrettyString: Swift.String {
+    get
   }
 }
 @objc @objcMembers final public class MMAdRequestInfo : ObjectiveC.NSObject {

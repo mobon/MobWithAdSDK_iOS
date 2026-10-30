@@ -108,7 +108,8 @@
                 sessionId: "{{SESSION_ID}}",
                 advrtsPrdtCode: "{{ADVRTS_PRDT_CODE}}",
                 sortlist: "{{SORTLIST}}",
-                unitId: "{{UNIT_ID}}"
+                unitId: "{{UNIT_ID}}",
+                exlItlSeq: "{{EXLITLSEQ}}"
             };
             
             // ✅ 사이즈 처리 로직
@@ -804,7 +805,8 @@
                                     exlItlInfo.push({
                                         sortlist: window.__NAM_CONFIG__.sortlist || "",
                                         unitId: window.__NAM_CONFIG__.unitId,
-                                        exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                        exlItlMemo: window.__NAM_CONFIG__.namPlacementId || "",
+                                        exlItlSeq: window.__NAM_CONFIG__.exlItlSeq || ""
                                     });
                                 }
                                 
@@ -825,7 +827,8 @@
                                     exlItlInfo.push({
                                         sortlist: window.__NAM_CONFIG__.sortlist || "",
                                         unitId: window.__NAM_CONFIG__.unitId,
-                                        exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                        exlItlMemo: window.__NAM_CONFIG__.namPlacementId || "",
+                                        exlItlSeq: window.__NAM_CONFIG__.exlItlSeq || ""
                                     });
                                 }
                                 
@@ -853,7 +856,8 @@
                                 exlItlInfo.push({
                                     sortlist: window.__NAM_CONFIG__.sortlist || "",
                                     unitId: window.__NAM_CONFIG__.unitId,
-                                    exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                    exlItlMemo: window.__NAM_CONFIG__.namPlacementId || "",
+                                    exlItlSeq: window.__NAM_CONFIG__.exlItlSeq || ""
                                 });
                             }
                             
@@ -884,7 +888,8 @@
                                 exlItlInfo.push({
                                     sortlist: window.__NAM_CONFIG__.sortlist || "",
                                     unitId: window.__NAM_CONFIG__.placementId,
-                                    exlItlMemo: window.__NAM_CONFIG__.namPlacementId || ""
+                                    exlItlMemo: window.__NAM_CONFIG__.namPlacementId || "",
+                                    exlItlSeq: window.__NAM_CONFIG__.exlItlSeq || ""
                                 });
                             }
                             
